@@ -156,7 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 10
-  outlineMode: 0
 --- !u!114 &5116809560825898505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +210,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8340082996898825479}
           m_TargetAssemblyTypeName: OB, Assembly-CSharp
           m_MethodName: StartGaze
           m_Mode: 1
@@ -227,7 +226,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8340082996898825479}
           m_TargetAssemblyTypeName: OB, Assembly-CSharp
           m_MethodName: StopGaze
           m_Mode: 1
