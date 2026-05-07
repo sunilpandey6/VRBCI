@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(EyeClosed))]
 [RequireComponent(typeof(AutoWalk))]
@@ -8,14 +9,43 @@ public class Test3D : MonoBehaviour
 {
     
     [Header("References")]
-    [SerializeField] private AutoWalk autoWalk;
-    [SerializeField] private EyeClosed eyeClosed;
+    [SerializeField] public AutoWalk autoWalk;
+    [SerializeField] public EyeClosed eyeClosed;
 
+    [Header("Intro Panel")]
     [Tooltip("The UI Canvas shown before and after training")]
     public GameObject IntroductionCanvas;
+    [SerializeField] private UpdateUIPos introPos;
     [Header("Intro Canvas child Panel")]
     public GameObject IntroButton;
+    [Header("Instruction UI")]
+    public TMP_Text IntroButton_headingText;
+    [Header("Instruction UI")]
+    public TMP_Text IntroButton_instructionText;
+
+    [Header("Instruction Heading Texts")]
+    [TextArea] public string eyeTrackingHeading;
+    [TextArea] public string hybridHeading;
+
+    [Header("Instruction Main Texts")]
+    [TextArea] public string eyeTrackingInstruction;
+    [TextArea] public string hybridInstruction;
+
     public GameObject IntroNextButton;
+    [Header("Instruction UI")]
+    public TMP_Text IntroNextButton_headingText;
+    [Header("Instruction UI")]
+    public TMP_Text IntroNextButton_instructionText;
+
+    [Header("Instruction Heading Texts")]
+    [TextArea] public string eyeTrackingHeadingFinal;
+    [TextArea] public string hybridHeadingFinal;
+
+    [Header("Instruction Main Texts")]
+    [TextArea] public string eyeTrackingInstructionFinal;
+    [TextArea] public string hybridInstructionFinal;
+
+
     [Header("Scene Reference")]
     public GameObject Test3DScene;
 
@@ -52,9 +82,44 @@ public class Test3D : MonoBehaviour
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnPredictionResult -= HandlePredictionLSL;
     }
-#endregion
+    #endregion
 
-#region Eye Closed Check
+    #region Introduction
+    public void ShowIntro()
+    {
+        if (IntroductionCanvas != null) 
+        { 
+            IntroductionCanvas.SetActive(true); 
+            if (introPos != null)
+            {
+                introPos.PositionCanvasFront();
+            }
+        }
+        if (Test3DScene != null) Test3DScene.SetActive(false);
+        StartIntroButtonUI();
+    }
+
+    public void StartIntroButtonUI()
+    {
+        if (IntroductionCanvas == null) return;
+        IntroButton.SetActive(true);
+        IntroNextButton.SetActive(false);
+
+
+    }
+
+
+    public void IntroNextButtonUI()
+    {
+        if (IntroductionCanvas == null) return;
+        IntroductionCanvas.SetActive(true);
+        IntroButton.SetActive(false);
+        IntroNextButton.SetActive(true);
+    }
+
+    #endregion
+
+    #region Eye Closed Check
     public void StartEyeClosedTest()
     {
         eyeClosed.StartChecking();
@@ -86,6 +151,7 @@ public class Test3D : MonoBehaviour
     }
     
 #endregion
+
 #region Walk to Door
     public void walk(int code)
     {
@@ -93,33 +159,7 @@ public class Test3D : MonoBehaviour
     }
 #endregion
 
-#region Introduction
-    public void ShowIntro()
-    {
-        if (IntroductionCanvas != null) IntroductionCanvas.SetActive(true);
-        if (Test3DScene != null) Test3DScene.SetActive(false);
-        StartIntroButtonUI();
-    }
 
-     public void StartIntroButtonUI() 
-    { 
-        if (IntroductionCanvas == null) return;
-        IntroButton.SetActive(true);
-        IntroNextButton.SetActive(false);
-
-
-    }
-
-
-     public void IntroNextButtonUI() 
-    {
-        if (IntroductionCanvas == null) return;
-        IntroductionCanvas.SetActive(true);
-        IntroButton.SetActive(false);
-        IntroNextButton.SetActive(true);
-    }
-    
-#endregion
 
 #region LSL
 public void HandlePredictionLSL(BCIMessage msg)

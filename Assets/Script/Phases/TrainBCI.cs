@@ -13,6 +13,7 @@ public class TrainBCI : MonoBehaviour
     
     [Tooltip("The UI Canvas shown before and after training")]
     public GameObject IntroductionCanvas;
+   
     [Header("Intro Buttons")]
     public GameObject IntroButton;
     public GameObject IntroNextButton;
@@ -28,7 +29,7 @@ public class TrainBCI : MonoBehaviour
     public float imageryDuration = 4f;
     [Header("Transition Duration")]
     [Tooltip("Duration before the imagery phase starts")]
-    public float imageryDelay = 0.5f;
+    public float imageryDelay = 0.3f;
 
 
 
@@ -39,6 +40,7 @@ public class TrainBCI : MonoBehaviour
     }
     private void OnEnable()
     {
+        PositionCanvasFront();
         ShowIntro();
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnTrainingEvent += OnTrainingResult;   
@@ -53,6 +55,26 @@ public class TrainBCI : MonoBehaviour
             LSLCommunicationManager.Instance.OnTrainingEvent -= OnTrainingResult;
     }
 
+
+
+    public void PositionCanvasFront()
+    {
+        if (GlobalInput.Instance.cam == null) return;
+
+        if (GlobalInput.Instance.cam != null)
+        {
+            // Position in front of camera once
+            transform.position = GlobalInput.Instance.cam.transform.position
+                + GlobalInput.Instance.cam.transform.right * GlobalInput.Instance.horizontalOffset
+                + GlobalInput.Instance.cam.transform.up * GlobalInput.Instance.verticalOffset
+                + GlobalInput.Instance.cam.transform.forward * GlobalInput.Instance.distance;
+
+            // Make UI face the camera once
+            transform.rotation = GlobalInput.Instance.cam.transform.rotation;
+        }
+    }
+
+
     /// <summary>
     /// Displays the Introduction Canvas and hides the doors.
     /// Also disables the "Next" button so the user must proceed through the training.
@@ -60,6 +82,7 @@ public class TrainBCI : MonoBehaviour
     public void ShowIntro()
     {
         if (IntroductionCanvas != null) IntroductionCanvas.SetActive(true);
+
         if (Door1 != null) Door1.SetActive(false);
         if (Door2 != null) Door2.SetActive(false);
 
@@ -67,11 +90,44 @@ public class TrainBCI : MonoBehaviour
     }
 
     /// <summary>
+    /// Hides the "Intro-Next-UI" button at the start of the scene.
+    /// </summary>
+    public void StartIntroButtonUI()
+    {
+        if (IntroductionCanvas == null) return;
+        IntroButton.SetActive(true);
+        IntroNextButton.SetActive(false);
+    }
+
+    /// <summary>
+    /// Shows the "Intro-Next-UI" button at the end of the training routine.
+    /// </summary>
+    public void IntroNextButtonUI()
+    {
+        if (IntroductionCanvas == null) return;
+        IntroductionCanvas.SetActive(true);
+        IntroButton.SetActive(false);
+        IntroNextButton.SetActive(true);
+    }
+
+    /// <summary>
+    /// Proceeds to the next phase of the experiment.
+    /// Should be linked to the "Intro-Next-UI" button.
+    /// </summary>
+    public void NextPhase()
+    {
+        if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();
+        gameObject.SetActive(false);
+    }
+
+
+    /// <summary>
     /// Function to disable the introduction canvas and begin the training routine.
     /// Should be linked to the "Start" button on the IntroductionCanvas.
     /// </summary>
     public void StartTraining()
     {
+        if (IntroductionCanvas != null) IntroductionCanvas.SetActive(false);
         // if (IntroductionCanvas != null) 
         // {
         //     BB[] buttons = IntroductionCanvas.GetComponentsInChildren<BB>(true); 
@@ -162,35 +218,7 @@ private IEnumerator TrainingRoutine()
     IntroNextButtonUI();
 }
 
-    /// <summary>
-    /// Hides the "Intro-Next-UI" button at the start of the scene.
-    /// </summary>
-    public void StartIntroButtonUI() 
-    { 
-        if (IntroductionCanvas == null) return;
-        IntroButton.SetActive(true);
-        IntroNextButton.SetActive(false);
-    }
 
-    /// <summary>
-    /// Shows the "Intro-Next-UI" button at the end of the training routine.
-    /// </summary>
-    public void IntroNextButtonUI() 
-    {
-        if (IntroductionCanvas == null) return;
-        IntroButton.SetActive(false);
-        IntroNextButton.SetActive(true);
-    }
-
-    /// <summary>
-    /// Proceeds to the next phase of the experiment.
-    /// Should be linked to the "Intro-Next-UI" button.
-    /// </summary>
-    public void NextPhase()
-    {
-        if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();
-        gameObject.SetActive(false);
-    }
 
     #region LSL Training Complete
     private void OnTrainingResult(BCIMessage msg)

@@ -83,7 +83,6 @@ public class OB : MonoBehaviour
     {
         outline.ApplyGlobalColors();
         flicker.enabled = false;
-
         // Subscribe to LSL flicker event — unsubscribed in OnDisable
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnFlickerStateChanged += HandleFlickerLSL;
@@ -234,7 +233,7 @@ public class OB : MonoBehaviour
             case ActionType.MoveToSelectedDoor:
                 if(test3D != null)
                 {
-                    test3D.walk((int)moveCode);
+                    test3D.autoWalk.MoveToTarget((int)moveCode, test3D.IntroNextButtonUI);
                 }
                 break;
             case ActionType.FinalScreen:

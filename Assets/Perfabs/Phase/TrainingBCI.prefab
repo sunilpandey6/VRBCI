@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
   attribute: 1
   currentState: 0
   outlineImage: {fileID: 8805571822172842727}
-  borderImage: {fileID: 0}
+  borderImage: {fileID: 9102973633498609360}
   buttonImage: {fileID: 1477524240330940072}
   outlineRect: {fileID: 900315285699100111}
   borderRect: {fileID: 3878963913827501935}
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -744,7 +744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8867510486159905620
 RectTransform:
   m_ObjectHideFlags: 0
@@ -967,7 +967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   attribute: 1
   currentState: 0
   outlineImage: {fileID: 8604667092819150929}
-  borderImage: {fileID: 0}
+  borderImage: {fileID: 2151674490427911954}
   buttonImage: {fileID: 5464693805701182378}
   outlineRect: {fileID: 7917608371524514849}
   borderRect: {fileID: 6831588156618772147}
@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1436,7 +1436,8 @@ MonoBehaviour:
   IntroNextButton: {fileID: 3568475214070324856}
   m_times: 10
   showDuration: 4
-  blankDuration: 4
+  imageryDuration: 4
+  imageryDelay: 0.5
 --- !u!1 &7625522240845991913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1719,7 @@ GameObject:
   - component: {fileID: 4340857859344135390}
   - component: {fileID: 5814722180702249448}
   - component: {fileID: 5954073994214874574}
+  - component: {fileID: 6018827650781309498}
   m_Layer: 0
   m_Name: IntroductionCanvas
   m_TagString: Untagged
@@ -1827,6 +1829,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &6018827650781309498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252314386442237459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4bcf5f7ab0db343b34b294cfea53b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9002823859056056147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,7 +1907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1968,7 +1982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1992,7 +2006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 303919798602843082, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 303919798602843082, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2029,6 +2043,10 @@ PrefabInstance:
     - target: {fileID: 1969011797375574692, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
       propertyPath: m_Name
       value: Door_Double
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969011797375574692, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7306632839621566550, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
       propertyPath: demoScene
@@ -2069,6 +2087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_Single
       objectReference: {fileID: 0}
+    - target: {fileID: 3523759924290548418, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4702831697223999445, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2079,7 +2101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7630682414537201805, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7630682414537201805, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
       propertyPath: m_LocalPosition.z

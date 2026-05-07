@@ -136,7 +136,6 @@ public class TestUI : MonoBehaviour
     public void NextPhase()
     {
         if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();
-        gameObject.SetActive(false);
     }
 #endregion
 }

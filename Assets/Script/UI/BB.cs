@@ -206,6 +206,7 @@ public class BB : MonoBehaviour
         {
             hasTriggered = true;
             Execution(selectedAction);
+            ResetColor();
         }
     }
 

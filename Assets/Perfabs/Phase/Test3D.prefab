@@ -86,9 +86,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TrainBCI, Assembly-CSharp
-        m_MethodName: StartTraining
+      - m_Target: {fileID: 3925528384694210973}
+        m_TargetAssemblyTypeName: Test3D, Assembly-CSharp
+        m_MethodName: StartTest3D
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
   attribute: 1
   currentState: 0
   outlineImage: {fileID: 4210071972093331674}
-  borderImage: {fileID: 0}
+  borderImage: {fileID: 7178849468615080341}
   buttonImage: {fileID: 2086306982334608061}
   outlineRect: {fileID: 9021189765384802994}
   borderRect: {fileID: 4015686037119762009}
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -953,6 +953,7 @@ GameObject:
   - component: {fileID: 6669383901438250252}
   - component: {fileID: 2804890002571927218}
   - component: {fileID: 158530554135010325}
+  - component: {fileID: 2318275692094753157}
   m_Layer: 0
   m_Name: IntroductionCanvas
   m_TagString: Untagged
@@ -968,7 +969,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3358477196187705406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0.39}
   m_LocalScale: {x: 0.0019999999, y: 0.0019999999, z: 0.0019999999}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -977,7 +978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.22600007}
+  m_AnchoredPosition: {x: 0, y: 0.879}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5998744277509115178
@@ -1062,6 +1063,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!114 &2318275692094753157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358477196187705406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4bcf5f7ab0db343b34b294cfea53b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3758907127157647268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2167785545669698379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1349,7 +1362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1424,7 +1437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BCI Test
+  m_text: Door Selection Test
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1666,7 +1679,7 @@ MonoBehaviour:
   attribute: 1
   currentState: 0
   outlineImage: {fileID: 5822031068985673284}
-  borderImage: {fileID: 0}
+  borderImage: {fileID: 3327966651142859534}
   buttonImage: {fileID: 704035420418636007}
   outlineRect: {fileID: 1886566546620567025}
   borderRect: {fileID: 5373306021597557163}
@@ -2060,7 +2073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2203,7 +2216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2278,7 +2291,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Now we will start  BCI Test \nInstruction:\nto Execute the door."
+  m_text: 'Instruction:
+
+    Pick a door to exit.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2305,7 +2320,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.25
+  m_fontSize: 44.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2515,11 +2530,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ed1fda0344a4ceba178a2531ab1079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 0}
   speed: 1.2
   target_DoubleDoor: {fileID: 5083970872221417416}
   target_SingleDoor: {fileID: 3059670010859409318}
   stopDistance: 0.3
+  currentTarget: {fileID: 0}
 --- !u!114 &3925528384694210973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,6 +2550,7 @@ MonoBehaviour:
   autoWalk: {fileID: 2000678570093287460}
   eyeClosed: {fileID: 6762824912280135886}
   IntroductionCanvas: {fileID: 3358477196187705406}
+  introPos: {fileID: 2318275692094753157}
   IntroButton: {fileID: 4585754088937977890}
   IntroNextButton: {fileID: 5361885951509487658}
   Test3DScene: {fileID: 8654659617834128526}
@@ -2742,7 +2758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 98ed78790d7c35241bd421ccb798a948, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 403acaae6c8164bc0b98d5ef57a4b243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2885,7 +2901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &635005555653321485
 Transform:
   m_ObjectHideFlags: 0
@@ -2969,6 +2985,18 @@ PrefabInstance:
     - target: {fileID: 7630682414537201805, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340082996898825479, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
+      propertyPath: test3D
+      value: 
+      objectReference: {fileID: 3925528384694210973}
+    - target: {fileID: 8340082996898825479, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
+      propertyPath: moveCode
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8340082996898825479, guid: 91d157b5789185541902ea70d5885ef7, type: 3}
+      propertyPath: selectedAction
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3209,8 +3237,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7306632839621566550, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
+      propertyPath: test3D
+      value: 
+      objectReference: {fileID: 3925528384694210973}
+    - target: {fileID: 7306632839621566550, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
       propertyPath: isHovering
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7306632839621566550, guid: ae3b0f87c7e42bd4180fe105b3aaef90, type: 3}
+      propertyPath: selectedAction
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

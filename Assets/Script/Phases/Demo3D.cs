@@ -42,6 +42,25 @@ public class Demo3D : MonoBehaviour
         if (Door2 != null) Door2.SetActive(false);
     }
 
+    public void PositionCanvasFront()
+    {
+        if (GlobalInput.Instance.cam == null) return;
+
+        if (GlobalInput.Instance.cam != null)
+        {
+            // Position in front of camera once
+            transform.position = GlobalInput.Instance.cam.transform.position
+                + GlobalInput.Instance.cam.transform.right * GlobalInput.Instance.horizontalOffset
+                + GlobalInput.Instance.cam.transform.up * GlobalInput.Instance.verticalOffset
+                + GlobalInput.Instance.cam.transform.forward * GlobalInput.Instance.distance;
+
+            // Make UI face the camera once
+            transform.rotation = GlobalInput.Instance.cam.transform.rotation;
+        }
+    }
+    #endregion
+
+    #region Intro canvas
     public void ShowIntroPanel()
     {
         if (IntroPanel != null) IntroPanel.SetActive(true);
@@ -65,22 +84,7 @@ public class Demo3D : MonoBehaviour
         instructionText.text = InstructionTextDemo;
     }
 
-    public void PositionCanvasFront()
-    {
-        if (GlobalInput.Instance.cam == null) return;
 
-        if (GlobalInput.Instance.cam != null)
-        {
-            // Position in front of camera once
-            transform.position = GlobalInput.Instance.cam.transform.position
-                + GlobalInput.Instance.cam.transform.right * GlobalInput.Instance.horizontalOffset
-                + GlobalInput.Instance.cam.transform.up * GlobalInput.Instance.verticalOffset
-                + GlobalInput.Instance.cam.transform.forward * GlobalInput.Instance.distance;
-
-            // Make UI face the camera once
-            transform.rotation = GlobalInput.Instance.cam.transform.rotation;
-        }
-    }
     #endregion
 
     #region Door Switching

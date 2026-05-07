@@ -1,0 +1,9 @@
+Time,Experiment,Phase,Event,Detail,Action
+17:25:09.208,None,None,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+17:25:09.209,None,None,Flicker_Start,Object: Door_Double; Hz: 15,Flickering_Start
+17:25:11.234,None,None,Flicker_End,Object: Door_Double,Flickering_Completed
+17:25:11.234,None,None,Action_Executed,Object: Door_Double; Action: None,Execution_Proceeding
+17:25:27.425,None,None,Dwell_Complete,Object: Door_Single,Dwelling_Completed
+17:25:27.425,None,None,Flicker_Start,Object: Door_Single; Hz: 15,Flickering_Start
+17:25:29.431,None,None,Flicker_End,Object: Door_Single,Flickering_Completed
+17:25:29.431,None,None,Action_Executed,Object: Door_Single; Action: None,Execution_Proceeding
