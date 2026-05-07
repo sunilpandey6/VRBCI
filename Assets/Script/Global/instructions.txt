@@ -1,0 +1,181 @@
+================================================================================
+ LSLCommunicationManager — Integration & Usage Guide
+ Escape BCI Experiment | Unity 2022 LTS+
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+1. IMPORTING liblsl-CSharp INTO THE PROJECT
+────────────────────────────────────────────────────────────────────────────────
+Done.
+
+────────────────────────────────────────────────────────────────────────────────
+2. ATTACHING LSLCommunicationManager TO A GAMEOBJECT
+────────────────────────────────────────────────────────────────────────────────
+
+  1. Locate (or create) a persistent "Managers" empty GameObject in your scene.
+     This object must NOT be destroyed between scenes.
+  2. Add Component ▸ search "LSLCommunicationManager".
+  3. Configure the Inspector fields:
+       Stream Name       : BCIBackend   ← must match your Python outlet name
+       Stream Type       : BCIResult    ← must match your Python outlet type
+       Resolve Timeout   : 3            ← seconds to wait for stream resolution
+       Reconnect Interval: 5            ← seconds between reconnect attempts
+
+  4. DontDestroyOnLoad is called automatically — do NOT add to multiple objects.
+
+  5. UnityEvent slots (optional, Inspector-driven wiring):
+       OnFlickerStateChangedUnity  → BCIMessage handler
+       OnTrainingEventUnity        → BCIMessage handler
+       OnPredictionResultUnity     → BCIMessage handler
+
+────────────────────────────────────────────────────────────────────────────────
+3. SUBSCRIBING TO EVENTS FROM CODE
+────────────────────────────────────────────────────────────────────────────────
+
+Always subscribe in OnEnable and unsubscribe in OnDisable to prevent leaks.
+
+  using UnityEngine;
+
+  public class CustomController : MonoBehaviour
+  {
+      private void OnEnable()
+      {
+          if (LSLCommunicationManager.Instance != null)
+          {
+              LSLCommunicationManager.Instance.OnPredictionResult    += HandlePrediction;
+              LSLCommunicationManager.Instance.OnFlickerStateChanged += HandleFlicker;
+          }
+      }
+
+      private void OnDisable()
+      {
+          if (LSLCommunicationManager.Instance != null)
+          {
+              LSLCommunicationManager.Instance.OnPredictionResult    -= HandlePrediction;
+              LSLCommunicationManager.Instance.OnFlickerStateChanged -= HandleFlicker;
+          }
+      }
+
+      private void HandlePrediction(BCIMessage msg)
+      {
+          Debug.Log($"Prediction code: {msg.Code}");
+      }
+
+      // Full BCIMessage is passed so subscribers can validate ownership
+      // via msg.Event and msg.Detail before acting.
+      private void HandleFlicker(BCIMessage msg)
+      {
+          bool detected = msg.Code == (int)LSLCommunicationManager.BCICommand.FlickerDetected;
+          Debug.Log($"Flicker detected: {detected} | Event: {msg.Event} | Detail: {msg.Detail}");
+      }
+  }
+
+────────────────────────────────────────────────────────────────────────────────
+4. JSON PROTOCOL & DATA FORMAT
+────────────────────────────────────────────────────────────────────────────────
+
+Python sends a JSON string per sample matching the following schema:
+
+  public class BCIMessage {
+      public int       Code;    // Protocol integer (100, 101, 201 …)
+      public string    Event;   // Unity event label echoed from LSL markers
+      public string    Detail;  // Unity detail label echoed from LSL markers
+      public BCIRemark Remark;  // BCI-specific analysis results
+  }
+
+  public class BCIRemark {
+      public float  Detected_Frequency;
+      public float  Confidence_Score;
+      public bool   SSVEP_Present;
+      public string Message;
+      public int    Epochs_Collected;
+      public int    Target_Epochs;
+      public string Object;
+  }
+
+Special Case — Connection Handshake:
+  When Python starts it sends a message with Event = "Test_Connection".
+  LSLCommunicationManager logs a green success message and returns early —
+  no gameplay events are fired.
+
+────────────────────────────────────────────────────────────────────────────────
+5. OB.cs AND BB.cs FLICKER LSL INTEGRATION
+────────────────────────────────────────────────────────────────────────────────
+
+Experiment Modes
+  • EyeTracking : Gaze → Dwell → Flicker → Execute immediately (no LSL wait)
+  • Hybrid/BCI  : Gaze → Dwell → Flicker → WaitingForLSL → Python confirmation
+
+The 4-Point Validation Loop (HandleFlickerLSL)
+  When OnFlickerStateChanged fires, each object checks:
+    1. Ownership  — am I the current waitingObject / waitingButton?
+    2. State      — is isWaitingForLSL == true?
+    3. Event match — does msg.Event match lastEvent?
+    4. Detail match — does msg.Detail match objectId / buttonId?
+
+  If ALL match:
+    • Detected     → reset retryCount, clear ownership, execute action.
+    • Not Detected → call RetryFlicker().
+
+Bounded Retry Logic (OB.cs / BB.cs)
+  private int retryCount = 0;
+  private const int maxRetries = 3;
+
+  RetryFlicker() increments retryCount each call and cancels if:
+    a) retryCount > maxRetries  → logs "Max_Retries_Reached", calls CancelRetry()
+    b) !isHovering after gap    → logs "Gaze_Lost",           calls CancelRetry()
+
+  CancelRetry() resets: isWaitingForLSL, isFlickering, retryCount,
+                        waitingObject, and the outline.
+
+  retryCount resets to 0 on:
+    • Successful LSL detection (HandleFlickerLSL)
+    • StopGaze() called by the eye tracker
+
+────────────────────────────────────────────────────────────────────────────────
+6. BCI COMMAND PROTOCOL REFERENCE
+────────────────────────────────────────────────────────────────────────────────
+
+  Code │ Enum Constant               │ Event Fired
+  ─────┼─────────────────────────────┼──────────────────────────
+   100 │ FlickerDetected             │ OnFlickerStateChanged
+   101 │ FlickerNotDetected          │ OnFlickerStateChanged
+   201 │ TrainObj1ActiveComplete     │ OnTrainingEvent
+   202 │ TrainObj2ActiveComplete     │ OnTrainingEvent
+   203 │ TrainObj1ImageryComplete    │ OnTrainingEvent
+   204 │ TrainObj2ImageryComplete    │ OnTrainingEvent
+   300 │ PredictResultActiveObj1     │ OnPredictionResult
+   301 │ PredictResultActiveObj2     │ OnPredictionResult
+   302 │ PredictResultImageryObj1    │ OnPredictionResult
+   303 │ PredictResultImageryObj2    │ OnPredictionResult
+
+────────────────────────────────────────────────────────────────────────────────
+7. IN-EDITOR TESTING (SimulateCommand)
+────────────────────────────────────────────────────────────────────────────────
+
+Inject a command without a live Python backend:
+
+  LSLCommunicationManager.Instance.SimulateCommand(
+      (int)LSLCommunicationManager.BCICommand.FlickerDetected,
+      "Flicker_Start"   // must match lastEvent in OB / BB for ownership to pass
+  );
+
+────────────────────────────────────────────────────────────────────────────────
+8. EYE TRACKING UTILITIES (EyeClosed.cs)
+────────────────────────────────────────────────────────────────────────────────
+
+File: Assets/Script/Global/EyeClosed.cs
+
+Setup:
+  1. Attach EyeClosed.cs to a GameObject.
+  2. Assign an AudioSource and AudioClip in the Inspector.
+  3. Set opennessThreshold (default 0.1) and requiredClosedDuration (default 0.5s).
+
+Usage:
+  • StartChecking()  — begins the background coroutine.
+  • StopChecking()   — stops the check.
+  • Evaluates SRanipal_Eye_v2.GetEyeOpenness for both eyes. If both fall below
+    the threshold for the required duration, the audio plays, areEyesClosed
+    becomes true, and OnEyesClosedTriggered fires.
+
+================================================================================
