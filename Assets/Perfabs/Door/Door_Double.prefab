@@ -110,8 +110,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.02104382, y: 0.0010000018, z: 0.020442305}
-  m_Center: {x: 0, y: 3.4729375e-10, z: 0.010221151}
+  m_Size: {x: 0.02104382, y: 0.0020042744, z: 0.020442305}
+  m_Center: {x: 0, y: -0.0005021362, z: 0.010221151}
 --- !u!114 &3299297324878740917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineWidth: 30
-  outlineMode: 1
 --- !u!114 &6796058414740025556
 MonoBehaviour:
   m_ObjectHideFlags: 0

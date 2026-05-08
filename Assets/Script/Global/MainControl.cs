@@ -39,6 +39,7 @@ public class MainControl : MonoBehaviour
         ExperimentPhase.SettingUI,
         ExperimentPhase.TestUI,
         ExperimentPhase.Demo3D,
+        ExperimentPhase.TrainBCI,
         ExperimentPhase.Test3D
     };
 

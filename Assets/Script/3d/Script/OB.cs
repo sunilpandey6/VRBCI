@@ -27,6 +27,7 @@ public class OB : MonoBehaviour
         DoorSwitch,
         NextScene,
         MoveToSelectedDoor,
+        TestFinalUI,
         FinalScreen
     }
 
@@ -128,9 +129,9 @@ public class OB : MonoBehaviour
     #region Pointer Event
     public void StartGaze()
     {
-        if (MainControl.Instance != null && !MainControl.Instance.isGazeInteractionEnabled) return;
+        if (MainControl.Instance != null && !MainControl.Instance.isGazeInteractionEnabled && !IsPhaseTrain()) return;
 
-        if (activeObject != null && activeObject != this) return;
+        if (activeObject != null && activeObject != this ) return;
         activeObject = this;
 
         isHovering = true;
@@ -234,6 +235,11 @@ public class OB : MonoBehaviour
                 if(test3D != null)
                 {
                     test3D.autoWalk.MoveToTarget((int)moveCode, test3D.IntroNextButtonUI);
+                }
+                break;
+            case ActionType.TestFinalUI:
+                {
+                    test3D.IntroNextButtonUI();
                 }
                 break;
             case ActionType.FinalScreen:
@@ -365,6 +371,13 @@ public class OB : MonoBehaviour
         var exp = MainControl.Instance.currentExperiment;
         return exp == MainControl.ExperimentType.BCI ||
                exp == MainControl.ExperimentType.Hybrid;
+    }
+
+    private bool IsPhaseTrain()
+    {
+        if (MainControl.Instance == null) return false;
+        var expp = MainControl.Instance.currentPhase;
+        return expp == MainControl.ExperimentPhase.TrainBCI;
     }
     #endregion
 }

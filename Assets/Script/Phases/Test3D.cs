@@ -54,7 +54,14 @@ public class Test3D : MonoBehaviour
     [Header("Door 2")]
     [SerializeField] private OB door2;
 
-#region Unity Lifecycle
+
+    [Header("Spawn Point")]
+    [SerializeField] private Transform spawnPoint;
+
+    [Header("Player / Camera Rig")]
+    [SerializeField] private Transform playerRig;
+
+    #region Unity Lifecycle
     private void Awake()
     {
         if(autoWalk == null) autoWalk = GetComponent<AutoWalk>();
@@ -112,7 +119,13 @@ public class Test3D : MonoBehaviour
     public void IntroNextButtonUI()
     {
         if (IntroductionCanvas == null) return;
+        if (Test3DScene != null) Test3DScene.SetActive(false);
         IntroductionCanvas.SetActive(true);
+        if (introPos != null)
+        {
+            introPos.PositionCanvasFront();
+        }
+
         IntroButton.SetActive(false);
         IntroNextButton.SetActive(true);
     }
@@ -138,6 +151,7 @@ public class Test3D : MonoBehaviour
         
         if (IntroductionCanvas != null) IntroductionCanvas.SetActive(false);
         if (Test3DScene != null) Test3DScene.SetActive(true);
+        MoveToPoint();
         Test3DMain();
     }
 
@@ -149,10 +163,19 @@ public class Test3D : MonoBehaviour
             
         }
     }
-    
-#endregion
 
-#region Walk to Door
+    private void MoveToPoint()
+    {
+        if (playerRig != null && spawnPoint != null)
+        {
+            playerRig.position = spawnPoint.position;
+            playerRig.rotation = spawnPoint.rotation;
+        }
+    }
+
+    #endregion
+
+    #region Walk to Door
     public void walk(int code)
     {
         autoWalk.MoveToTarget(code);
