@@ -118,7 +118,7 @@ public class SettingUI : MonoBehaviour
         if (flickerTimeText != null)
             flickerTimeText.text = GlobalInput.Instance.flickerDuration.ToString("0.0") + " Sec";
         if (flickerHzText != null)
-            flickerHzText.text = GlobalInput.Instance.flickerHz.ToString("0.0") + " Hz";
+            flickerHzText.text = GlobalInput.Instance.flickerHz.ToString("0.##") + " Hz";
     }
     #endregion
 
@@ -142,21 +142,42 @@ public class SettingUI : MonoBehaviour
     #endregion
 
     #region Flicker Settings Controls
+    private readonly float[] allowedFrequencies = { 6f, 7.5f, 9f, 10f, 11.25f, 15f };
+
     public void addhz()
     {
-        if (GlobalInput.Instance.flickerHz < 30f)
+        float currentHz = GlobalInput.Instance.flickerHz;
+        for (int i = 0; i < allowedFrequencies.Length - 1; i++)
         {
-            GlobalInput.Instance.flickerHz += 1.0f;
-            UpdateFlickerValues();
+            if (currentHz < allowedFrequencies[i + 1])
+            {
+                GlobalInput.Instance.flickerHz = allowedFrequencies[i + 1];
+                UpdateFlickerValues();
+                return;
+            }
         }
+        
+        // If we reach here, we're at or above the max value. Wrap around to the minimum.
+        GlobalInput.Instance.flickerHz = allowedFrequencies[0];
+        UpdateFlickerValues();
     }
+
     public void subhz()
     {
-        if (GlobalInput.Instance.flickerHz > 12f)
+        float currentHz = GlobalInput.Instance.flickerHz;
+        for (int i = allowedFrequencies.Length - 1; i > 0; i--)
         {
-            GlobalInput.Instance.flickerHz -= 1.0f;
-            UpdateFlickerValues();
+            if (currentHz > allowedFrequencies[i - 1])
+            {
+                GlobalInput.Instance.flickerHz = allowedFrequencies[i - 1];
+                UpdateFlickerValues();
+                return;
+            }
         }
+
+        // If we reach here, we're at or below the min value. Wrap around to the maximum.
+        GlobalInput.Instance.flickerHz = allowedFrequencies[allowedFrequencies.Length - 1];
+        UpdateFlickerValues();
     }
 
     public void addTime()

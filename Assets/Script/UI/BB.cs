@@ -87,6 +87,9 @@ public class BB : MonoBehaviour
     public bool isNext;
     public TestUI testUI;
 
+    // for dwell log
+    private bool dwellStartLogged = false;
+
     #region Unity Lifecycle
     void Awake()
     {
@@ -235,8 +238,13 @@ public class BB : MonoBehaviour
         if (outlineImage && !outlineImage.gameObject.activeSelf)
             outlineImage.gameObject.SetActive(true);
 
-        ExperimentLogger.Instance?.LogEvent("Dwell_Start", $"Button: {gameObject.name}", "Dwell_Started");
-        LSL_Logger.Instance?.LogEvent("Dwell_Start", $"Button: {gameObject.name}", "Dwell_Started");
+        // Log ONLY once per hover session
+        if (!dwellStartLogged)
+        {
+            ExperimentLogger.Instance?.LogEvent("Dwell_Start", $"Button: {gameObject.name}", "Dwell_Started");
+            LSL_Logger.Instance?.LogEvent("Dwell_Start", $"Button: {gameObject.name}", "Dwell_Started");
+            dwellStartLogged = true;
+        }
 
         if (outlineImage)
         {
