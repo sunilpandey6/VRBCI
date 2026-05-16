@@ -14,8 +14,8 @@ public class OB : MonoBehaviour
     public enum DoorCode
     {
         None = 0,
-        Door1 = 300,
-        Door2 = 301
+        DoorSingle = 300,
+        DoorDouble = 301
     }
 
     public enum ActionType
@@ -28,13 +28,15 @@ public class OB : MonoBehaviour
     }
 
     public DoorOpenAnimation doorOpenController;
+    [Header("Door Identification Code")]
+    public DoorCode doorCode = DoorCode.None;
 
     [Header("Door Operations")]
     [SerializeField] private ActionType selectedAction = ActionType.None;
     [Header("BCI Test3D Override")]
     [Tooltip("Action to execute when in BCI mode and Test3D phase")]
     [SerializeField] private ActionType bciTest3DAction = ActionType.None;
-    public DoorCode doorCode = DoorCode.None;
+    
 
     [Header("Outline")]
     [SerializeField] private Outline outline;
