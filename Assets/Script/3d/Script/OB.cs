@@ -3,6 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Outline))]
 [RequireComponent(typeof(Flicker))]
+[RequireComponent(typeof(DoorOpenAnimation))]
 public class OB : MonoBehaviour
 {
     #region Variables
@@ -72,6 +73,7 @@ public class OB : MonoBehaviour
     {
         outline  = GetComponent<Outline>();
         flicker  = GetComponent<Flicker>();
+        doorOpenController = GetComponent<DoorOpenAnimation>();
         objectId = gameObject.name;
     }
 
@@ -79,12 +81,14 @@ public class OB : MonoBehaviour
     {
         outline = GetComponent<Outline>();
         flicker = GetComponent<Flicker>();
+        doorOpenController = GetComponent<DoorOpenAnimation>();
     }
 
     private void OnEnable()
     {
         outline.ApplyGlobalColors();
         flicker.enabled = false;
+        doorOpenController.Close();
         // Subscribe to LSL flicker event — unsubscribed in OnDisable
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnFlickerStateChanged += HandleFlickerLSL;
@@ -105,6 +109,7 @@ public class OB : MonoBehaviour
         if (activeObject  == this) activeObject  = null;
         if (waitingObject == this) waitingObject = null;
 
+        doorOpenController.Close();
         StopAllCoroutines();
     }
 

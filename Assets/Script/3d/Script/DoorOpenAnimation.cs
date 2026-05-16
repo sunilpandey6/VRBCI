@@ -12,10 +12,6 @@ public class DoorOpenAnimation : MonoBehaviour
         doorOpen = false;
         doorAnimator.SetBool("isOpen", doorOpen);
     }
-    private void OnEnable()
-    {
-        Close();
-    }
 #region Open and Close
     public void Open()
     {

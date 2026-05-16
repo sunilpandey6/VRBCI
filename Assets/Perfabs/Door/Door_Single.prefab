@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: -1847798516308685085}
   - component: {fileID: 5329829848426906929}
   - component: {fileID: 5116809560825898505}
+  - component: {fileID: 9046611221723192413}
   - component: {fileID: 8340082996898825479}
   - component: {fileID: -5855402112520335509}
   - component: {fileID: 2448642485479815873}
@@ -169,6 +170,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flickerFillMaterial: {fileID: 2100000, guid: 5608c632029cf4ff49e6361771c822bb, type: 2}
+--- !u!114 &9046611221723192413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523759924290548418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9825ac537565a4a218cf16f51691ae1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpen: 0
+  doorAnimator: {fileID: 2448642485479815873}
 --- !u!114 &8340082996898825479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,8 +198,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demoScene: {fileID: 0}
   test3D: {fileID: 0}
-  moveCode: 300
+  doorOpenController: {fileID: 9046611221723192413}
   selectedAction: 0
+  bciTest3DAction: 4
+  doorCode: 300
   outline: {fileID: 5329829848426906929}
   flicker: {fileID: 5116809560825898505}
   dwellTimer: 0
