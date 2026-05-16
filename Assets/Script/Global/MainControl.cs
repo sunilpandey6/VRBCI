@@ -39,7 +39,6 @@ public class MainControl : MonoBehaviour
         ExperimentPhase.SettingUI,
         ExperimentPhase.TestUI,
         ExperimentPhase.Demo3D,
-        ExperimentPhase.TrainBCI,
         ExperimentPhase.Test3D
     };
 
@@ -77,6 +76,8 @@ public class MainControl : MonoBehaviour
     {
         // Initialize the first experiment type (EyeTracking)
         SetExperimentType(ExperimentType.EyeTracking);
+        //SetExperimentType(ExperimentType.BCI);
+
     }
 
     /// <summary>

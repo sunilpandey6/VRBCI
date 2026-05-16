@@ -1670,7 +1670,6 @@ GameObject:
   - component: {fileID: 22702844118666318}
   - component: {fileID: 2923994050305595960}
   - component: {fileID: 4667790659272556917}
-  - component: {fileID: 3145611279951050844}
   - component: {fileID: 313665340951227744}
   m_Layer: 0
   m_Name: Test3D
@@ -1815,23 +1814,6 @@ MonoBehaviour:
   OnEyesClosedTriggered:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3145611279951050844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7066357660838486283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ed1fda0344a4ceba178a2531ab1079, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.2
-  target_DoubleDoor: {fileID: 0}
-  target_SingleDoor: {fileID: 0}
-  stopDistance: 0.3
-  currentTarget: {fileID: 0}
 --- !u!114 &313665340951227744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1844,7 +1826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d49f6fc940d044eeb2dbaacc9d15a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoWalk: {fileID: 3145611279951050844}
   eyeClosed: {fileID: 4667790659272556917}
   currentMode: 0
   IntroductionCanvas: {fileID: 6109950745516077459}

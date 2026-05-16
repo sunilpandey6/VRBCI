@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -175,7 +175,7 @@ MonoBehaviour:
   activeColor: {r: 0, g: 1, b: 0, a: 1}
   flickerOn: {r: 0, g: 0, b: 0, a: 0}
   cam: {fileID: 441087507}
-  distance: 2
+  distance: 3
   horizontalOffset: 0
   verticalOffset: 0
 --- !u!1 &299639867
@@ -532,6 +532,10 @@ PrefabInstance:
     - target: {fileID: 1923139781215577341, guid: 90659db8912db42b386f65ac9109c8f7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172330915650220262, guid: 90659db8912db42b386f65ac9109c8f7, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3412859908921540107, guid: 90659db8912db42b386f65ac9109c8f7, type: 3}
       propertyPath: borderImage
@@ -1044,7 +1048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7598864495493032180, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1667,6 +1671,58 @@ PrefabInstance:
       propertyPath: playerRig
       value: 
       objectReference: {fileID: 441087516}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: bciHeading
+      value: eeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: hybridHeading
+      value: "ET +eeg\t"
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: bciInstruction
+      value: FULL EEG CONTROL
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: bciHeadingFinal
+      value: Test <Complete>
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: hybridInstruction
+      value: ETE TRACK + PYTHON CONFIRMATION
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: eyeTrackingHeading
+      value: ET
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: hybridHeadingFinal
+      value: Hybrid DOne
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: bciInstructionFinal
+      value: Test Complete
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: eyeTrackingInstruction
+      value: EYE TRACK
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: hybridInstructionFinal
+      value: Move to next test
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: eyeTrackingHeadingFinal
+      value: ET DONE
+      objectReference: {fileID: 0}
+    - target: {fileID: 313665340951227744, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: eyeTrackingInstructionFinal
+      value: Move to next test
+      objectReference: {fileID: 0}
+    - target: {fileID: 656834478466447386, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: outlineWidth
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2723849602603709930, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1675,6 +1731,10 @@ PrefabInstance:
       propertyPath: currentTarget
       value: 
       objectReference: {fileID: 441087516}
+    - target: {fileID: 4667790659272556917, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
+      propertyPath: requiredClosedDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5059542615866178186, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1695,7 +1755,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3145611279951050844, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

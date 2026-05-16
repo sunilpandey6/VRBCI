@@ -247,11 +247,25 @@ public class OB : MonoBehaviour
                 }
                 break;
             case ActionType.OpenDoor:
-                doorOpenController.Open();
+                StartCoroutine(DoorFlow());
+                
                 break;
         }
     }
-#endregion
+
+    private IEnumerator DoorFlow()
+    {
+        // 1. start animation
+        doorOpenController.Open();
+
+        // 2. wait until animation is finished
+        yield return new WaitForSeconds(1.5f);
+
+        // 3. now execute next logic
+        test3D.IntroNextButtonUI();
+    }
+
+    #endregion
 
     #region LSL Response Handler
 

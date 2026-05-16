@@ -1,0 +1,3 @@
+Time,Experiment,Phase,Event,Detail,Action
+18:14:44.481,BCI,SettingUI,Experiment_Start,BCI,
+18:14:44.481,BCI,TrainBCI,Phase_Start,TrainBCI,

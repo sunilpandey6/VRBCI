@@ -137,4 +137,5 @@ public class EyeClosed : MonoBehaviour
         areEyesClosed = false;
         hasTriggered = false;
     }
+
 }

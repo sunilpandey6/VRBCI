@@ -4,12 +4,10 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(EyeClosed))]
-[RequireComponent(typeof(AutoWalk))]
 public class Test3D : MonoBehaviour
 {
     
     [Header("References")]
-    [SerializeField] public AutoWalk autoWalk;
     [SerializeField] public EyeClosed eyeClosed;
 
     [Header("Experiment Mode")]
@@ -72,12 +70,10 @@ public class Test3D : MonoBehaviour
     #region Unity Lifecycle
     private void Awake()
     {
-        if(autoWalk == null) autoWalk = GetComponent<AutoWalk>();
         if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
     }
 
     private void OnValidate(){
-        autoWalk = GetComponent<AutoWalk>();
         eyeClosed = GetComponent<EyeClosed>();
     }
 
@@ -234,14 +230,6 @@ public class Test3D : MonoBehaviour
     }
 
     #endregion
-
-    #region Walk to Door
-    public void walk(int code)
-    {
-        autoWalk.MoveToTarget(code);
-    }
-#endregion
-
 
 
 #region LSL
