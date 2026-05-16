@@ -263,15 +263,15 @@ public class BB : MonoBehaviour
 
     private IEnumerator FlickerAndExecute()
     {
-        ExperimentLogger.Instance?.LogEvent("Dwell_Complete", $"Button: {gameObject.name}", "Dwelling_Completed");
-        LSL_Logger.Instance?.LogEvent("Dwell_Complete", $"Button: {gameObject.name}", "Dwelling_Completed");
+        ExperimentLogger.Instance?.LogEvent("Dwell", $"Button: {gameObject.name}", "Dwelling_Completed");
+        LSL_Logger.Instance?.LogEvent("Dwell", $"Button: {gameObject.name}", "Dwelling_Completed");
 
         currentState     = State.Flickering;
         hasTriggered     = true;
         flickerStartTime = -1f;
 
         // Store the event/detail pair so HandleFlickerLSL can validate the echo
-        lastEvent  = "Flicker_Start";
+        lastEvent  = "Flicker";
         lastDetail = buttonId;
 
         ExperimentLogger.Instance?.LogEvent(lastEvent, lastDetail, "Flicker_Start");
@@ -284,7 +284,7 @@ public class BB : MonoBehaviour
         if (runtimeMaterialFlicker != null)
             runtimeMaterialFlicker.SetFloat("_FlickerState", 0f);
 
-        ExperimentLogger.Instance?.LogEvent("Flicker_End", $"Button: {gameObject.name}", "Flicker_End");
+        ExperimentLogger.Instance?.LogEvent(lastEvent, lastDetail, "Flicker_End");
         LSL_Logger.Instance?.LogEvent(lastEvent, lastDetail, "Flicker_End");
 
         // ── Route by experiment mode ─────────────────────────────────────────

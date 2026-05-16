@@ -75,7 +75,7 @@ public class MainControl : MonoBehaviour
     void Start()
     {
         // Initialize the first experiment type (EyeTracking)
-        SetExperimentType(ExperimentType.EyeTracking);
+        SetExperimentType(currentExperiment);
         //SetExperimentType(ExperimentType.BCI);
 
     }
