@@ -125,6 +125,12 @@ public class EyeClosed : MonoBehaviour
         }
     }
 
+    public void startpredict()
+    {
+        ExperimentLogger.Instance?.LogEvent("start prediction", $"Button: {gameObject.name}", "Start_Predict");
+        LSL_Logger.Instance?.LogEvent("start prediction", $"Button: {gameObject.name}", "Start_Predict");
+    }
+
     public void playPredictSound()
     {
         if (audioSource != null && predictSound != null)
