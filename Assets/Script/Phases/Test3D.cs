@@ -245,6 +245,9 @@ public void HandlePredictionLSL(BCIMessage msg)
     {
        door2.TriggerInteraction();
     }
+
+    ExperimentLogger.Instance?.LogEvent("Predict_End", "Prediction_Phase", "Predict_End");
+    LSL_Logger.Instance?.LogEvent("Predict_End", "Prediction_Phase", "Predict_End");
 }
 #endregion
 
