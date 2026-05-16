@@ -228,7 +228,7 @@ public class OB : MonoBehaviour
                 break;
             case ActionType.OpenDoor:
                 doorOpenController.Open();
-                break:
+                break;
         }
     }
 #endregion
