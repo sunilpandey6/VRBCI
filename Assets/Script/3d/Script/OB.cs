@@ -3,6 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Outline))]
 [RequireComponent(typeof(Flicker))]
+[RequireComponent(typeof(DoorOpenAnimation))]
 public class OB : MonoBehaviour
 {
     #region Variables
@@ -13,8 +14,8 @@ public class OB : MonoBehaviour
     public enum DoorCode
     {
         None = 0,
-        Door1 = 300,
-        Door2 = 301
+        DoorSingle = 300,
+        DoorDouble = 301
     }
 
     public enum ActionType
@@ -27,13 +28,15 @@ public class OB : MonoBehaviour
     }
 
     public DoorOpenAnimation doorOpenController;
+    [Header("Door Identification Code")]
+    public DoorCode doorCode = DoorCode.None;
 
     [Header("Door Operations")]
     [SerializeField] private ActionType selectedAction = ActionType.None;
     [Header("BCI Test3D Override")]
     [Tooltip("Action to execute when in BCI mode and Test3D phase")]
     [SerializeField] private ActionType bciTest3DAction = ActionType.None;
-    public DoorCode doorCode = DoorCode.None;
+    
 
     [Header("Outline")]
     [SerializeField] private Outline outline;
@@ -72,6 +75,7 @@ public class OB : MonoBehaviour
     {
         outline  = GetComponent<Outline>();
         flicker  = GetComponent<Flicker>();
+        doorOpenController = GetComponent<DoorOpenAnimation>();
         objectId = gameObject.name;
     }
 
@@ -79,12 +83,14 @@ public class OB : MonoBehaviour
     {
         outline = GetComponent<Outline>();
         flicker = GetComponent<Flicker>();
+        doorOpenController = GetComponent<DoorOpenAnimation>();
     }
 
     private void OnEnable()
     {
         outline.ApplyGlobalColors();
         flicker.enabled = false;
+        doorOpenController.Close();
         // Subscribe to LSL flicker event — unsubscribed in OnDisable
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnFlickerStateChanged += HandleFlickerLSL;
@@ -105,6 +111,7 @@ public class OB : MonoBehaviour
         if (activeObject  == this) activeObject  = null;
         if (waitingObject == this) waitingObject = null;
 
+        doorOpenController.Close();
         StopAllCoroutines();
     }
 
