@@ -75,6 +75,9 @@ public class SettingUI : MonoBehaviour
 
     public void NextPhase()
     {
+        ExperimentLogger.Instance?.LogEvent("Set_Target_Frequency", $"Button: {gameObject.name}", $"Set_Target_Frequency: {GlobalInput.Instance.flickerHz}");
+        LSL_Logger.Instance?.LogEvent("Set_Target_Frequency", $"Button: {gameObject.name}", $"Set_Target_Frequency: {GlobalInput.Instance.flickerHz}");
+
         if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();
         gameObject.SetActive(false);
     }
