@@ -10,6 +10,13 @@ public class OB : MonoBehaviour
     [SerializeField] private Demo3D demoScene; // Scene controller to call door actions
     [SerializeField] private Test3D test3D;
 
+    public enum DoorCode
+    {
+        None = 0,
+        Door1 = 300,
+        Door2 = 301
+    }
+
     public enum ActionType
     {
         None,
@@ -19,10 +26,14 @@ public class OB : MonoBehaviour
         OpenDoor
     }
 
-    [SerializeField] private DoorOpenAnimation doorOpenController;
+    public DoorOpenAnimation doorOpenController;
 
     [Header("Door Operations")]
     [SerializeField] private ActionType selectedAction = ActionType.None;
+    [Header("BCI Test3D Override")]
+    [Tooltip("Action to execute when in BCI mode and Test3D phase")]
+    [SerializeField] private ActionType bciTest3DAction = ActionType.None;
+    public DoorCode doorCode = DoorCode.None;
 
     [Header("Outline")]
     [SerializeField] private Outline outline;
@@ -263,7 +274,17 @@ public class OB : MonoBehaviour
             retryCount      = 0;
             waitingObject   = null;
             isWaitingForLSL = false;
-            ExecuteAction(selectedAction);
+
+            if (MainControl.Instance != null && 
+                MainControl.Instance.currentExperiment == MainControl.ExperimentType.BCI && 
+                MainControl.Instance.currentPhase == MainControl.ExperimentPhase.Test3D)
+            {
+                ExecuteAction(bciTest3DAction);
+            }
+            else
+            {
+                ExecuteAction(selectedAction);
+            }
         }
         else
         {

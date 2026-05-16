@@ -249,6 +249,14 @@ public void HandlePredictionLSL(BCIMessage msg)
 {
     Debug.Log($"[Test3D] BCI Prediction received: {msg}");
 
+    if (door1 != null && door1.doorCode != OB.DoorCode.None && msg.Code == (int)door1.doorCode)
+    {
+       door1.TriggerInteraction();
+    }
+    else if (door2 != null && door2.doorCode != OB.DoorCode.None && msg.Code == (int)door2.doorCode)
+    {
+       door2.TriggerInteraction();
+    }
 }
 #endregion
 
