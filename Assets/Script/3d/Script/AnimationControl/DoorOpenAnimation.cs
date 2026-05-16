@@ -29,22 +29,5 @@ public class DoorOpenAnimation : MonoBehaviour
             doorAnimator.SetBool("isOpen", false);
     }
 #endregion
-    // Start is called before the first frame update
-    #region Trigger Enter and Exit
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Open();
-        }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Close();
-        }
-    }
-    #endregion
 }

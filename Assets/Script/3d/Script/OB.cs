@@ -10,26 +10,16 @@ public class OB : MonoBehaviour
     [SerializeField] private Demo3D demoScene; // Scene controller to call door actions
     [SerializeField] private Test3D test3D;
 
-    public enum MoveCode
-    {
-        Default = 0,
-        Door_Single = 300,
-        Door_Double = 301
-    }
-    
-    [Header("Movement Code")]
-    [Tooltip("Unique code that identifies this object for movement.")]
-    [SerializeField] private MoveCode moveCode ;
-
     public enum ActionType
     {
         None,
         DoorSwitch,
         NextScene,
-        MoveToSelectedDoor,
         TestFinalUI,
-        FinalScreen
+        OpenDoor
     }
+
+    [SerializeField] private DoorOpenAnimation doorOpenController;
 
     [Header("Door Operations")]
     [SerializeField] private ActionType selectedAction = ActionType.None;
@@ -231,20 +221,14 @@ public class OB : MonoBehaviour
             case ActionType.NextScene:
                 MainControl.Instance.GoToNextPhase();
                 break;
-            case ActionType.MoveToSelectedDoor:
-                if(test3D != null)
-                {
-                    test3D.autoWalk.MoveToTarget((int)moveCode, test3D.IntroNextButtonUI);
-                }
-                break;
             case ActionType.TestFinalUI:
                 {
                     test3D.IntroNextButtonUI();
                 }
                 break;
-            case ActionType.FinalScreen:
-                Debug.Log("Final Screen Action Triggered!");
-                break;
+            case ActionType.OpenDoor:
+                doorOpenController.Open();
+                break:
         }
     }
 #endregion

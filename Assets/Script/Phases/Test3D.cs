@@ -12,11 +12,15 @@ public class Test3D : MonoBehaviour
     [SerializeField] public AutoWalk autoWalk;
     [SerializeField] public EyeClosed eyeClosed;
 
+    [Header("Experiment Mode")]
+    public MainControl.ExperimentType currentMode;
+
     [Header("Intro Panel")]
     [Tooltip("The UI Canvas shown before and after training")]
     public GameObject IntroductionCanvas;
     [SerializeField] private UpdateUIPos introPos;
     [Header("Intro Canvas child Panel")]
+    
     public GameObject IntroButton;
     [Header("Instruction UI")]
     public TMP_Text IntroButton_headingText;
@@ -26,10 +30,12 @@ public class Test3D : MonoBehaviour
     [Header("Instruction Heading Texts")]
     [TextArea] public string eyeTrackingHeading;
     [TextArea] public string hybridHeading;
+    [TextArea] public string bciHeading;
 
     [Header("Instruction Main Texts")]
     [TextArea] public string eyeTrackingInstruction;
     [TextArea] public string hybridInstruction;
+    [TextArea] public string bciInstruction;
 
     public GameObject IntroNextButton;
     [Header("Instruction UI")]
@@ -40,10 +46,12 @@ public class Test3D : MonoBehaviour
     [Header("Instruction Heading Texts")]
     [TextArea] public string eyeTrackingHeadingFinal;
     [TextArea] public string hybridHeadingFinal;
+    [TextArea] public string bciHeadingFinal;
 
     [Header("Instruction Main Texts")]
     [TextArea] public string eyeTrackingInstructionFinal;
     [TextArea] public string hybridInstructionFinal;
+    [TextArea] public string bciInstructionFinal;
 
 
     [Header("Scene Reference")]
@@ -77,6 +85,7 @@ public class Test3D : MonoBehaviour
     {
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnPredictionResult += HandlePredictionLSL;
+        currentMode = MainControl.Instance.currentExperiment;
         //show ui for test 3d
         ShowIntro();
         
@@ -111,10 +120,33 @@ public class Test3D : MonoBehaviour
         if (IntroductionCanvas == null) return;
         IntroButton.SetActive(true);
         IntroNextButton.SetActive(false);
+        SetMessageIntroButtonUI();
 
 
     }
 
+    public void SetMessageIntroButtonUI()
+    {
+        if (IntroButton_headingText == null) return;
+        if (IntroButton_instructionText == null) return;
+
+        if (currentMode == MainControl.ExperimentType.EyeTracking)
+        {
+            IntroButton_headingText.text = eyeTrackingHeading;
+            IntroButton_instructionText.text = eyeTrackingInstruction;
+        }
+        else if (currentMode == MainControl.ExperimentType.Hybrid)
+        {
+            IntroButton_headingText.text = hybridHeading;
+            IntroButton_instructionText.text = hybridInstruction;
+        }
+
+        else if (currentMode == MainControl.ExperimentType.Hybrid)
+        {
+            IntroButton_headingText.text = bciHeading;
+            IntroButton_instructionText.text = bciInstruction;
+        }
+    }
 
     public void IntroNextButtonUI()
     {
@@ -128,7 +160,35 @@ public class Test3D : MonoBehaviour
 
         IntroButton.SetActive(false);
         IntroNextButton.SetActive(true);
+        SetMessageIntroFinalUI();
+
     }
+
+    public void SetMessageIntroFinalUI()
+    {
+        if (IntroNextButton_headingText == null) return;
+        if (IntroNextButton_instructionText == null) return;
+
+        if (currentMode == MainControl.ExperimentType.EyeTracking)
+        {
+            IntroNextButton_headingText.text = eyeTrackingHeadingFinal;
+            IntroNextButton_instructionText.text = eyeTrackingInstructionFinal;
+        }
+        else if (currentMode == MainControl.ExperimentType.Hybrid)
+        {
+            IntroNextButton_headingText.text = hybridHeadingFinal;
+            IntroNextButton_instructionText.text = hybridInstructionFinal;
+        }
+
+        else if (currentMode == MainControl.ExperimentType.Hybrid)
+        {
+            IntroNextButton_headingText.text = bciHeadingFinal;
+            IntroNextButton_instructionText.text = bciInstructionFinal;
+        }
+
+    }
+
+
 
     #endregion
 
@@ -201,8 +261,7 @@ public void HandlePredictionLSL(BCIMessage msg)
     private bool IsBCIMode()
     {
         if (MainControl.Instance == null) return false;
-        var exp = MainControl.Instance.currentExperiment;
-        return exp == MainControl.ExperimentType.BCI;
+        return currentMode == MainControl.ExperimentType.BCI;
     }
     #endregion
 
