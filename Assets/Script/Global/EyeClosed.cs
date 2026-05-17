@@ -100,8 +100,9 @@ public class EyeClosed : MonoBehaviour
                             if (audioSource != null && closedSound != null)
                             {
                                 audioSource.PlayOneShot(closedSound);
-                                ExperimentLogger.Instance?.LogEvent("Predict Door Imagery", "eye closed","Predict_Start_Imagery");
-                                LSL_Logger.Instance?.LogEvent("Predict Door Imagery", "eye closed","Predict_Start_Imagery");
+                                //imagery classification log
+                                // ExperimentLogger.Instance?.LogEvent("Predict Door Imagery", "eye closed","Predict_Start_Imagery");
+                                // LSL_Logger.Instance?.LogEvent("Predict Door Imagery", "eye closed","Predict_Start_Imagery");
                             }
 
                             OnEyesClosedTriggered?.Invoke();
