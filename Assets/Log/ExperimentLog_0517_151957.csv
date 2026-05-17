@@ -1,0 +1,281 @@
+Time,Experiment,Phase,Event,Detail,Action
+15:20:00.281,Hybrid,SettingUI,LSL_Connected,BCIBackend,BCI_Stream_Open
+15:20:00.289,Hybrid,SettingUI,Experiment_Start,Hybrid,
+15:20:00.290,Hybrid,TestUI,Phase_Start,TestUI,
+15:20:31.915,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:31.917,Hybrid,TestUI,Dwell_Start,Button: NextHybrid,Dwell_Started
+15:20:31.937,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:31.948,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:31.980,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:33.045,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:33.057,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:33.302,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:33.313,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:33.323,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:33.391,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:33.401,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:33.435,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:35.223,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:35.234,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:35.245,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:35.257,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:46.606,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:46.972,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:48.707,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:48.740,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+15:20:50.871,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+15:20:52.870,Hybrid,TestUI,Dwell,Button: NextHybrid,Dwelling_Completed
+15:20:52.870,Hybrid,TestUI,Flicker,NextHybrid,Flicker_Start
+15:20:54.879,Hybrid,TestUI,Flicker,NextHybrid,Flicker_End
+15:20:54.924,Hybrid,TestUI,BCI_Command_Received,100,FlickerDetected
+15:20:54.926,Hybrid,TestUI,Action_Executed,Button: NextHybrid; Action: ButtonAction,Execution_Proceeding
+15:20:55.289,Hybrid,TestUI,Hover_Enter,Button: deleteTestUI,Hovering
+15:20:55.289,Hybrid,TestUI,Dwell_Start,Button: deleteTestUI,Dwell_Started
+15:20:55.669,Hybrid,TestUI,Hover_Exit,Button: deleteTestUI,Hover_Exit
+15:20:56.124,Hybrid,TestUI,Hover_Enter,Button: 3,Hovering
+15:20:56.124,Hybrid,TestUI,Dwell_Start,Button: 3,Dwell_Started
+15:20:58.122,Hybrid,TestUI,Dwell,Button: 3,Dwelling_Completed
+15:20:58.122,Hybrid,TestUI,Flicker,3,Flicker_Start
+15:21:00.133,Hybrid,TestUI,Flicker,3,Flicker_End
+15:21:00.156,Hybrid,TestUI,BCI_Command_Received,100,FlickerDetected
+15:21:00.156,Hybrid,TestUI,Action_Executed,Button: 3; Action: TestUI,Execution_Proceeding
+15:21:00.517,Hybrid,TestUI,Hover_Exit,Button: 3,Hover_Exit
+15:21:00.527,Hybrid,TestUI,Hover_Enter,Button: 8,Hovering
+15:21:00.527,Hybrid,TestUI,Dwell_Start,Button: 8,Dwell_Started
+15:21:00.561,Hybrid,TestUI,Hover_Exit,Button: 8,Hover_Exit
+15:21:00.806,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:00.806,Hybrid,TestUI,Dwell_Start,Button: nextTestUI,Dwell_Started
+15:21:00.830,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:00.842,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:00.875,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:00.909,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:00.999,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:01.010,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:01.020,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:01.066,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:01.298,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:01.322,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:01.898,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:01.933,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:02.230,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:02.241,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:02.286,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:02.351,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:02.620,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:02.686,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:02.775,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:02.795,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:02.808,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:02.896,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:02.974,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:03.041,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:03.052,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:03.064,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:03.297,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:03.430,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:03.442,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:03.597,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:03.786,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:03.818,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:03.875,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:03.897,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:04.341,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:04.354,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:06.096,Hybrid,TestUI,Hover_Exit,Button: nextTestUI,Hover_Exit
+15:21:06.119,Hybrid,TestUI,Hover_Enter,Button: nextTestUI,Hovering
+15:21:08.117,Hybrid,TestUI,Dwell,Button: nextTestUI,Dwelling_Completed
+15:21:08.117,Hybrid,TestUI,Flicker,nextTestUI,Flicker_Start
+15:21:10.126,Hybrid,TestUI,Flicker,nextTestUI,Flicker_End
+15:21:10.182,Hybrid,TestUI,BCI_Command_Received,100,FlickerDetected
+15:21:10.182,Hybrid,TestUI,Action_Executed,Button: nextTestUI; Action: TestUI,Execution_Proceeding
+15:21:10.183,Hybrid,Test3D,Phase_Start,Test3D,
+15:21:12.559,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+15:21:12.559,Hybrid,Test3D,Dwell_Start,Button: StartTestBCI,Dwell_Started
+15:21:13.091,Hybrid,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+15:21:13.458,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+15:21:13.481,Hybrid,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+15:21:13.503,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+15:21:13.847,Hybrid,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+15:21:14.225,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+15:21:16.224,Hybrid,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+15:21:16.224,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_Start
+15:21:18.233,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_End
+15:21:18.289,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+15:21:18.289,Hybrid,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+15:21:19.055,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+15:21:21.049,Hybrid,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+15:21:21.049,Hybrid,Test3D,Flicker_Start,Object: Door_Double; Hz: 15,Flicker_Start
+15:21:23.060,Hybrid,Test3D,Flicker_End,Object: Door_Double,Flicker_End
+15:21:23.118,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+15:21:23.118,Hybrid,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+15:21:25.686,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+15:21:25.686,Hybrid,Test3D,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+15:21:27.685,Hybrid,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+15:21:27.685,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_Start
+15:21:29.695,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_End
+15:21:29.751,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+15:21:29.751,Hybrid,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+15:21:29.751,Hybrid,Test3D,Experiment_Ended,Hybrid,
+15:21:29.751,BCI,Test3D,Experiment_Start,BCI,
+15:21:29.752,BCI,TrainBCI,Phase_Start,TrainBCI,
+15:21:29.763,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+15:21:29.763,BCI,TrainBCI,Dwell_Start,Button: StartTrainBCI,Dwell_Started
+15:21:30.062,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+15:21:34.359,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+15:21:36.357,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+15:21:36.357,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_Start
+15:21:38.367,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_End
+15:21:38.401,BCI,TrainBCI,BCI_Command_Received,100,FlickerDetected
+15:21:38.401,BCI,TrainBCI,Action_Executed,Button: StartTrainBCI; Action: ButtonAction,Execution_Proceeding
+15:21:38.401,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:21:42.410,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:21:42.922,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:21:46.930,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:21:46.930,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:21:49.629,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:21:49.629,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:21:49.629,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:21:50.941,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:21:51.449,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:21:54.382,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:21:54.382,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:21:54.382,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:21:55.460,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:21:55.460,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:21:57.492,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:21:57.492,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:21:57.492,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:21:59.467,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:21:59.978,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:02.001,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:02.001,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:02.001,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:03.987,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:03.987,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:05.987,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:05.987,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:05.987,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:07.996,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:08.508,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:10.551,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:10.551,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:10.551,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:12.516,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:12.516,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:14.549,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:14.549,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:14.549,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:16.525,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:17.036,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:19.046,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:19.046,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:19.046,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:21.046,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:21.046,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:23.044,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:23.044,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:23.044,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:25.055,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:25.565,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:27.598,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:27.598,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:27.598,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:29.574,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:29.574,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:31.597,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:31.597,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:31.597,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:33.583,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:34.095,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:36.103,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:36.103,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:36.103,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:38.104,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:38.104,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:40.102,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:40.102,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:40.102,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:42.113,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:42.622,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:44.655,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:44.655,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:44.655,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:46.631,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:46.631,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:48.642,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:48.642,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:48.642,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:50.641,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:51.151,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:22:53.151,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:22:53.151,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:22:53.151,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:22:55.159,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:22:55.159,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Training_Active_Door1_Start
+15:22:57.149,BCI,TrainBCI,BCI_Command_Received,201,TrainObj1ActiveComplete
+15:22:57.149,BCI,TrainBCI,[TrainBCI] Training complete for Active Door 1,,
+15:22:57.149,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,Door:1:
+15:22:59.170,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,Training_Active_Door1_End
+15:22:59.680,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Training_Imagery_Door1_Start
+15:23:01.702,BCI,TrainBCI,BCI_Command_Received,203,TrainObj1ImageryComplete
+15:23:01.702,BCI,TrainBCI,[TrainBCI] Training complete for Imagery Door 1,,
+15:23:01.702,BCI,TrainBCI,Training_Imagery_Door1_Start,Door_Single,Door:1:
+15:23:03.690,BCI,TrainBCI,Training_Imagery_Door1_End,Door_Single,Training_Imagery_Door1_End
+15:23:03.690,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:07.694,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:08.200,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:23:12.207,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:23:12.207,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:16.217,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:16.727,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:23:20.737,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:23:20.737,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:24.745,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:25.256,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:23:29.265,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:23:29.265,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:33.274,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:33.785,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:23:37.795,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:23:37.795,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:41.803,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:42.313,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:23:46.322,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:23:46.322,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:50.333,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:50.844,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:23:54.852,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:23:54.852,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:23:58.861,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:23:59.372,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:24:03.381,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:24:03.381,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:24:07.390,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:24:07.900,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:24:11.910,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:24:11.910,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:24:15.920,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:24:16.428,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:24:20.438,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:24:20.438,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,Active_Training_Door2_Start
+15:24:24.448,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,Active_Training_Door2_End
+15:24:24.958,BCI,TrainBCI,Image_Training_Door2_Start,Door_Double,Image_Training_Door2_Start
+15:24:28.966,BCI,TrainBCI,Image_Training_Door2_End,Door_Double,Image_Training_Door2_End
+15:24:28.966,BCI,TrainBCI,Train_End,Training Complete,Train_End
+15:24:31.444,BCI,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+15:24:31.444,BCI,TrainBCI,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+15:24:33.442,BCI,TrainBCI,Dwell,Button: NextTrainBCI,Dwelling_Completed
+15:24:33.442,BCI,TrainBCI,Flicker,NextTrainBCI,Flicker_Start
+15:24:35.453,BCI,TrainBCI,Flicker,NextTrainBCI,Flicker_End
+15:24:35.497,BCI,TrainBCI,BCI_Command_Received,100,FlickerDetected
+15:24:35.497,BCI,TrainBCI,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+15:24:35.497,BCI,Test3D,Phase_Start,Test3D,
+15:24:35.509,BCI,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+15:24:35.785,BCI,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+15:24:39.128,BCI,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+15:24:41.127,BCI,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+15:24:41.127,BCI,Test3D,Flicker,StartTestBCI,Flicker_Start
+15:24:43.137,BCI,Test3D,Flicker,StartTestBCI,Flicker_End
+15:24:43.171,BCI,Test3D,BCI_Command_Received,100,FlickerDetected
+15:24:43.171,BCI,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+15:24:46.557,BCI,Test3D,Predict Door Imagery,eye closed,Predict_Start_Imagery

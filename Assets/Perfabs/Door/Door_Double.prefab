@@ -33,15 +33,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969011797375574692}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071067, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.78, y: 0, z: 2.73}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4672767423608983467}
   - {fileID: 3622979533641564830}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
 --- !u!33 &5949960229855843194
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -168,9 +168,9 @@ MonoBehaviour:
   demoScene: {fileID: 0}
   test3D: {fileID: 0}
   doorOpenController: {fileID: 5050693981682615025}
+  doorCode: 301
   selectedAction: 0
   bciTest3DAction: 4
-  doorCode: 301
   outline: {fileID: 3299297324878740917}
   flicker: {fileID: 6796058414740025556}
   dwellTimer: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   isFlickering: 0
   isWaitingForLSL: 0
   objectId: 
+  waitTime: 0.5
 --- !u!114 &7390698607842760180
 MonoBehaviour:
   m_ObjectHideFlags: 0

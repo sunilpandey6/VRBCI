@@ -1,0 +1,83 @@
+Time,Experiment,Phase,Event,Detail,Action
+16:23:12.507,BCI,SettingUI,Experiment_Start,BCI,
+16:23:12.507,BCI,TrainBCI,Phase_Start,TrainBCI,
+16:23:34.258,BCI,TrainBCI,LSL_Connected,BCIBackend,BCI_Stream_Open
+16:23:51.237,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:23:51.237,BCI,TrainBCI,Dwell_Start,Button: StartTrainBCI,Dwell_Started
+16:23:53.232,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+16:23:53.232,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_Start
+16:23:55.242,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_End
+16:23:56.253,BCI,TrainBCI,BCI_Command_Received,101,FlickerNotDetected
+16:23:56.564,BCI,TrainBCI,Flicker_Retry,Button: StartTrainBCI,Retry: 1 / 3
+16:23:56.564,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_Start
+16:23:58.574,BCI,TrainBCI,Flicker_End,Button: StartTrainBCI,Flicker_End
+16:23:58.607,BCI,TrainBCI,BCI_Command_Received,101,FlickerNotDetected
+16:23:58.739,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:23:58.918,BCI,TrainBCI,Retry_Cancelled,Button: StartTrainBCI,Gaze_Lost
+16:23:59.329,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:01.327,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+16:24:01.327,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_Start
+16:24:01.928,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:01.972,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:03.338,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_End
+16:24:03.971,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+16:24:03.971,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_Start
+16:24:04.347,BCI,TrainBCI,BCI_Command_Received,101,FlickerNotDetected
+16:24:04.369,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:04.635,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:04.692,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:04.757,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:04.768,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:05.983,BCI,TrainBCI,Flicker,StartTrainBCI,Flicker_End
+16:24:06.348,BCI,TrainBCI,BCI_Command_Received,101,FlickerNotDetected
+16:24:06.658,BCI,TrainBCI,Retry_Cancelled,Button: StartTrainBCI,Gaze_Lost
+16:24:08.469,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:08.777,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:19.684,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:19.881,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:20.294,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:21.127,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:21.140,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:21.150,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:21.163,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:21.173,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:21.217,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:21.228,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:21.240,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:22.083,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:26.725,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:27.913,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:28.301,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:28.401,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:29.458,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:29.612,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:32.168,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:32.188,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:34.398,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:34.665,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:35.221,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:35.708,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:36.452,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:36.464,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:36.476,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:36.498,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:36.509,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:36.577,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:36.637,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:36.703,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:36.748,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:36.770,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:39.030,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:39.207,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:39.340,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:39.621,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:39.663,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:40.951,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:41.062,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:41.084,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:41.151,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:41.252,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:42.616,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:42.817,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:24:42.828,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:24:43.661,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit

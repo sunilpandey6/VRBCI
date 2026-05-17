@@ -1,0 +1,81 @@
+Time,Experiment,Phase,Event,Detail,Action
+14:34:26.219,Hybrid,SettingUI,Experiment_Start,Hybrid,
+14:34:26.219,Hybrid,TestUI,Phase_Start,TestUI,
+14:34:34.805,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:34.806,Hybrid,TestUI,Dwell_Start,Button: NextHybrid,Dwell_Started
+14:34:35.235,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:35.256,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:35.614,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:37.400,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:37.701,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:37.869,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:37.901,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:38.500,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:38.546,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:38.555,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:38.622,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:38.655,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:38.669,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:41.308,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:41.444,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:41.454,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:41.732,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:53.148,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:54.447,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:54.525,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:54.548,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:54.659,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:54.683,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:54.714,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:54.881,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:54.892,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:55.835,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:55.848,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:55.925,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:55.936,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:57.891,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:57.913,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:58.996,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:59.008,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:59.031,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:59.040,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:59.234,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:59.246,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:59.269,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:59.280,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:34:59.289,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:34:59.300,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:01.301,Hybrid,TestUI,Dwell,Button: NextHybrid,Dwelling_Completed
+14:35:01.301,Hybrid,TestUI,Flicker,NextHybrid,Flicker_Start
+14:35:03.310,Hybrid,TestUI,Flicker,NextHybrid,Flicker_End
+14:35:03.642,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:03.677,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:03.699,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:08.408,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:10.407,Hybrid,TestUI,Dwell,Button: NextHybrid,Dwelling_Completed
+14:35:10.407,Hybrid,TestUI,Flicker,NextHybrid,Flicker_Start
+14:35:12.417,Hybrid,TestUI,Flicker,NextHybrid,Flicker_End
+14:35:12.851,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:17.203,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:17.225,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:17.248,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:17.470,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:17.513,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:19.513,Hybrid,TestUI,Dwell,Button: NextHybrid,Dwelling_Completed
+14:35:19.513,Hybrid,TestUI,Flicker,NextHybrid,Flicker_Start
+14:35:21.521,Hybrid,TestUI,Flicker,NextHybrid,Flicker_End
+14:35:22.033,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:22.522,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:22.556,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:23.061,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:25.057,Hybrid,TestUI,Dwell,Button: NextHybrid,Dwelling_Completed
+14:35:25.058,Hybrid,TestUI,Flicker,NextHybrid,Flicker_Start
+14:35:25.382,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:25.448,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:25.461,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:25.827,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:27.065,Hybrid,TestUI,Flicker,NextHybrid,Flicker_End
+14:35:27.541,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:28.330,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit
+14:35:32.962,Hybrid,TestUI,Hover_Enter,Button: NextHybrid,Hovering
+14:35:33.181,Hybrid,TestUI,Hover_Exit,Button: NextHybrid,Hover_Exit

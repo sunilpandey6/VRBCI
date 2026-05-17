@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -68,6 +69,8 @@ public class OB : MonoBehaviour
     private int retryCount = 0;
     private const int maxRetries = 3;
 
+    [Header("BCI wait time before next UI")]
+    public float waitTime = 0.5f;
     #endregion
 
     #region Unity_Functions
@@ -198,16 +201,16 @@ public class OB : MonoBehaviour
         lastDetail = objectId;
 
         ExperimentLogger.Instance?.LogEvent(lastEvent,
-            $"Object: {gameObject.name}, Hz: {GlobalInput.Instance.flickerHz}", "Flickering_Start");
-        LSL_Logger.Instance?.LogEvent(lastEvent, lastDetail, "Flickering_Start");
+            $"Object: {gameObject.name}, Hz: {GlobalInput.Instance.flickerHz}", "Flicker_Start");
+        LSL_Logger.Instance?.LogEvent(lastEvent, lastDetail, "Flicker_Start");
 
         yield return new WaitForSecondsRealtime(GlobalInput.Instance.flickerDuration);
 
         outline.ResetOutline();
         isFlickering = false;
 
-        ExperimentLogger.Instance?.LogEvent("Flicker_End", $"Object: {gameObject.name}", "Flickering_Completed");
-        LSL_Logger.Instance?.LogEvent("Flicker_End", $"Object: {gameObject.name}", "Flickering_Completed");
+        ExperimentLogger.Instance?.LogEvent("Flicker_End", $"Object: {gameObject.name}", "Flicker_End");
+        LSL_Logger.Instance?.LogEvent("Flicker_End", $"Object: {gameObject.name}", "Flicker_End");
 
         // ── Route by experiment mode ─────────────────────────────────────────
         if (!IsBCIMode())
@@ -236,10 +239,10 @@ public class OB : MonoBehaviour
         {
             case ActionType.None: break;
             case ActionType.DoorSwitch:
-                demoScene?.Door2Active();
+                StartCoroutine(DoorFlow(() => demoScene?.Door2Active()));
                 break;
             case ActionType.NextScene:
-                MainControl.Instance.GoToNextPhase();
+                StartCoroutine(DoorFlow(NextPhase));
                 break;
             case ActionType.TestFinalUI:
                 {
@@ -247,22 +250,21 @@ public class OB : MonoBehaviour
                 }
                 break;
             case ActionType.OpenDoor:
-                StartCoroutine(DoorFlow());
-                
+                StartCoroutine(DoorFlow(test3D.IntroNextButtonUI));
                 break;
         }
     }
 
-    private IEnumerator DoorFlow()
+    private IEnumerator DoorFlow(Action onComplete)
     {
         // 1. start animation
         doorOpenController.Open();
 
         // 2. wait until animation is finished
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(waitTime);
 
-        // 3. now execute next logic
-        test3D.IntroNextButtonUI();
+        // 3. execute whatever function was passed
+        onComplete?.Invoke();
     }
 
     #endregion
@@ -408,4 +410,10 @@ public class OB : MonoBehaviour
         return expp == MainControl.ExperimentPhase.TrainBCI;
     }
     #endregion
+
+    public void NextPhase()
+    {
+        if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();
+        gameObject.SetActive(false);
+    }
 }

@@ -338,7 +338,7 @@ public class BB : MonoBehaviour
 
         // 4. Detail match: Python must echo back our specific buttonId
         if (msg.Detail != lastDetail) return;
-
+        Debug.Log($"'{buttonId}' LSL response: '{msg}'");
         if (msg.Code == (int)LSLCommunicationManager.BCICommand.FlickerDetected)
         {
             Debug.Log($"[BB] Valid LSL response for '{buttonId}': detected = Detected");
