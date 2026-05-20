@@ -86,7 +86,7 @@ public class MLtest : MonoBehaviour
         // Hide both doors at startup
         SetDoorVisible(Door1, false);
         SetDoorVisible(Door2, false);
-
+        SetDoorVisible(uiElement, true);
         // Build and shuffle the trial sequence
         GenerateSequence();
     }
