@@ -14,8 +14,14 @@ public class MLtest : MonoBehaviour
     public GameObject Door2;
 
     [Header("Sequence Parameters")]
-    [Tooltip("How many repetitions of each trial type (default = 10)")]
-    public int repetitionsPerType = 10;
+    [Tooltip("Number of Door 1 trials")]
+    public int door1Count = 15;
+
+    [Tooltip("Number of Door 2 trials")]
+    public int door2Count = 15;
+
+    [Tooltip("Number of Door 1 Flicker trials")]
+    public int door1FlickerCount = 10;
 
     [Header("Timing (seconds)")]
     [Tooltip("Blank gap BEFORE the stimulus appears")]
@@ -25,9 +31,10 @@ public class MLtest : MonoBehaviour
     public float showDuration   = 4f;
 
     [Tooltip("Blank gap for imagery")]
-    public float imageryDelay = 4f;
+    public float imageryDuration = 4f;
 
-    
+    [Tooltip("Rest period between trials (after post-trial gap)")]
+    public float restPeriod = 2f;
 
     #endregion
 
@@ -96,20 +103,19 @@ public class MLtest : MonoBehaviour
     #region Sequence Generation
 
     /// <summary>
-    /// Populates <see cref="trialSequence"/> with the four trial types,
+    /// Populates <see cref="trialSequence"/> with the three trial types,
     /// shuffles it using Fisher-Yates, and logs every entry to the console.
     /// </summary>
     private void GenerateSequence()
     {
         trialSequence.Clear();
 
-        // Define all trial types and how many of each we want
+        // Define trial types and counts from the inspector
         var trialTypes = new (string label, int count)[]
         {
-            ("Door1",        repetitionsPerType),
-            ("Door2",        repetitionsPerType),
-            ("Door1Flicker", repetitionsPerType),
-            ("Door2Flicker", repetitionsPerType),
+            ("Door1",        door1Count),
+            ("Door2",        door2Count),
+            ("Door1Flicker", door1FlickerCount),
         };
 
         // Fill the list
@@ -159,11 +165,6 @@ public class MLtest : MonoBehaviour
     /// <summary>
     /// Iterates through every entry in <see cref="trialSequence"/> and
     /// runs the timed display logic for each trial.
-    ///
-    /// Per-trial timing:
-    ///   [preTrialDelay]  → blank gap before stimulus
-    ///   [showDuration]   → stimulus shown (± flicker)
-    ///   [postTrialDelay] → blank gap after stimulus
     /// </summary>
     private IEnumerator RunTrialSequence()
     {
@@ -199,12 +200,17 @@ public class MLtest : MonoBehaviour
 
         // ── 2. Determine which door and whether to flicker ───────────────────
         bool useDoor1   = trialType == "Door1"        || trialType == "Door1Flicker";
-        bool useFlicker = trialType == "Door1Flicker" || trialType == "Door2Flicker";
+        bool useFlicker = trialType == "Door1Flicker";
 
         GameObject activeDoor  = useDoor1 ? Door1  : Door2;
         Flicker    activeFlick = useDoor1 ? flicker1 : flicker2;
         string     doorName    = activeDoor != null ? activeDoor.name : (useDoor1 ? "Door1" : "Door2");
 
+        // Build event name roots to match TrainBCI.cs convention:
+        //   Door1 active  → Training_Active_Door1_Start / End
+        //   Door2 active  → Active_Training_Door2_Start / End
+        //   Door1 imagery → Training_Imagery_Door1_Start / End
+        //   Door2 imagery → Image_Training_Door2_Start / End
         string activeStart  = useDoor1 ? "Training_Active_Door1_Start"  : "Active_Training_Door2_Start";
         string activeEnd    = useDoor1 ? "Training_Active_Door1_End"    : "Active_Training_Door2_End";
         string imageryStart = useDoor1 ? "Training_Imagery_Door1_Start" : "Image_Training_Door2_Start";
@@ -244,7 +250,7 @@ public class MLtest : MonoBehaviour
         LSL_Logger.Instance?.LogEvent(imageryEnd, doorName, imageryEnd);
 
         // ── 4. Rest period (between trials) ──────────────────────────────────
-        yield return new WaitForSeconds(preTrialDelay);
+        yield return new WaitForSeconds(restPeriod);
     }
 
     #endregion

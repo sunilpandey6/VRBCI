@@ -10,7 +10,8 @@ public class MainControl : MonoBehaviour
     {
         EyeTracking,
         Hybrid,
-        BCI
+        BCI,
+        TrainML
     }
 
     public enum ExperimentPhase
@@ -20,6 +21,7 @@ public class MainControl : MonoBehaviour
         Demo3D,
         TrainBCI,
         Test3D,
+        MLTrain,
         Completed
     }
 
@@ -52,6 +54,11 @@ public class MainControl : MonoBehaviour
     {
         ExperimentPhase.TrainBCI,
         ExperimentPhase.Test3D
+    };
+
+    private readonly List<ExperimentPhase> trainMLSequence = new List<ExperimentPhase>
+    {
+        ExperimentPhase.MLTrain
     };
 
     private List<ExperimentPhase> currentSequence;
@@ -87,8 +94,8 @@ public class MainControl : MonoBehaviour
     public void SetExperimentType(ExperimentType newType)
     {
         currentExperiment = newType;
-        // if the current experiment is BCI, disable gaze interaction
-        isGazeInteractionEnabled = (newType != ExperimentType.BCI);
+        // if the current experiment is BCI or TrainML, disable gaze interaction
+        isGazeInteractionEnabled = (newType != ExperimentType.BCI && newType != ExperimentType.TrainML);
 
         Debug.Log($"--- Starting Experiment Block: {currentExperiment} ---");
         
@@ -112,6 +119,9 @@ public class MainControl : MonoBehaviour
                 break;
             case ExperimentType.BCI:
                 currentSequence = bciSequence;
+                break;
+            case ExperimentType.TrainML:
+                currentSequence = trainMLSequence;
                 break;
         }
 
@@ -152,7 +162,7 @@ public class MainControl : MonoBehaviour
     }
 
     /// <summary>
-    /// Handles the continuous flow: EyeTracking -> Hybrid -> BCI
+    /// Handles the continuous flow: EyeTracking -> Hybrid -> BCI -> TrainML
     /// </summary>
     private void GoToNextExperiment()
     {
@@ -166,7 +176,11 @@ public class MainControl : MonoBehaviour
         }
         else if (currentExperiment == ExperimentType.BCI)
         {
-            // If BCI is finished, everything is fully done
+            SetExperimentType(ExperimentType.TrainML);
+        }
+        else if (currentExperiment == ExperimentType.TrainML)
+        {
+            // If TrainML is finished, everything is fully done
             Debug.Log("ALL EXPERIMENTS COMPLETED!");
             currentPhase = ExperimentPhase.Completed;
             
