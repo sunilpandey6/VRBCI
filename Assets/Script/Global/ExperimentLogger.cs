@@ -19,9 +19,14 @@ public class ExperimentLogger : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Setup CSV file path in the Assets folder so it's easy to find during dev
+        // Setup CSV file path in the Assets/Log folder
+        string logFolder = Path.Combine(Application.dataPath, "Log");
+        if (!Directory.Exists(logFolder))
+        {
+            Directory.CreateDirectory(logFolder);
+        }
         string timestamp = DateTime.Now.ToString("MMdd_HHmmss");
-        filePath = Path.Combine(Application.dataPath, $"ExperimentLog_{timestamp}.csv");
+        filePath = Path.Combine(logFolder, $"ExperimentLog_{timestamp}.csv");
 
         // Write CSV header
         writer = new StreamWriter(filePath, true);
