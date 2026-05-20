@@ -5,6 +5,8 @@ using ViveSR.anipal.Eye;
 
 public class EyeClosed : MonoBehaviour
 {
+    #region Configuration & Fields
+
     [Header("Configuration")]
     [Tooltip("Threshold below which the eye is considered closed (0.0 to 1.0)")]
     [Range(0f, 1f)]
@@ -20,7 +22,6 @@ public class EyeClosed : MonoBehaviour
     public AudioClip closedSound;
     public AudioClip predictSound;
 
-
     [Header("Status (Read Only)")]
     public bool isChecking = false;
     public bool areEyesClosed = false;
@@ -32,24 +33,25 @@ public class EyeClosed : MonoBehaviour
     private bool hasTriggered = false;
     private Coroutine checkCoroutine;
 
-#region Unity Lifecycle
-    // private void OnEnable()
-    // {   
-    // }
+    #endregion
 
-    // private void OnDisable()
-    // {
-    // }
-#endregion
+    #region Unity Lifecycle
 
+    private void OnDisable()
+    {
+        StopChecking();
+    }
+
+    #endregion
+
+    #region Checking Long Close Eye for BCI Test
 
     /// <summary>
-    /// Starts actively checking if the user's eyes are closed.
-    /// Call this function when you want to begin monitoring.
+    /// Starts actively checking if the user's eyes are closed with full feedback (audio/events).
     /// </summary>
     public void StartChecking()
     {
-        if (checkCoroutine != null) return; // Already checking
+        if (checkCoroutine != null) return;
         
         isChecking = true;
         ResetState();
@@ -58,7 +60,7 @@ public class EyeClosed : MonoBehaviour
     }
 
     /// <summary>
-    /// Stops checking for closed eyes.
+    /// Stops full feedback checking for closed eyes.
     /// </summary>
     public void StopChecking()
     {
@@ -76,7 +78,6 @@ public class EyeClosed : MonoBehaviour
     {
         while (true)
         {
-            // Ensure the SRanipal Eye framework is active and working before polling data
             if (SRanipal_Eye_Framework.Status == SRanipal_Eye_Framework.FrameworkStatus.WORKING)
             {
                 float leftOpenness, rightOpenness;
@@ -85,24 +86,18 @@ public class EyeClosed : MonoBehaviour
 
                 if (leftValid && rightValid)
                 {
-                    // Check if both eyes are below the openness threshold
                     if (leftOpenness <= opennessThreshold && rightOpenness <= opennessThreshold)
                     {
                         currentClosedTime += Time.deltaTime;
 
-                        // Trigger the event only once per continuous close duration
                         if (currentClosedTime >= requiredClosedDuration && !hasTriggered)
                         {
                             areEyesClosed = true;
                             hasTriggered = true;
                             
-                            // Play the configured sound
                             if (audioSource != null && closedSound != null)
                             {
                                 audioSource.PlayOneShot(closedSound);
-                                //imagery classification log
-                                // ExperimentLogger.Instance?.LogEvent("Predict Door Imagery", "eye closed","Predict_Start_Imagery");
-                                // LSL_Logger.Instance?.LogEvent("Predict Door Imagery", "eye closed","Predict_Start_Imagery");
                             }
 
                             OnEyesClosedTriggered?.Invoke();
@@ -111,20 +106,22 @@ public class EyeClosed : MonoBehaviour
                     }
                     else
                     {
-                        // At least one eye is open or above threshold; reset timer
                         ResetState();
                     }
                 }
                 else
                 {
-                    // If eye tracking data is lost or invalid, reset the timer to prevent false positives
                     ResetState();
                 }
             }
 
-            yield return null; // Wait for the next frame
+            yield return null;
         }
     }
+
+    #endregion
+
+    #region Prediction & Sound Helpers
 
     public void startpredict()
     {
@@ -138,6 +135,10 @@ public class EyeClosed : MonoBehaviour
             audioSource.PlayOneShot(predictSound);
     }
 
+    #endregion
+
+    #region Private Helpers
+
     private void ResetState()
     {
         currentClosedTime = 0f;
@@ -145,4 +146,5 @@ public class EyeClosed : MonoBehaviour
         hasTriggered = false;
     }
 
+    #endregion
 }
