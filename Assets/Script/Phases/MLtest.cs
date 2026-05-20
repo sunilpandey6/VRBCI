@@ -36,6 +36,8 @@ public class MLtest : MonoBehaviour
     [Tooltip("Rest period between trials (after post-trial gap)")]
     public float restPeriod = 2f;
 
+
+    public GameObject uiElement;
     #endregion
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -154,6 +156,7 @@ public class MLtest : MonoBehaviour
     /// </summary>
     public void StartMLTest()
     {
+        SetDoorVisible(uiElement, false);
         StartCoroutine(RunTrialSequence());
     }
 
@@ -213,8 +216,8 @@ public class MLtest : MonoBehaviour
         //   Door2 imagery → Image_Training_Door2_Start / End
         string activeStart  = useDoor1 ? "Training_Active_Door1_Start"  : "Active_Training_Door2_Start";
         string activeEnd    = useDoor1 ? "Training_Active_Door1_End"    : "Active_Training_Door2_End";
-        string imageryStart = useDoor1 ? "Training_Imagery_Door1_Start" : "Image_Training_Door2_Start";
-        string imageryEnd   = useDoor1 ? "Training_Imagery_Door1_End"   : "Image_Training_Door2_End";
+        string imageryStart = useDoor1 ? "Training_Imagery_Door1_Start" : " ";
+        string imageryEnd   = useDoor1 ? "Training_Imagery_Door1_End"   : " ";
 
         // ── Log active-phase onset ───────────────────────────────────────────
         ExperimentLogger.Instance?.LogEvent(activeStart, doorName, activeStart);
