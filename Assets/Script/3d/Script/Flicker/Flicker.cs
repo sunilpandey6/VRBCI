@@ -8,7 +8,8 @@ public class Flicker : MonoBehaviour
     private MaterialPropertyBlock mpb;
     private bool isFlickering = false;
     private float flickerTimer = 0f;
-    private float flickerStartTime = -1f; // phase anchor
+    private float flickerStartTime = -1f;
+    private float currentDuration = 4f;
 
     void Awake()
     {
@@ -48,7 +49,7 @@ public class Flicker : MonoBehaviour
         }
 
         flickerTimer += Time.deltaTime;
-        if (flickerTimer >= GlobalInput.Instance.flickerDuration)
+        if (flickerTimer >= currentDuration)
         {
             StopFlickerState();
             enabled = false;
@@ -57,6 +58,13 @@ public class Flicker : MonoBehaviour
 
     public void StartFlicker()
     {
+        float duration = GlobalInput.Instance != null ? GlobalInput.Instance.flickerDuration : 4f;
+        StartFlicker(duration);
+    }
+
+    public void StartFlicker(float duration)
+    {
+        currentDuration = duration;
         ApplyMaterial();
         if (!enabled) enabled = true;
         isFlickering  = true;

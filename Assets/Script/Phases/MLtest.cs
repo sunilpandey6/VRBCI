@@ -15,10 +15,10 @@ public class MLtest : MonoBehaviour
 
     [Header("Sequence Parameters")]
     [Tooltip("Number of Door 1 trials")]
-    public int door1Count = 15;
+    public int door1Count = 10;
 
     [Tooltip("Number of Door 2 trials")]
-    public int door2Count = 15;
+    public int door2Count = 10;
 
     [Tooltip("Number of Door 1 Flicker trials")]
     public int door1FlickerCount = 10;
@@ -229,7 +229,7 @@ public class MLtest : MonoBehaviour
         // ── Optionally start flicker ─────────────────────────────────────────
         if (useFlicker && activeFlick != null)
         {
-            activeFlick.StartFlicker();
+            activeFlick.StartFlicker(showDuration);
             Debug.Log($"[MLtest] Flicker started on {doorName}.");
         }
 
