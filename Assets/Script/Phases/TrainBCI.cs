@@ -145,70 +145,71 @@ public class TrainBCI : MonoBehaviour
 
 private IEnumerator TrainingRoutine()
 {
+    GenerateSequence();
 
-    // ----------------------------------------------------
-    // Phase 1: Train Door 1
-    // ----------------------------------------------------
-    for (int i = 0; i < m_times; i++)
+    for (int i = 0; i < trialSequence.Count; i++)
     {
-        if (Door1 != null)
+        string trial = trialSequence[i];
+        Debug.Log($"[TrainBCI] Trial {i + 1}/{trialSequence.Count}: {trial}");
+
+        if (trial == "Door1")
         {
-            // ---------------- ACTIVE PHASE ----------------
-            ExperimentLogger.Instance.LogEvent("Training_Active_Door1_Start", Door1.name, "Training_Active_Door1_Start");
-            LSL_Logger.Instance?.LogEvent("Training_Active_Door1_Start", Door1.name, "Training_Active_Door1_Start");
+            if (Door1 != null)
+            {
+                // ---------------- ACTIVE PHASE ----------------
+                ExperimentLogger.Instance.LogEvent("Training_Active_Door1_Start", Door1.name, "TAD1S");
+                LSL_Logger.Instance?.LogEvent("Training_Active_Door1_Start", Door1.name, "TAD1S");
 
-            Door1.SetActive(true);
-            yield return new WaitForSeconds(showDuration);
+                Door1.SetActive(true);
+                yield return new WaitForSeconds(showDuration);
 
-            ExperimentLogger.Instance.LogEvent("Training_Active_Door1_End", Door1.name, "Training_Active_Door1_End");
-            LSL_Logger.Instance?.LogEvent("Training_Active_Door1_End", Door1.name, "Training_Active_Door1_End");
+                ExperimentLogger.Instance.LogEvent("Training_Active_Door1_End", Door1.name, "TAD1E");
+                LSL_Logger.Instance?.LogEvent("Training_Active_Door1_End", Door1.name, "TAD1E");
 
-            Door1.SetActive(false);
+                Door1.SetActive(false);
+            }
+
+            // ---------------- TRANSITION GAP ----------------
+            yield return new WaitForSeconds(imageryDelay);
+
+            // ---------------- IMAGERY PHASE ----------------
+            ExperimentLogger.Instance?.LogEvent("Training_Imagery_Door1_Start", Door1.name, "TID1S");
+            LSL_Logger.Instance?.LogEvent("Training_Imagery_Door1_Start", Door1.name, "TID1S");
+
+            yield return new WaitForSeconds(imageryDuration);
+
+            ExperimentLogger.Instance?.LogEvent("Training_Imagery_Door1_End", Door1.name, "TID1E");
+            LSL_Logger.Instance?.LogEvent("Training_Imagery_Door1_End", Door1.name, "TID1E");
         }
-
-        // ---------------- TRANSITION GAP ----------------
-        yield return new WaitForSeconds(imageryDelay);
-
-        // ---------------- IMAGERY PHASE ----------------
-        ExperimentLogger.Instance?.LogEvent("Training_Imagery_Door1_Start", Door1.name, "Training_Imagery_Door1_Start");
-        LSL_Logger.Instance?.LogEvent("Training_Imagery_Door1_Start", Door1.name, "Training_Imagery_Door1_Start");
-
-        yield return new WaitForSeconds(imageryDuration);
-
-        ExperimentLogger.Instance?.LogEvent("Training_Imagery_Door1_End", Door1.name, "Training_Imagery_Door1_End");
-        LSL_Logger.Instance?.LogEvent("Training_Imagery_Door1_End", Door1.name, "Training_Imagery_Door1_End");
-    }
-
-    // ----------------------------------------------------
-    // Phase 2: Train Door 2
-    // ----------------------------------------------------
-    for (int i = 0; i < m_times; i++)
-    {
-        if (Door2 != null)
+        else if (trial == "Door2")
         {
-            ExperimentLogger.Instance.LogEvent("Active_Training_Door2_Start", Door2.name, "Active_Training_Door2_Start");
-            LSL_Logger.Instance?.LogEvent("Active_Training_Door2_Start", Door2.name, "Active_Training_Door2_Start");
+            if (Door2 != null)
+            {
+                // ---------------- ACTIVE PHASE ----------------
+                ExperimentLogger.Instance.LogEvent("Active_Training_Door2_Start", Door2.name, "TAD2S");
+                LSL_Logger.Instance?.LogEvent("Active_Training_Door2_Start", Door2.name, "TAD2S");
 
-            Door2.SetActive(true);
-            yield return new WaitForSeconds(showDuration);
+                Door2.SetActive(true);
+                yield return new WaitForSeconds(showDuration);
 
-            ExperimentLogger.Instance.LogEvent("Active_Training_Door2_End", Door2.name, "Active_Training_Door2_End");
-            LSL_Logger.Instance?.LogEvent("Active_Training_Door2_End", Door2.name, "Active_Training_Door2_End");
+                ExperimentLogger.Instance.LogEvent("Active_Training_Door2_End", Door2.name, "TAD2E");
+                LSL_Logger.Instance?.LogEvent("Active_Training_Door2_End", Door2.name, "TAD2E");
 
-            Door2.SetActive(false);
+                Door2.SetActive(false);
+            }
+
+            // ---------------- TRANSITION GAP ----------------
+            yield return new WaitForSeconds(imageryDelay);
+
+            // ---------------- IMAGERY PHASE ----------------
+            ExperimentLogger.Instance?.LogEvent("Image_Training_Door2_Start", Door2.name, "TID2S");
+            LSL_Logger.Instance?.LogEvent("Image_Training_Door2_Start", Door2.name, "TID2S");
+
+            yield return new WaitForSeconds(imageryDuration);
+
+            ExperimentLogger.Instance?.LogEvent("Image_Training_Door2_End", Door2.name, "TID2E");
+            LSL_Logger.Instance?.LogEvent("Image_Training_Door2_End", Door2.name, "TID2E");
         }
-
-        // ---------------- TRANSITION GAP ----------------
-        yield return new WaitForSeconds(imageryDelay);
-
-        // ---------------- IMAGERY PHASE ----------------
-        ExperimentLogger.Instance?.LogEvent("Image_Training_Door2_Start", Door2.name, "Image_Training_Door2_Start");
-        LSL_Logger.Instance?.LogEvent("Image_Training_Door2_Start", Door2.name, "Image_Training_Door2_Start");
-
-        yield return new WaitForSeconds(imageryDuration);
-
-        ExperimentLogger.Instance?.LogEvent("Image_Training_Door2_End", Door2.name, "Image_Training_Door2_End");
-        LSL_Logger.Instance?.LogEvent("Image_Training_Door2_End", Door2.name, "Image_Training_Door2_End");
     }
 
     ExperimentLogger.Instance?.LogEvent("Train_End", "Training Complete", "Train_End");
@@ -217,6 +218,33 @@ private IEnumerator TrainingRoutine()
     if (IntroductionCanvas != null) IntroductionCanvas.SetActive(true);
     IntroNextButtonUI();
 }
+
+    private List<string> trialSequence = new List<string>();
+
+    private void GenerateSequence()
+    {
+        trialSequence.Clear();
+        for (int i = 0; i < m_times; i++)
+        {
+            trialSequence.Add("Door1");
+            trialSequence.Add("Door2");
+        }
+        FisherYatesShuffle(trialSequence);
+        
+        Debug.Log($"[TrainBCI] Generated {trialSequence.Count} trials:");
+        for (int i = 0; i < trialSequence.Count; i++)
+            Debug.Log($"[TrainBCI]  [{i:D2}] {trialSequence[i]}");
+    }
+
+    private static void FisherYatesShuffle<T>(List<T> list)
+    {
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1); // inclusive upper bound
+            (list[i], list[j]) = (list[j], list[i]);
+        }
+    }
+
 
 
 
