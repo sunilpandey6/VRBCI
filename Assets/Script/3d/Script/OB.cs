@@ -91,9 +91,15 @@ public class OB : MonoBehaviour
 
     private void OnEnable()
     {
-        outline.ApplyGlobalColors();
-        flicker.enabled = false;
-        doorOpenController.Close();
+        if (outline != null)
+            outline.ApplyGlobalColors();
+
+        if (flicker != null)
+            flicker.enabled = false;
+
+        if (doorOpenController != null)
+            doorOpenController.Close();
+            
         // Subscribe to LSL flicker event — unsubscribed in OnDisable
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnFlickerStateChanged += HandleFlickerLSL;
@@ -114,7 +120,8 @@ public class OB : MonoBehaviour
         if (activeObject  == this) activeObject  = null;
         if (waitingObject == this) waitingObject = null;
 
-        doorOpenController.Close();
+        if (doorOpenController != null) doorOpenController.Close();
+
         StopAllCoroutines();
     }
 

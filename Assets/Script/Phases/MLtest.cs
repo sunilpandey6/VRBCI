@@ -86,7 +86,7 @@ public class MLtest : MonoBehaviour
         // Hide both doors at startup
         SetDoorVisible(Door1, false);
         SetDoorVisible(Door2, false);
-        SetDoorVisible(uiElement, true);
+        SetUIVisible(uiElement, true);
         // Build and shuffle the trial sequence
         GenerateSequence();
     }
@@ -97,6 +97,7 @@ public class MLtest : MonoBehaviour
         StopAllCoroutines();
         SetDoorVisible(Door1, false);
         SetDoorVisible(Door2, false);
+        SetUIVisible(uiElement, false);
     }
 
     #endregion
@@ -156,7 +157,7 @@ public class MLtest : MonoBehaviour
     /// </summary>
     public void StartMLTest()
     {
-        SetDoorVisible(uiElement, false);
+        SetUIVisible(uiElement, false);
         StartCoroutine(RunTrialSequence());
     }
 
@@ -276,7 +277,18 @@ public class MLtest : MonoBehaviour
     /// </summary>
     private static void SetDoorVisible(GameObject door, bool visible)
     {
-        if (door != null) door.SetActive(visible);
+        if (door == null) return;
+
+        Renderer[] renderers = door.GetComponentsInChildren<Renderer>(true);
+
+        foreach (Renderer r in renderers)
+            r.enabled = visible;
+    }
+
+    private static void SetUIVisible(GameObject ui, bool visible)
+    {
+        Debug.Log($"[MLtest] UI is now {visible}");
+        if (ui != null) ui.SetActive(visible);
     }
 
     #endregion
