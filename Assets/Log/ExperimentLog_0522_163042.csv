@@ -1,0 +1,4 @@
+Time,Experiment,Phase,Event,Detail,Action
+16:30:45.435,TrainML,MLTrain,LSL_Connected,BCIBackend,BCI_Stream_Open
+16:30:45.436,TrainML,MLTrain,Experiment_Start,TrainML,
+16:30:45.436,TrainML,MLTrain,Phase_Start,MLTrain,

@@ -335,12 +335,7 @@ public class MLtest : MonoBehaviour
     /// </summary>
     private static void SetDoorVisible(GameObject door, bool visible)
     {
-        if (door == null) return;
-
-        Renderer[] renderers = door.GetComponentsInChildren<Renderer>(true);
-
-        foreach (Renderer r in renderers)
-            r.enabled = visible;
+        if (door != null) door.SetActive(visible);
     }
 
     private static void SetUIVisible(GameObject ui, bool visible)
