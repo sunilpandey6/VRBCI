@@ -23,6 +23,9 @@ public class MLtest : MonoBehaviour
     [Tooltip("Number of Door 1 Flicker trials")]
     public int door1FlickerCount = 10;
 
+    [Tooltip("Number of Test trials")]
+    public int testTrialCount = 10;
+
     [Header("Timing (seconds)")]
     [Tooltip("Blank gap BEFORE the stimulus appears")]
     public float preTrialDelay  = 2f;
@@ -35,6 +38,9 @@ public class MLtest : MonoBehaviour
 
     [Tooltip("Rest period between trials (after post-trial gap)")]
     public float restPeriod = 2f;
+
+    [Tooltip("GameObject for the testing scene")]
+    public GameObject testSceneObject;
 
 
     public GameObject uiElement;
@@ -83,9 +89,10 @@ public class MLtest : MonoBehaviour
 
     private void Start()
     {
-        // Hide both doors at startup
+        // Hide doors and testSceneObject at startup
         SetDoorVisible(Door1, false);
         SetDoorVisible(Door2, false);
+        SetDoorVisible(testSceneObject, false);
         SetUIVisible(uiElement, true);
         // Build and shuffle the trial sequence
         GenerateSequence();
@@ -97,6 +104,7 @@ public class MLtest : MonoBehaviour
         StopAllCoroutines();
         SetDoorVisible(Door1, false);
         SetDoorVisible(Door2, false);
+        SetDoorVisible(testSceneObject, false);
         SetUIVisible(uiElement, false);
     }
 
@@ -187,6 +195,12 @@ public class MLtest : MonoBehaviour
         Debug.Log("[MLtest] All trials complete.");
         ExperimentLogger.Instance?.LogEvent("MLtest_End", "MLtest", "Trial_Sequence_End");
         LSL_Logger.Instance?.LogEvent("MLtest_End", "MLtest", "Trial_Sequence_End");
+
+        // ── Test Trials ──────────────────────────────────────────────────────
+        for (int i = 0; i < testTrialCount; i++)
+        {
+            yield return StartCoroutine(RunTestTrial(i));
+        }
     }
 
     /// <summary>
@@ -265,6 +279,50 @@ public class MLtest : MonoBehaviour
 
         // ── 4. Rest period (between trials) ──────────────────────────────────
         yield return new WaitForSeconds(restPeriod);
+    }
+
+    /// <summary>
+    /// Executes the test trial after training sequence ends.
+    /// </summary>
+    private IEnumerator RunTestTrial(int index)
+    {
+        string objectName = testSceneObject != null ? testSceneObject.name : "testSceneObject";
+
+        // log test trail
+        Debug.Log($"[MLtest] Test trial {index + 1}/{testTrialCount} started.");
+        ExperimentLogger.Instance?.LogEvent("Test_Trial_Start", objectName, "log test trail");
+        LSL_Logger.Instance?.LogEvent("Test_Trial_Start", objectName, "log test trail");
+
+        // start with pretrial delay
+        SetDoorVisible(testSceneObject, false);
+        yield return new WaitForSeconds(preTrialDelay);
+
+        // then show testobject for showDuration with log active predict
+        ExperimentLogger.Instance?.LogEvent("Active_Predict_Start", objectName, "active predict");
+        LSL_Logger.Instance?.LogEvent("Active_Predict_Start", objectName, "active predict");
+        SetDoorVisible(testSceneObject, true);
+
+        yield return new WaitForSeconds(showDuration);
+
+        SetDoorVisible(testSceneObject, false);
+        ExperimentLogger.Instance?.LogEvent("Active_Predict_End", objectName, "active predict end");
+        LSL_Logger.Instance?.LogEvent("Active_Predict_End", objectName, "active predict end");
+
+        // then not show for imageryDuration with log predict imagery followed by rest period
+        ExperimentLogger.Instance?.LogEvent("Predict_Imagery_Start", objectName, "predict imagery");
+        LSL_Logger.Instance?.LogEvent("Predict_Imagery_Start", objectName, "predict imagery");
+
+        yield return new WaitForSeconds(imageryDuration);
+
+        ExperimentLogger.Instance?.LogEvent("Predict_Imagery_End", objectName, "predict imagery end");
+        LSL_Logger.Instance?.LogEvent("Predict_Imagery_End", objectName, "predict imagery end");
+
+        yield return new WaitForSeconds(restPeriod);
+
+        // then end test trail
+        Debug.Log("[MLtest] Test trial complete.");
+        ExperimentLogger.Instance?.LogEvent("Test_Trial_End", objectName, "end test trail");
+        LSL_Logger.Instance?.LogEvent("Test_Trial_End", objectName, "end test trail");
     }
 
     #endregion
