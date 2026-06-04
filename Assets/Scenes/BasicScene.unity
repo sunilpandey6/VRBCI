@@ -1955,7 +1955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingUIObject: {fileID: 1529056358287670972}
-  testUIObject: {fileID: 0}
   demo3DObject: {fileID: 1743748094}
   trainBCIObject: {fileID: 1852547141}
   test3DObject: {fileID: 7379296187806163810}
@@ -1972,7 +1971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d5dc89587d24ea58d8a3fb6648d00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentExperiment: 3
+  currentExperiment: 0
   currentPhase: 5
 --- !u!1001 &1852547139
 PrefabInstance:
@@ -5657,10 +5656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IntroPanel: {fileID: 7990875259735063443}
   DwellPanel: {fileID: 4677306124816754265}
-  FlickerPanel: {fileID: 0}
   dwellTimeText: {fileID: 5256197957437398443}
-  flickerHzText: {fileID: 0}
-  flickerTimeText: {fileID: 0}
 --- !u!224 &5928710317738535240
 RectTransform:
   m_ObjectHideFlags: 0

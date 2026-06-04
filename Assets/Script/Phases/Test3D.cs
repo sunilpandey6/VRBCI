@@ -68,14 +68,14 @@ public class Test3D : MonoBehaviour
     [SerializeField] private Transform playerRig;
 
     #region Unity Lifecycle
-    private void Awake()
-    {
-        if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
-    }
+    //private void Awake()
+    //{
+    //    if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
+    //}
 
-    private void OnValidate(){
-        eyeClosed = GetComponent<EyeClosed>();
-    }
+    //private void OnValidate(){
+    //    eyeClosed = GetComponent<EyeClosed>();
+    //}
 
     void OnEnable()
     {
@@ -188,12 +188,12 @@ public class Test3D : MonoBehaviour
 
     #endregion
 
-    #region Eye Closed Check
-    public void StartEyeClosedTest()
-    {
-        eyeClosed.StartChecking();
-    }
-#endregion
+//    #region Eye Closed Check
+//    public void StartEyeClosedTest()
+//    {
+//        eyeClosed.StartChecking();
+//    }
+//#endregion
 
 #region  Test 3D Main
 //if BCI mode, start the eye closed test and wait for user input
