@@ -138,7 +138,31 @@ public class OB : MonoBehaviour
         if (!hasTriggered && progress >= 1f)
         {
             hasTriggered = true;
-            StartCoroutine(FlickerAndExecute());
+
+            if (MainControl.Instance != null && 
+                (MainControl.Instance.currentExperiment == MainControl.ExperimentType.EyeTracking || 
+                 MainControl.Instance.currentExperiment == MainControl.ExperimentType.BCI))
+            {
+                // Execute directly
+                ExperimentLogger.Instance?.LogEvent("Dwell_Complete", $"Object: {gameObject.name}", "Dwelling_Completed");
+                LSL_Logger.Instance?.LogEvent("Dwell_Complete", $"Object: {gameObject.name}", "Dwelling_Completed");
+                outline.ResetOutline();
+
+                if (MainControl.Instance.currentExperiment == MainControl.ExperimentType.BCI && 
+                    MainControl.Instance.currentPhase == MainControl.ExperimentPhase.Test3D)
+                {
+                    ExecuteAction(bciTest3DAction);
+                }
+                else
+                {
+                    ExecuteAction(selectedAction);
+                }
+            }
+            else
+            {
+                // Hybrid mode: flicker then execute
+                StartCoroutine(FlickerAndExecute());
+            }
         }
     }
 

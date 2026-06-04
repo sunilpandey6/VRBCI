@@ -256,7 +256,20 @@ public class BB : MonoBehaviour
             {
                 hasTriggered = true;
                 ResetColor();
-                StartCoroutine(FlickerAndExecute());
+
+                if (MainControl.Instance != null &&
+                    (MainControl.Instance.currentExperiment == MainControl.ExperimentType.EyeTracking ||
+                     MainControl.Instance.currentExperiment == MainControl.ExperimentType.BCI))
+                {
+                    ExperimentLogger.Instance?.LogEvent("Dwell", $"Button: {gameObject.name}", "Dwelling_Completed");
+                    LSL_Logger.Instance?.LogEvent("Dwell", $"Button: {gameObject.name}", "Dwelling_Completed");
+                    currentState = State.Idle;
+                    Execution(selectedAction);
+                }
+                else
+                {
+                    StartCoroutine(FlickerAndExecute());
+                }
             }
         }
     }
