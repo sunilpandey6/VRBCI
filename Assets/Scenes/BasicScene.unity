@@ -2033,6 +2033,10 @@ PrefabInstance:
       propertyPath: Door1
       value: 
       objectReference: {fileID: 722763301}
+    - target: {fileID: 5123135920685847215, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 5381430862970100892, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
