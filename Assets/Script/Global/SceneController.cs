@@ -8,8 +8,8 @@ public class SceneController : MonoBehaviour
     [Tooltip("The parent GameObject for the Setting UI")]
     public GameObject settingUIObject;
     
-    [Tooltip("The parent GameObject for the Test UI")]
-    public GameObject testUIObject;
+    // [Tooltip("The parent GameObject for the Test UI")]
+    // public GameObject testUIObject;
     
     [Tooltip("The parent GameObject for the Demo 3D Environment")]
     public GameObject demo3DObject;
@@ -59,9 +59,9 @@ public class SceneController : MonoBehaviour
             case MainControl.ExperimentPhase.SettingUI:
                 if (settingUIObject != null) settingUIObject.SetActive(true);
                 break;
-            case MainControl.ExperimentPhase.TestUI:
-                if (testUIObject != null) testUIObject.SetActive(true);
-                break;
+            // case MainControl.ExperimentPhase.TestUI:
+            //     if (testUIObject != null) testUIObject.SetActive(true);
+            //     break;
             case MainControl.ExperimentPhase.Demo3D:
                 if (demo3DObject != null) demo3DObject.SetActive(true);
                 break;
@@ -84,7 +84,7 @@ public class SceneController : MonoBehaviour
     private void TurnOffAll()
     {
         if (settingUIObject != null) settingUIObject.SetActive(false);
-        if (testUIObject != null) testUIObject.SetActive(false);
+        // if (testUIObject != null) testUIObject.SetActive(false);
         if (demo3DObject != null) demo3DObject.SetActive(false);
         if (trainBCIObject != null) trainBCIObject.SetActive(false);
         if (test3DObject != null) test3DObject.SetActive(false);

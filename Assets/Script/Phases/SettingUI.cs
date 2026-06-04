@@ -8,14 +8,14 @@ public class SettingUI : MonoBehaviour
     [Header("UI Panels")]
     public GameObject IntroPanel;
     public GameObject DwellPanel;
-    public GameObject FlickerPanel;
+    // public GameObject FlickerPanel;
     
     [Header("Dwell Setting References")]
     public TMP_Text dwellTimeText;
 
-    [Header("Flicker Setting References")]
-    public TMP_Text flickerHzText;
-    public TMP_Text flickerTimeText;
+    // [Header("Flicker Setting References")]
+    // public TMP_Text flickerHzText;
+    // public TMP_Text flickerTimeText;
 
     #region Unity Lifecycle
     private void Start()
@@ -30,7 +30,7 @@ public class SettingUI : MonoBehaviour
     {
         if (IntroPanel != null) IntroPanel.SetActive(false);
         if (DwellPanel != null) DwellPanel.SetActive(false);
-        if (FlickerPanel != null) FlickerPanel.SetActive(false);
+        // if (FlickerPanel != null) FlickerPanel.SetActive(false);
     }
 
     public void PositionCanvasFront()
@@ -56,22 +56,22 @@ public class SettingUI : MonoBehaviour
     {
         if (IntroPanel != null) IntroPanel.SetActive(true);
         if (DwellPanel != null) DwellPanel.SetActive(false);
-        if (FlickerPanel != null) FlickerPanel.SetActive(false);
+        // if (FlickerPanel != null) FlickerPanel.SetActive(false);
     }
     
     public void DwellPanelOn()
     {
         if (DwellPanel != null) DwellPanel.SetActive(true);
-        if (FlickerPanel != null) FlickerPanel.SetActive(false);
+        // if (FlickerPanel != null) FlickerPanel.SetActive(false);
         if (IntroPanel != null) IntroPanel.SetActive(false);
     }
 
-    public void FlickerPanelOn()
-    {
-        if (DwellPanel != null) DwellPanel.SetActive(false);
-        if (FlickerPanel != null) FlickerPanel.SetActive(true);
-        if (IntroPanel != null) IntroPanel.SetActive(false);
-    }
+    // public void FlickerPanelOn()
+    // {
+    //     if (DwellPanel != null) DwellPanel.SetActive(false);
+    //     if (FlickerPanel != null) FlickerPanel.SetActive(true);
+    //     if (IntroPanel != null) IntroPanel.SetActive(false);
+    // }
 
     public void NextPhase()
     {
@@ -107,7 +107,7 @@ public class SettingUI : MonoBehaviour
     public void UpdateAllValues()
     {
         UpdateDwellValue();
-        UpdateFlickerValues();
+        // UpdateFlickerValues();
     }
 
     private void UpdateDwellValue()
@@ -116,13 +116,13 @@ public class SettingUI : MonoBehaviour
             dwellTimeText.text = GlobalInput.Instance.dwellTime.ToString("0.0") + " Sec";
     }
 
-    private void UpdateFlickerValues()
-    {
-        if (flickerTimeText != null)
-            flickerTimeText.text = GlobalInput.Instance.flickerDuration.ToString("0.0") + " Sec";
-        if (flickerHzText != null)
-            flickerHzText.text = GlobalInput.Instance.flickerHz.ToString("0.##") + " Hz";
-    }
+    // private void UpdateFlickerValues()
+    // {
+    //     if (flickerTimeText != null)
+    //         flickerTimeText.text = GlobalInput.Instance.flickerDuration.ToString("0.0") + " Sec";
+    //     if (flickerHzText != null)
+    //         flickerHzText.text = GlobalInput.Instance.flickerHz.ToString("0.##") + " Hz";
+    // }
     #endregion
 
     #region Dwell Settings Controls
@@ -145,60 +145,60 @@ public class SettingUI : MonoBehaviour
     #endregion
 
     #region Flicker Settings Controls
-    private readonly float[] allowedFrequencies = { 6f, 7.5f, 9f, 10f, 11.25f, 15f };
+    // private readonly float[] allowedFrequencies = { 6f, 7.5f, 9f, 10f, 11.25f, 15f };
 
-    public void addhz()
-    {
-        float currentHz = GlobalInput.Instance.flickerHz;
-        for (int i = 0; i < allowedFrequencies.Length - 1; i++)
-        {
-            if (currentHz < allowedFrequencies[i + 1])
-            {
-                GlobalInput.Instance.flickerHz = allowedFrequencies[i + 1];
-                UpdateFlickerValues();
-                return;
-            }
-        }
+    // public void addhz()
+    // {
+    //     float currentHz = GlobalInput.Instance.flickerHz;
+    //     for (int i = 0; i < allowedFrequencies.Length - 1; i++)
+    //     {
+    //         if (currentHz < allowedFrequencies[i + 1])
+    //         {
+    //             GlobalInput.Instance.flickerHz = allowedFrequencies[i + 1];
+    //             UpdateFlickerValues();
+    //             return;
+    //         }
+    //     }
         
-        // If we reach here, we're at or above the max value. Wrap around to the minimum.
-        GlobalInput.Instance.flickerHz = allowedFrequencies[0];
-        UpdateFlickerValues();
-    }
+    //     // If we reach here, we're at or above the max value. Wrap around to the minimum.
+    //     GlobalInput.Instance.flickerHz = allowedFrequencies[0];
+    //     UpdateFlickerValues();
+    // }
 
-    public void subhz()
-    {
-        float currentHz = GlobalInput.Instance.flickerHz;
-        for (int i = allowedFrequencies.Length - 1; i > 0; i--)
-        {
-            if (currentHz > allowedFrequencies[i - 1])
-            {
-                GlobalInput.Instance.flickerHz = allowedFrequencies[i - 1];
-                UpdateFlickerValues();
-                return;
-            }
-        }
+    // public void subhz()
+    // {
+    //     float currentHz = GlobalInput.Instance.flickerHz;
+    //     for (int i = allowedFrequencies.Length - 1; i > 0; i--)
+    //     {
+    //         if (currentHz > allowedFrequencies[i - 1])
+    //         {
+    //             GlobalInput.Instance.flickerHz = allowedFrequencies[i - 1];
+    //             UpdateFlickerValues();
+    //             return;
+    //         }
+    //     }
 
-        // If we reach here, we're at or below the min value. Wrap around to the maximum.
-        GlobalInput.Instance.flickerHz = allowedFrequencies[allowedFrequencies.Length - 1];
-        UpdateFlickerValues();
-    }
+    //     // If we reach here, we're at or below the min value. Wrap around to the maximum.
+    //     GlobalInput.Instance.flickerHz = allowedFrequencies[allowedFrequencies.Length - 1];
+    //     UpdateFlickerValues();
+    // }
 
-    public void addTime()
-    {
-        if (GlobalInput.Instance.flickerDuration < 5f)
-        {
-            GlobalInput.Instance.flickerDuration += 0.5f;
-            UpdateFlickerValues();
-        }
-    }
+    // public void addTime()
+    // {
+    //     if (GlobalInput.Instance.flickerDuration < 5f)
+    //     {
+    //         GlobalInput.Instance.flickerDuration += 0.5f;
+    //         UpdateFlickerValues();
+    //     }
+    // }
 
-    public void subTime()
-    {
-        if (GlobalInput.Instance.flickerDuration > 1.5f)
-        {
-            GlobalInput.Instance.flickerDuration -= 0.5f;
-            UpdateFlickerValues();
-        }
-    }
+    // public void subTime()
+    // {
+    //     if (GlobalInput.Instance.flickerDuration > 1.5f)
+    //     {
+    //         GlobalInput.Instance.flickerDuration -= 0.5f;
+    //         UpdateFlickerValues();
+    //     }
+    // }
     #endregion
 }

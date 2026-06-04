@@ -237,7 +237,7 @@ public class MLtest : MonoBehaviour
         }
         else
         {
-            activeStart = useDoor1 ? "Training_Active_Door1_Start" : "Active_Training_Door2_Start";
+            activeStart = useDoor1 ? "Training_Active_Door1_Start" : "Training_Active_Door2_Start";
             activeEnd   = useDoor1 ? "Training_Active_Door1_End"   : "Active_Training_Door2_End";
         }
 

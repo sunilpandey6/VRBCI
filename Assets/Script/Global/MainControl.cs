@@ -17,7 +17,7 @@ public class MainControl : MonoBehaviour
     public enum ExperimentPhase
     {
         SettingUI,
-        TestUI,
+        // TestUI,
         Demo3D,
         TrainBCI,
         Test3D,
@@ -39,14 +39,14 @@ public class MainControl : MonoBehaviour
     private readonly List<ExperimentPhase> eyeTrackingSequence = new List<ExperimentPhase>
     {
         ExperimentPhase.SettingUI,
-        ExperimentPhase.TestUI,
+        // ExperimentPhase.TestUI,
         ExperimentPhase.Demo3D,
         ExperimentPhase.Test3D
     };
 
     private readonly List<ExperimentPhase> hybridSequence = new List<ExperimentPhase>
     {
-        ExperimentPhase.TestUI,
+        // ExperimentPhase.TestUI,
         ExperimentPhase.Test3D
     };
 
