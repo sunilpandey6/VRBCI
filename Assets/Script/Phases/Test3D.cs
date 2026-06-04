@@ -7,8 +7,8 @@ using TMPro;
 public class Test3D : MonoBehaviour
 {
     
-    [Header("References")]
-    [SerializeField] public EyeClosed eyeClosed;
+    // [Header("References")]
+    // [SerializeField] public EyeClosed eyeClosed;
 
     [Header("Experiment Mode")]
     public MainControl.ExperimentType currentMode;
@@ -215,7 +215,9 @@ public class Test3D : MonoBehaviour
     {
         if(IsBCIMode())
         {
-            StartEyeClosedTest();
+            // StartEyeClosedTest();
+            ExperimentLogger.Instance?.LogEvent("Predict_Start", "Prediction_Phase", "Predict_Active_Start");
+            LSL_Logger.Instance?.LogEvent("Predict_Start", "Prediction_Phase", "Predict_Active_Start");
             
         }
     }
