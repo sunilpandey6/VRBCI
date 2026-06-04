@@ -21,7 +21,7 @@ public class MainControl : MonoBehaviour
         Demo3D,
         TrainBCI,
         Test3D,
-        MLTrain,
+        //MLTrain,
         Completed
     }
 
@@ -56,10 +56,10 @@ public class MainControl : MonoBehaviour
         ExperimentPhase.Test3D
     };
 
-    private readonly List<ExperimentPhase> trainMLSequence = new List<ExperimentPhase>
-    {
-        ExperimentPhase.MLTrain
-    };
+    //private readonly List<ExperimentPhase> trainMLSequence = new List<ExperimentPhase>
+    //{
+    //    ExperimentPhase.MLTrain
+    //};
 
     private List<ExperimentPhase> currentSequence;
     private int currentPhaseIndex = 0;
@@ -120,9 +120,9 @@ public class MainControl : MonoBehaviour
             case ExperimentType.BCI:
                 currentSequence = bciSequence;
                 break;
-            case ExperimentType.TrainML:
-                currentSequence = trainMLSequence;
-                break;
+            //case ExperimentType.TrainML:
+            //    currentSequence = trainMLSequence;
+            //    break;
         }
 
         currentPhaseIndex = 0;
@@ -178,20 +178,22 @@ public class MainControl : MonoBehaviour
         {
             SetExperimentType(ExperimentType.TrainML);
         }
-        else if (currentExperiment == ExperimentType.TrainML)
-        {
-            // If TrainML is finished, everything is fully done
-            Debug.Log("ALL EXPERIMENTS COMPLETED!");
-            currentPhase = ExperimentPhase.Completed;
-            
-            if (ExperimentLogger.Instance != null)
-            {
-                ExperimentLogger.Instance.LogEvent("All_Experiments_Completed");
-            }
-        }
-    }
+        if (ExperimentLogger.Instance != null)  ExperimentLogger.Instance.LogEvent("All_Experiments_Completed");
 
-    private void SetPhase(ExperimentPhase newPhase)
+            //else if (currentExperiment == ExperimentType.TrainML)
+            //{
+            //    // If TrainML is finished, everything is fully done
+            //    Debug.Log("ALL EXPERIMENTS COMPLETED!");
+            //    currentPhase = ExperimentPhase.Completed;
+
+            //    if (ExperimentLogger.Instance != null)
+            //    {
+            //        ExperimentLogger.Instance.LogEvent("All_Experiments_Completed");
+            //    }
+            //}
+        }
+
+        private void SetPhase(ExperimentPhase newPhase)
     {
         currentPhase = newPhase;
         

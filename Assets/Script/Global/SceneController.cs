@@ -20,8 +20,8 @@ public class SceneController : MonoBehaviour
     [Tooltip("The parent GameObject for the Test 3D Environment")]
     public GameObject test3DObject;
 
-    [Tooltip("The parent GameObject for the ML Train Environment")]
-    public GameObject mlTrainObject;
+    //[Tooltip("The parent GameObject for the ML Train Environment")]
+    //public GameObject mlTrainObject;
 
     private void Start()
     {
@@ -71,13 +71,13 @@ public class SceneController : MonoBehaviour
             case MainControl.ExperimentPhase.Test3D:
                 if (test3DObject != null) test3DObject.SetActive(true);
                 break;
-            case MainControl.ExperimentPhase.MLTrain:
-                if (mlTrainObject != null) mlTrainObject.SetActive(true);
-                break;
-            case MainControl.ExperimentPhase.Completed:
-                // Optional: Show a "Thank you" UI or an End Screen
-                Debug.Log("SceneController: All experiments completed.");
-                break;
+            //case MainControl.ExperimentPhase.MLTrain:
+            //    if (mlTrainObject != null) mlTrainObject.SetActive(true);
+            //    break;
+            //case MainControl.ExperimentPhase.Completed:
+            //    // Optional: Show a "Thank you" UI or an End Screen
+            //    Debug.Log("SceneController: All experiments completed.");
+            //    break;
         }
     }
 
@@ -88,6 +88,6 @@ public class SceneController : MonoBehaviour
         if (demo3DObject != null) demo3DObject.SetActive(false);
         if (trainBCIObject != null) trainBCIObject.SetActive(false);
         if (test3DObject != null) test3DObject.SetActive(false);
-        if (mlTrainObject != null) mlTrainObject.SetActive(false);
+        //if (mlTrainObject != null) mlTrainObject.SetActive(false);
     }
 }

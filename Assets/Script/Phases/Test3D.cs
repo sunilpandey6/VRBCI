@@ -271,7 +271,8 @@ public void HandlePredictionLSL(BCIMessage msg)
 
      public void NextPhase()
     {
-        if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();            
         gameObject.SetActive(false);
+        if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();            
+       
     }
 }

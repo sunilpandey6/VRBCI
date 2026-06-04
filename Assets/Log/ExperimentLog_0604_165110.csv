@@ -1,0 +1,75 @@
+Time,Experiment,Phase,Event,Detail,Action
+16:51:13.446,EyeTracking,Test3D,LSL_Connected,BCIBackend,BCI_Stream_Open
+16:51:13.466,EyeTracking,Test3D,Experiment_Start,EyeTracking,
+16:51:13.467,EyeTracking,SettingUI,Phase_Start,SettingUI,
+16:51:36.167,EyeTracking,SettingUI,Dwell_Start,Button: Intro-Next-UI,Dwell_Started
+16:51:38.165,EyeTracking,SettingUI,Dwell,Button: Intro-Next-UI,Dwelling_Completed
+16:51:38.165,EyeTracking,SettingUI,Action_Executed,Button: Intro-Next-UI; Action: ButtonAction,Execution_Proceeding
+16:51:54.477,EyeTracking,SettingUI,Dwell_Start,Button: nextDwellSetting,Dwell_Started
+16:51:56.479,EyeTracking,SettingUI,Dwell,Button: nextDwellSetting,Dwelling_Completed
+16:51:56.479,EyeTracking,SettingUI,Action_Executed,Button: nextDwellSetting; Action: ButtonAction,Execution_Proceeding
+16:51:56.479,EyeTracking,SettingUI,Set_Target_Frequency,Button: SettingUICanvas,Set_Target_Frequency: 15
+16:51:56.479,EyeTracking,Demo3D,Phase_Start,Demo3D,
+16:52:02.615,EyeTracking,Demo3D,Dwell_Start,Button: StartDemo,Dwell_Started
+16:52:04.610,EyeTracking,Demo3D,Dwell,Button: StartDemo,Dwelling_Completed
+16:52:04.610,EyeTracking,Demo3D,Action_Executed,Button: StartDemo; Action: ButtonAction,Execution_Proceeding
+16:52:16.700,EyeTracking,Demo3D,Dwell_Complete,Object: Door_Single,Dwelling_Completed
+16:52:16.700,EyeTracking,Demo3D,Action_Executed,Object: Door_Single; Action: DoorSwitch,Execution_Proceeding
+16:52:25.103,EyeTracking,Demo3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+16:52:25.103,EyeTracking,Demo3D,Action_Executed,Object: Door_Double; Action: NextScene,Execution_Proceeding
+16:52:25.614,EyeTracking,Test3D,Phase_Start,Test3D,
+16:52:36.055,EyeTracking,Test3D,Dwell_Start,Button: StartTestBCI,Dwell_Started
+16:52:38.053,EyeTracking,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:52:38.053,EyeTracking,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:52:53.448,EyeTracking,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+16:52:53.448,EyeTracking,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+16:53:14.091,EyeTracking,Test3D,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+16:53:16.085,EyeTracking,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:53:16.085,EyeTracking,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:53:16.085,EyeTracking,Test3D,Experiment_Ended,EyeTracking,
+16:53:16.085,Hybrid,Test3D,Experiment_Start,Hybrid,
+16:53:16.085,Hybrid,Test3D,Phase_Start,Test3D,
+16:53:18.088,Hybrid,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:53:18.088,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_Start
+16:53:20.099,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_End
+16:53:20.121,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+16:53:20.122,Hybrid,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:53:36.930,Hybrid,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+16:53:36.930,Hybrid,Test3D,Flicker_Start,Object: Door_Double; Hz: 15,Flicker_Start
+16:53:38.931,Hybrid,Test3D,Flicker_End,Object: Door_Double,Flicker_End
+16:53:38.981,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+16:53:38.982,Hybrid,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+16:53:41.487,Hybrid,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:53:41.487,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_Start
+16:53:43.499,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_End
+16:53:43.541,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+16:53:43.541,Hybrid,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:53:43.541,Hybrid,Test3D,Experiment_Ended,Hybrid,
+16:53:43.541,BCI,Test3D,Experiment_Start,BCI,
+16:53:43.542,BCI,TrainBCI,Phase_Start,TrainBCI,
+16:54:03.363,BCI,TrainBCI,Dwell_Start,Button: StartTrainBCI,Dwell_Started
+16:54:05.353,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+16:54:05.353,BCI,TrainBCI,Action_Executed,Button: StartTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:54:05.863,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:54:09.873,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:54:10.884,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:54:14.892,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:54:15.914,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:54:19.923,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:54:20.945,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:54:24.953,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:54:25.465,BCI,TrainBCI,Train_End,Training Complete,Train_End
+16:54:39.737,BCI,TrainBCI,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+16:54:41.738,BCI,TrainBCI,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:54:41.738,BCI,TrainBCI,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:54:41.738,BCI,Test3D,Phase_Start,Test3D,
+16:54:43.744,BCI,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:54:43.744,BCI,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:54:43.744,BCI,Test3D,Predict_Start,Prediction_Phase,Predict_Active_Start
+16:54:53.268,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+16:54:53.268,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+16:54:55.772,BCI,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:54:55.772,BCI,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:54:55.772,BCI,Test3D,Experiment_Ended,BCI,
+16:54:55.772,TrainML,Test3D,Experiment_Start,TrainML,
+16:54:55.772,TrainML,MLTrain,Phase_Start,MLTrain,

@@ -438,7 +438,7 @@ public class OB : MonoBehaviour
     {
         if (MainControl.Instance == null) return false;
         var expp = MainControl.Instance.currentPhase;
-        return expp == MainControl.ExperimentPhase.TrainBCI || expp == MainControl.ExperimentPhase.MLTrain;
+        return expp == MainControl.ExperimentPhase.TrainBCI;// || expp == MainControl.ExperimentPhase.MLTrain;
     }
     #endregion
 
