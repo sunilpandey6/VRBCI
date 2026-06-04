@@ -7,8 +7,8 @@ using TMPro;
 public class Test3D : MonoBehaviour
 {
     
-    // [Header("References")]
-    // [SerializeField] public EyeClosed eyeClosed;
+    [Header("References")]
+    [SerializeField] public EyeClosed eyeClosed;
 
     [Header("Experiment Mode")]
     public MainControl.ExperimentType currentMode;
@@ -68,14 +68,14 @@ public class Test3D : MonoBehaviour
     [SerializeField] private Transform playerRig;
 
     #region Unity Lifecycle
-    //private void Awake()
-    //{
-    //    if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
-    //}
+    private void Awake()
+    {
+        if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
+    }
 
-    //private void OnValidate(){
-    //    eyeClosed = GetComponent<EyeClosed>();
-    //}
+    private void OnValidate(){
+        eyeClosed = GetComponent<EyeClosed>();
+    }
 
     void OnEnable()
     {
@@ -188,12 +188,12 @@ public class Test3D : MonoBehaviour
 
     #endregion
 
-//    #region Eye Closed Check
-//    public void StartEyeClosedTest()
-//    {
-//        eyeClosed.StartChecking();
-//    }
-//#endregion
+    #region Eye Closed Check
+    public void StartEyeClosedTest()
+    {
+        eyeClosed.StartChecking();
+    }
+    #endregion
 
 #region  Test 3D Main
 //if BCI mode, start the eye closed test and wait for user input
@@ -241,11 +241,14 @@ public void HandlePredictionLSL(BCIMessage msg)
 
     if (door1 != null && door1.doorCode != OB.DoorCode.None && msg.Code == (int)door1.doorCode)
     {
-       door1.TriggerInteraction();
+        door1.TriggerInteraction();
+        eyeClosed.playPredictSound();
     }
     else if (door2 != null && door2.doorCode != OB.DoorCode.None && msg.Code == (int)door2.doorCode)
     {
-       door2.TriggerInteraction();
+        door2.TriggerInteraction();
+        eyeClosed.playPredictSound();
+
     }
 
     ExperimentLogger.Instance?.LogEvent("Predict_End", "Prediction_Phase", "Predict_End");
