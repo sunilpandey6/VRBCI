@@ -393,7 +393,9 @@ public class LSLCommunicationManager : MonoBehaviour
         }
 
         // ── Standard dispatch ─────────────────────────────────────────────
+        Debug.Log($"[LSLCommMgr] Received code: {msg} ({(BCICommand)code})");
         Debug.Log($"[LSLCommMgr] Received code: {code} ({(BCICommand)code})");
+        
 
         // Log to CSV and LSL outlet — mirroring the experiment logging pattern
         ExperimentLogger.Instance?.LogEvent("BCI_Command_Received", code.ToString(), ((BCICommand)code).ToString());

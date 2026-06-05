@@ -1,0 +1,457 @@
+Time,Experiment,Phase,Event,Detail,Action
+16:40:18.831,EyeTracking,SettingUI,LSL_Connected,BCIBackend,BCI_Stream_Open
+16:40:18.840,EyeTracking,SettingUI,Experiment_Start,EyeTracking,
+16:40:18.840,EyeTracking,SettingUI,Phase_Start,SettingUI,
+16:40:23.225,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:23.246,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:24.513,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:24.546,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:27.836,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:27.855,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:28.189,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:28.201,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:32.381,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:32.550,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:33.510,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:33.521,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:34.287,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:34.319,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:36.073,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:36.085,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:36.130,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:36.141,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:36.171,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:36.536,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:36.602,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:36.635,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:36.808,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:37.684,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:37.763,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:37.873,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:37.917,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:38.041,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:38.140,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:38.550,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:38.851,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:38.995,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:42.305,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:42.383,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:42.449,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:42.461,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:42.505,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:42.905,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:43.135,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:45.125,EyeTracking,SettingUI,Action_Executed,Button: demoIntroScene; Action: ButtonAction,Execution_Proceeding
+16:40:45.603,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:45.647,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:45.647,EyeTracking,SettingUI,Dwell_Start,Button: Intro-Next-UI,Dwell_Started
+16:40:46.369,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:46.413,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:48.412,EyeTracking,SettingUI,Action_Executed,Button: demoIntroScene; Action: ButtonAction,Execution_Proceeding
+16:40:49.933,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:49.946,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:50.000,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:50.332,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:50.645,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:50.753,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:50.765,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:51.087,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:51.377,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:51.411,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:51.866,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:52.320,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:52.343,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:52.377,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:52.676,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:53.177,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+16:40:53.231,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+16:40:53.289,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:53.387,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:53.398,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:53.432,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:53.487,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:53.565,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:53.678,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:53.732,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:53.798,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:53.898,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:54.554,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:54.875,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:55.520,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:40:55.597,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:40:56.919,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:57.319,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:57.519,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:57.652,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:57.740,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:58.485,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:58.619,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:58.629,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:58.639,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:40:58.665,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+16:40:59.017,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+16:41:01.006,EyeTracking,SettingUI,Dwell,Button: Intro-Next-UI,Dwelling_Completed
+16:41:01.006,EyeTracking,SettingUI,Action_Executed,Button: Intro-Next-UI; Action: ButtonAction,Execution_Proceeding
+16:41:01.021,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:01.021,EyeTracking,SettingUI,Dwell_Start,Button: nextDwellSetting,Dwell_Started
+16:41:01.407,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:01.439,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:01.523,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+16:41:01.934,EyeTracking,SettingUI,Hover_Enter,Button: addTimeDwell,Hovering
+16:41:01.934,EyeTracking,SettingUI,Dwell_Start,Button: addTimeDwell,Dwell_Started
+16:41:01.944,EyeTracking,SettingUI,Hover_Exit,Button: addTimeDwell,Hover_Exit
+16:41:02.471,EyeTracking,SettingUI,Hover_Enter,Button: addTimeDwell,Hovering
+16:41:02.483,EyeTracking,SettingUI,Hover_Exit,Button: addTimeDwell,Hover_Exit
+16:41:03.049,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:03.049,EyeTracking,SettingUI,Dwell_Start,Button: subTimeDwell,Dwell_Started
+16:41:04.259,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:04.705,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:06.703,EyeTracking,SettingUI,Dwell,Button: subTimeDwell,Dwelling_Completed
+16:41:06.703,EyeTracking,SettingUI,Action_Executed,Button: subTimeDwell; Action: ButtonAction,Execution_Proceeding
+16:41:07.124,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:07.191,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:07.248,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:07.646,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:07.980,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:07.991,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:08.378,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:08.836,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:09.180,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:10.068,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:10.200,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:10.234,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:10.268,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:10.345,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:10.358,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:10.367,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+16:41:11.866,EyeTracking,SettingUI,Dwell,Button: subTimeDwell,Dwelling_Completed
+16:41:11.866,EyeTracking,SettingUI,Action_Executed,Button: subTimeDwell; Action: ButtonAction,Execution_Proceeding
+16:41:12.378,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+16:41:12.412,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:12.500,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:12.556,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:12.618,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+16:41:12.632,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:12.793,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+16:41:12.917,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:12.933,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+16:41:13.073,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:13.117,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+16:41:13.172,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:13.316,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+16:41:13.339,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+16:41:14.336,EyeTracking,SettingUI,Dwell,Button: nextDwellSetting,Dwelling_Completed
+16:41:14.336,EyeTracking,SettingUI,Action_Executed,Button: nextDwellSetting; Action: ButtonAction,Execution_Proceeding
+16:41:14.336,EyeTracking,SettingUI,Set_Target_Frequency,Button: SettingUICanvas,Set_Target_Frequency: 15
+16:41:14.336,EyeTracking,Demo3D,Phase_Start,Demo3D,
+16:41:14.849,EyeTracking,Demo3D,Eye_Closed,eye_tracking,Eye_Closed
+16:41:14.949,EyeTracking,Demo3D,Eye_Opened,eye_tracking,Eye_Opened
+16:41:15.098,EyeTracking,Demo3D,Hover_Enter,Button: StartDemo,Hovering
+16:41:15.098,EyeTracking,Demo3D,Dwell_Start,Button: StartDemo,Dwell_Started
+16:41:15.220,EyeTracking,Demo3D,Hover_Exit,Button: StartDemo,Hover_Exit
+16:41:15.265,EyeTracking,Demo3D,Eye_Closed,eye_tracking,Eye_Closed
+16:41:15.333,EyeTracking,Demo3D,Eye_Opened,eye_tracking,Eye_Opened
+16:41:15.821,EyeTracking,Demo3D,Hover_Enter,Button: StartDemo,Hovering
+16:41:16.820,EyeTracking,Demo3D,Dwell,Button: StartDemo,Dwelling_Completed
+16:41:16.820,EyeTracking,Demo3D,Action_Executed,Button: StartDemo; Action: ButtonAction,Execution_Proceeding
+16:41:16.850,EyeTracking,Demo3D,Dwell_Start,Object: Door_Single,Dwell_Started
+16:41:17.830,EyeTracking,Demo3D,Dwell_Complete,Object: Door_Single,Dwelling_Completed
+16:41:17.830,EyeTracking,Demo3D,Action_Executed,Object: Door_Single; Action: DoorSwitch,Execution_Proceeding
+16:41:18.352,EyeTracking,Demo3D,Dwell_Start,Object: Door_Double,Dwell_Started
+16:41:19.353,EyeTracking,Demo3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+16:41:19.353,EyeTracking,Demo3D,Action_Executed,Object: Door_Double; Action: NextScene,Execution_Proceeding
+16:41:19.740,EyeTracking,Demo3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+16:41:19.786,EyeTracking,Demo3D,Dwell_Start,Object: Door_Double,Dwell_Started
+16:41:19.797,EyeTracking,Demo3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+16:41:19.807,EyeTracking,Demo3D,Dwell_Start,Object: Door_Double,Dwell_Started
+16:41:19.863,EyeTracking,Test3D,Phase_Start,Test3D,
+16:41:20.362,EyeTracking,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:41:20.362,EyeTracking,Test3D,Dwell_Start,Button: StartTestBCI,Dwell_Started
+16:41:20.385,EyeTracking,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:41:20.396,EyeTracking,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:41:21.395,EyeTracking,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:41:21.395,EyeTracking,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:41:21.663,EyeTracking,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:41:21.696,EyeTracking,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:41:21.817,EyeTracking,Test3D,Dwell_Start,Object: Door_Single,Dwell_Started
+16:41:22.140,EyeTracking,Test3D,Gaze_Stop,Object: Door_Single,Hover_Exit
+16:41:22.150,EyeTracking,Test3D,Dwell_Start,Object: Door_Single,Dwell_Started
+16:41:23.150,EyeTracking,Test3D,Dwell_Complete,Object: Door_Single,Dwelling_Completed
+16:41:23.150,EyeTracking,Test3D,Action_Executed,Object: Door_Single; Action: OpenDoor,Execution_Proceeding
+16:41:24.505,EyeTracking,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:24.505,EyeTracking,Test3D,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+16:41:24.517,EyeTracking,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:41:24.527,EyeTracking,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:24.548,EyeTracking,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:41:24.628,EyeTracking,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:25.626,EyeTracking,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:41:25.626,EyeTracking,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:41:25.627,EyeTracking,Test3D,Experiment_Ended,EyeTracking,
+16:41:25.627,Hybrid,Test3D,Experiment_Start,Hybrid,
+16:41:25.627,Hybrid,Test3D,Phase_Start,Test3D,
+16:41:25.627,Hybrid,Test3D,All_Experiments_Completed,,
+16:41:25.636,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:41:26.026,Hybrid,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:41:26.237,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:41:27.237,Hybrid,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:41:27.238,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_Start
+16:41:29.245,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_End
+16:41:29.311,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+16:41:29.312,Hybrid,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:41:29.702,Hybrid,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:41:29.758,Hybrid,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:41:29.780,Hybrid,Test3D,Dwell_Start,Object: Door_Single,Dwell_Started
+16:41:29.924,Hybrid,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:41:30.046,Hybrid,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:41:30.147,Hybrid,Test3D,Gaze_Stop,Object: Door_Single,Hover_Exit
+16:41:30.147,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+16:41:30.158,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+16:41:30.212,Hybrid,Test3D,Dwell_Start,Object: Door_Single,Dwell_Started
+16:41:31.213,Hybrid,Test3D,Dwell_Complete,Object: Door_Single,Dwelling_Completed
+16:41:31.214,Hybrid,Test3D,Flicker_Start,Object: Door_Single; Hz: 15,Flicker_Start
+16:41:31.347,Hybrid,Test3D,Gaze_Stop,Object: Door_Single,Hover_Exit
+16:41:31.357,Hybrid,Test3D,Dwell_Start,Object: Door_Single,Dwell_Started
+16:41:33.222,Hybrid,Test3D,Flicker_End,Object: Door_Single,Flicker_End
+16:41:33.279,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+16:41:33.279,Hybrid,Test3D,Action_Executed,Object: Door_Single; Action: OpenDoor,Execution_Proceeding
+16:41:34.599,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:34.655,Hybrid,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:41:34.676,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:34.733,Hybrid,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:41:34.754,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:34.767,Hybrid,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:41:34.845,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+16:41:35.843,Hybrid,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:41:35.843,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_Start
+16:41:37.854,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_End
+16:41:37.920,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+16:41:37.920,Hybrid,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:41:37.920,Hybrid,Test3D,Experiment_Ended,Hybrid,
+16:41:37.920,BCI,Test3D,Experiment_Start,BCI,
+16:41:37.920,BCI,TrainBCI,Phase_Start,TrainBCI,
+16:41:37.922,BCI,TrainBCI,All_Experiments_Completed,,
+16:41:37.931,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:41:37.931,BCI,TrainBCI,Dwell_Start,Button: StartTrainBCI,Dwell_Started
+16:41:38.931,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+16:41:38.931,BCI,TrainBCI,Action_Executed,Button: StartTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:41:40.940,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:41:42.618,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:42.973,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:43.751,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:43.818,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:44.739,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:44.816,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:44.951,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:41:48.414,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:48.492,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:48.970,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:41:49.269,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:41:49.336,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:41:52.978,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:41:57.718,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:42:01.719,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:42:05.717,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:42:05.727,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:42:05.740,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:42:09.748,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:42:13.769,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:42:17.776,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:42:21.796,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:42:25.806,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:42:29.826,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:42:33.834,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:42:34.303,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:42:34.358,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:42:37.855,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:42:41.864,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:42:43.389,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:42:43.586,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:42:44.785,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:42:44.941,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:42:45.885,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:42:48.772,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:42:48.804,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:42:49.893,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:42:50.316,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:42:50.582,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:42:53.913,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:42:57.923,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:43:01.943,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:43:05.951,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:43:08.095,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:08.183,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:09.973,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:43:13.981,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:43:15.047,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:15.280,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:18.002,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:43:22.010,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:43:22.654,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:22.821,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:22.977,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:23.099,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:26.030,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:43:29.673,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:29.773,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:30.039,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:43:33.992,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:34.004,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:34.059,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:43:38.069,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:43:39.824,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:39.868,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:42.088,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:43:46.098,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:43:49.418,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:49.440,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:50.118,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:43:54.126,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:43:58.070,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:43:58.146,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:43:58.146,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:44:02.156,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:44:04.476,BCI,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:44:04.600,BCI,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:44:06.177,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:44:10.185,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:44:14.204,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:44:18.214,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:44:20.224,BCI,TrainBCI,Train_End,Training Complete,Train_End
+16:44:20.801,BCI,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:44:20.801,BCI,TrainBCI,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+16:44:21.808,BCI,TrainBCI,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:44:21.808,BCI,TrainBCI,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:44:21.808,BCI,Test3D,Phase_Start,Test3D,
+16:44:21.830,BCI,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:44:22.811,BCI,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:44:22.811,BCI,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:44:22.811,BCI,Test3D,Predict_Start,Prediction_Phase,Predict_Active_Start
+16:44:23.189,BCI,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:44:23.244,BCI,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:44:29.441,BCI,Test3D,BCI_Command_Received,301,PredictResultActiveObj2
+16:44:29.441,BCI,Test3D,Dwell_Start_External,Object: Door_Double,Dwell_Started
+16:44:29.441,BCI,Test3D,Predict_End,Prediction_Phase,Predict_End
+16:44:30.430,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+16:44:30.430,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+16:44:31.641,BCI,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:44:31.685,BCI,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:44:31.951,BCI,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:44:31.951,BCI,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:44:31.951,BCI,Test3D,Experiment_Ended,BCI,
+16:44:31.951,TrainML,Test3D,Experiment_Start,TrainML,
+16:44:31.951,TrainML,TrainBCI,Phase_Start,TrainBCI,
+16:44:31.951,TrainML,TrainBCI,All_Experiments_Completed,,
+16:44:32.396,TrainML,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:44:32.408,TrainML,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:44:32.440,TrainML,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:44:32.507,TrainML,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:44:32.541,TrainML,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:44:32.551,TrainML,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+16:44:32.574,TrainML,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+16:44:33.573,TrainML,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+16:44:33.573,TrainML,TrainBCI,Flicker,StartTrainBCI,Flicker_Start
+16:44:35.582,TrainML,TrainBCI,Flicker,StartTrainBCI,Flicker_End
+16:44:35.582,TrainML,TrainBCI,Action_Executed,Button: StartTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:44:36.749,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:44:36.804,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:44:37.593,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:44:41.603,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:44:45.622,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:44:45.666,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:44:45.733,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:44:49.632,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:44:53.651,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:44:57.660,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:45:01.681,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:45:05.689,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:45:09.709,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:45:13.720,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:45:17.739,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:45:21.748,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:45:25.757,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:45:29.765,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:45:33.786,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:45:35.308,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:45:35.386,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:45:37.041,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:45:37.184,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:45:37.792,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:45:41.682,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:45:41.802,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:45:41.825,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:45:44.137,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:45:44.180,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:45:45.814,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:45:49.835,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:45:53.842,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:45:57.851,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:46:01.859,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:46:05.880,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:46:09.888,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:46:13.908,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:46:17.918,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:46:21.939,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:46:25.947,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:46:29.967,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:46:33.976,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:46:37.997,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:46:42.006,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:46:45.516,TrainML,TrainBCI,Eye_Closed,eye_tracking,Eye_Closed
+16:46:45.769,TrainML,TrainBCI,Eye_Opened,eye_tracking,Eye_Opened
+16:46:46.024,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:46:50.024,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:46:54.044,TrainML,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+16:46:58.053,TrainML,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+16:47:02.073,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:47:06.082,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:47:10.102,TrainML,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+16:47:14.112,TrainML,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+16:47:16.112,TrainML,TrainBCI,Train_End,Training Complete,Train_End
+16:47:16.789,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:16.820,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:16.844,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:16.866,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:16.889,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:16.910,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:16.922,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:16.946,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:16.954,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:17.186,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:17.197,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:17.208,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:17.241,TrainML,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+16:47:18.233,TrainML,TrainBCI,Dwell,Button: NextTrainBCI,Dwelling_Completed
+16:47:18.233,TrainML,TrainBCI,Flicker,NextTrainBCI,Flicker_Start
+16:47:20.109,TrainML,TrainBCI,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+16:47:20.242,TrainML,TrainBCI,Flicker,NextTrainBCI,Flicker_End
+16:47:20.242,TrainML,TrainBCI,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+16:47:20.242,TrainML,Test3D,Phase_Start,Test3D,
+16:47:20.684,TrainML,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:47:20.727,TrainML,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:47:20.738,TrainML,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:47:21.499,TrainML,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:47:22.370,TrainML,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:47:22.383,TrainML,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:47:22.747,TrainML,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:47:22.781,TrainML,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:47:22.958,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:47:23.058,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:47:23.158,TrainML,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:47:23.180,TrainML,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+16:47:23.235,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:47:23.344,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:47:23.425,TrainML,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+16:47:24.416,TrainML,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+16:47:24.416,TrainML,Test3D,Flicker,StartTestBCI,Flicker_Start
+16:47:26.428,TrainML,Test3D,Flicker,StartTestBCI,Flicker_End
+16:47:26.428,TrainML,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+16:48:01.731,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:48:01.776,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:48:02.063,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:48:02.128,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:48:26.251,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:48:26.307,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:48:27.518,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:48:27.638,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
+16:48:27.902,TrainML,Test3D,Eye_Closed,eye_tracking,Eye_Closed
+16:48:27.969,TrainML,Test3D,Eye_Opened,eye_tracking,Eye_Opened
