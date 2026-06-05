@@ -315,11 +315,11 @@ public class OB : MonoBehaviour
         // 1. Ownership
         if (waitingObject != this) return;
 
-        // 2. State guard
-        if (!isWaitingForLSL) return;
+        // // 2. State guard
+        // if (!isWaitingForLSL) return;
 
-        // 3. Event match
-        if (msg.Event != lastEvent) return;
+        // // 3. Event match
+        // if (msg.Event != lastEvent) return;
 
         // 4. Detail match (objectId)
         if (msg.Detail != lastDetail) return;

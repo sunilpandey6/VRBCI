@@ -343,11 +343,11 @@ public class BB : MonoBehaviour
         // 1. Ownership: only the button that sent the flicker should respond
         if (waitingButton != this) return;
 
-        // 2. State guard: if we somehow left WaitingForLSL, ignore
-        if (currentState != State.WaitingForLSL) return;
+        // // 2. State guard: if we somehow left WaitingForLSL, ignore
+        // if (currentState != State.WaitingForLSL) return;
 
-        // 3. Event match: Python must echo back "Flicker_Start"
-        if (msg.Event != lastEvent) return;
+        // // 3. Event match: Python must echo back "Flicker_Start"
+        // if (msg.Event != lastEvent) return;
 
         // 4. Detail match: Python must echo back our specific buttonId
         if (msg.Detail != lastDetail) return;
