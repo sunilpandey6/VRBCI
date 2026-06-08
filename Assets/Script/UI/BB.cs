@@ -145,6 +145,11 @@ public class BB : MonoBehaviour
         if (waitingButton == this) waitingButton = null;
 
         StopAllCoroutines();
+        
+        // Reset runtime state
+        dwellTimer       = 0f;
+        hasTriggered     = false;
+        flickerStartTime = -1f;
     }
 
     void ApplyGlobalColors()

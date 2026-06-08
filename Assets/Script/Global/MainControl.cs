@@ -11,7 +11,7 @@ public class MainControl : MonoBehaviour
         EyeTracking,
         Hybrid,
         BCI,
-        TrainML
+        // TrainML
     }
 
     public enum ExperimentPhase
@@ -22,7 +22,7 @@ public class MainControl : MonoBehaviour
         TrainBCI,
         Test3D,
         //MLTrain,
-        Completed
+        // Completed
     }
 
     // gaze controller
@@ -95,7 +95,8 @@ public class MainControl : MonoBehaviour
     {
         currentExperiment = newType;
         // if the current experiment is BCI or TrainML, disable gaze interaction
-        isGazeInteractionEnabled = (newType != ExperimentType.BCI && newType != ExperimentType.TrainML);
+        // isGazeInteractionEnabled = (newType != ExperimentType.BCI && newType != ExperimentType.TrainML);
+        isGazeInteractionEnabled = (newType != ExperimentType.BCI);
 
         Debug.Log($"--- Starting Experiment Block: {currentExperiment} ---");
         
@@ -176,7 +177,7 @@ public class MainControl : MonoBehaviour
         }
         else if (currentExperiment == ExperimentType.BCI)
         {
-            SetExperimentType(ExperimentType.TrainML);
+            // SetExperimentType(ExperimentType.TrainML);
         }
         if (ExperimentLogger.Instance != null)  ExperimentLogger.Instance.LogEvent("All_Experiments_Completed");
 

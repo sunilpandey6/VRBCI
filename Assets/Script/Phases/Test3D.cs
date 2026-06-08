@@ -75,6 +75,11 @@ public class Test3D : MonoBehaviour
     [Tooltip("Sound to play when prediction done")]
     public AudioClip predictSound;
 
+    private int currentBCITrial = 0;
+    // private int totalBCITrials = 5;
+    [SerializeField]
+    private float[] bciPredictionWindows = { 5f, 4f, 3f, 2f, 1f };
+
     #region Unity Lifecycle
     // private void Awake()
     // {
@@ -87,6 +92,7 @@ public class Test3D : MonoBehaviour
 
     void OnEnable()
     {
+        currentBCITrial = 0;
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnPredictionResult += HandlePredictionLSL;
         currentMode = MainControl.Instance.currentExperiment;
@@ -101,6 +107,7 @@ public class Test3D : MonoBehaviour
         if (Test3DScene != null) Test3DScene.SetActive(false);
         if (LSLCommunicationManager.Instance != null)
             LSLCommunicationManager.Instance.OnPredictionResult -= HandlePredictionLSL;
+        currentBCITrial = 0;
     }
     #endregion
 
@@ -146,7 +153,7 @@ public class Test3D : MonoBehaviour
             IntroButton_instructionText.text = hybridInstruction;
         }
 
-        else if (currentMode == MainControl.ExperimentType.Hybrid)
+        else if (currentMode == MainControl.ExperimentType.BCI)
         {
             IntroButton_headingText.text = bciHeading;
             IntroButton_instructionText.text = bciInstruction;
@@ -186,7 +193,7 @@ public class Test3D : MonoBehaviour
             IntroNextButton_instructionText.text = hybridInstructionFinal;
         }
 
-        else if (currentMode == MainControl.ExperimentType.Hybrid)
+        else if (currentMode == MainControl.ExperimentType.BCI)
         {
             IntroNextButton_headingText.text = bciHeadingFinal;
             IntroNextButton_instructionText.text = bciInstructionFinal;
@@ -225,7 +232,21 @@ public class Test3D : MonoBehaviour
         //create log
         ExperimentLogger.Instance?.LogEvent("Answer", "Answer_Phase", gameObject.name);
         LSL_Logger.Instance?.LogEvent("Answer", "Answer_Phase", gameObject.name);
-        
+       
+        if (IsBCIMode())
+        {
+            currentBCITrial++;
+
+            if (currentBCITrial >= bciPredictionWindows.Length)
+            {
+                IntroNextButtonUI();
+                return;
+            }
+
+            StartTest3D();
+            return;
+        }
+
         IntroNextButtonUI();
         
     }
@@ -249,13 +270,14 @@ public class Test3D : MonoBehaviour
 
     public void Test3DMain()
     {
-        if(IsBCIMode())
-        {
-            // StartEyeClosedTest();
-            ExperimentLogger.Instance?.LogEvent("Predict_Start", "Prediction_Phase", "Predict_Active_Start");
-            LSL_Logger.Instance?.LogEvent("Predict_Start", "Prediction_Phase", "Predict_Active_Start");
-            
-        }
+        if (!IsBCIMode()) return;
+
+        float window = bciPredictionWindows[currentBCITrial];
+
+        string action = $"Predict_Start:{window}";
+
+        ExperimentLogger.Instance?.LogEvent("Predict_Start", "Prediction_Window", action);
+        LSL_Logger.Instance?.LogEvent("Predict_Start", "Prediction_Window", action);
     }
 
     private void MoveToPoint()
