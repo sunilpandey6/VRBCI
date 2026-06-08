@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-[RequireComponent(typeof(EyeClosed))]
+// [RequireComponent(typeof(EyeClosed))]
 public class Test3D : MonoBehaviour
 {
     
-    [Header("References")]
-    [SerializeField] public EyeClosed eyeClosed;
+    // [Header("References")]
+    // [SerializeField] public EyeClosed eyeClosed;
 
     [Header("Experiment Mode")]
     public MainControl.ExperimentType currentMode;
@@ -69,15 +69,21 @@ public class Test3D : MonoBehaviour
     [Header("Player / Camera Rig")]
     [SerializeField] private Transform playerRig;
 
-    #region Unity Lifecycle
-    private void Awake()
-    {
-        if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
-    }
+    [Header("Audio Feedback")]
+    [Tooltip("AudioSource used to play the sound")]
+    public AudioSource audioSource;
+    [Tooltip("Sound to play when prediction done")]
+    public AudioClip predictSound;
 
-    private void OnValidate(){
-        eyeClosed = GetComponent<EyeClosed>();
-    }
+    #region Unity Lifecycle
+    // private void Awake()
+    // {
+    //     if(eyeClosed == null) eyeClosed = GetComponent<EyeClosed>();
+    // }
+
+    // private void OnValidate(){
+    //     eyeClosed = GetComponent<EyeClosed>();
+    // }
 
     void OnEnable()
     {
@@ -208,10 +214,10 @@ public class Test3D : MonoBehaviour
     #endregion
 
     #region Eye Closed Check
-    public void StartEyeClosedTest()
-    {
-        eyeClosed.StartChecking();
-    }
+    // public void StartEyeClosedTest()
+    // {
+    //     eyeClosed.StartChecking();
+    // }
 
     // create function to store the experiment mode and then the test results
     public void ProcessAnswer()
@@ -271,13 +277,15 @@ public void HandlePredictionLSL(BCIMessage msg)
 
     if (door1 != null && door1.doorCode != OB.DoorCode.None && msg.Code == (int)door1.doorCode)
     {
+        playPredictSound();
         door1.TriggerInteraction();
-        eyeClosed.playPredictSound();
+        // eyeClosed.playPredictSound();
     }
     else if (door2 != null && door2.doorCode != OB.DoorCode.None && msg.Code == (int)door2.doorCode)
     {
+        playPredictSound();
         door2.TriggerInteraction();
-        eyeClosed.playPredictSound();
+        // eyeClosed.playPredictSound();
 
     }
 
@@ -285,6 +293,15 @@ public void HandlePredictionLSL(BCIMessage msg)
     LSL_Logger.Instance?.LogEvent("Predict_End", "Prediction_Phase", "Predict_End");
 }
 #endregion
+
+
+    #region Play Sound
+    public void playPredictSound()
+    {
+        if (audioSource != null && predictSound != null)
+            audioSource.PlayOneShot(predictSound);
+    }
+    #endregion
 
  #region Helpers
 
