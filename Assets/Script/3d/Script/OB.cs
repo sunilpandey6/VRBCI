@@ -281,7 +281,7 @@ public class OB : MonoBehaviour
                 }
                 break;
             case ActionType.OpenDoor:
-                StartCoroutine(DoorFlow(test3D.IntroNextButtonUI));
+                StartCoroutine(DoorFlow(test3D.SetAnsUI));
                 break;
         }
     }

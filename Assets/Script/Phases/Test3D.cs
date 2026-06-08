@@ -20,9 +20,9 @@ public class Test3D : MonoBehaviour
     [Header("Intro Canvas child Panel")]
     
     public GameObject IntroButton;
-    [Header("Instruction UI")]
+    [Header("Instruction Heading Text UI")]
     public TMP_Text IntroButton_headingText;
-    [Header("Instruction UI")]
+    [Header("Instruction Text UI")]
     public TMP_Text IntroButton_instructionText;
 
     [Header("Instruction Heading Texts")]
@@ -51,6 +51,8 @@ public class Test3D : MonoBehaviour
     [TextArea] public string hybridInstructionFinal;
     [TextArea] public string bciInstructionFinal;
 
+    [Header("Answer UI")]
+    public GameObject IntroAnswerUI;
 
     [Header("Scene Reference")]
     public GameObject Test3DScene;
@@ -115,6 +117,7 @@ public class Test3D : MonoBehaviour
     {
         if (IntroductionCanvas == null) return;
         IntroButton.SetActive(true);
+        IntroAnswerUI.SetActive(false);
         IntroNextButton.SetActive(false);
         SetMessageIntroButtonUI();
 
@@ -143,7 +146,7 @@ public class Test3D : MonoBehaviour
             IntroButton_instructionText.text = bciInstruction;
         }
     }
-
+    // Final UI show after the experiment
     public void IntroNextButtonUI()
     {
         if (IntroductionCanvas == null) return;
@@ -155,6 +158,7 @@ public class Test3D : MonoBehaviour
         }
 
         IntroButton.SetActive(false);
+        IntroAnswerUI.SetActive(false);
         IntroNextButton.SetActive(true);
         SetMessageIntroFinalUI();
 
@@ -183,8 +187,23 @@ public class Test3D : MonoBehaviour
         }
 
     }
+    #endregion
+    #region Answer UI
 
+    public void SetAnsUI()
+    {
+        if (IntroductionCanvas == null) return;
+        if (Test3DScene != null) Test3DScene.SetActive(false);
+        IntroductionCanvas.SetActive(true);
+        if (introPos != null)
+        {
+            introPos.PositionCanvasFront();
+        }
 
+        IntroButton.SetActive(false);
+        IntroAnswerUI.SetActive(true);
+        IntroNextButton.SetActive(false);
+    }
 
     #endregion
 
@@ -192,6 +211,17 @@ public class Test3D : MonoBehaviour
     public void StartEyeClosedTest()
     {
         eyeClosed.StartChecking();
+    }
+
+    // create function to store the experiment mode and then the test results
+    public void ProcessAnswer()
+    {
+        //create log
+        ExperimentLogger.Instance?.LogEvent("Answer", "Answer_Phase", gameObject.name);
+        LSL_Logger.Instance?.LogEvent("Answer", "Answer_Phase", gameObject.name);
+        
+        IntroNextButtonUI();
+        
     }
     #endregion
 
