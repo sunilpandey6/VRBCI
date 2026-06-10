@@ -270,16 +270,6 @@ private IEnumerator TrainingRoutine()
             HandleDoorTrainingComplete(2, msg);
             break;
 
-        case LSLCommunicationManager.BCICommand.TrainObj1ImageryComplete:
-            ExperimentLogger.Instance.LogEvent("[TrainBCI] Training complete for Imagery Door 1");
-            HandleDoorTrainingComplete(1, msg);
-            break;
-
-        case LSLCommunicationManager.BCICommand.TrainObj2ImageryComplete:
-            ExperimentLogger.Instance.LogEvent("[TrainBCI] Training complete for Imagery Door 2");
-            HandleDoorTrainingComplete(2, msg);
-            break;
-
         default:
             // Ignore anything else
             return;

@@ -64,10 +64,10 @@ public class LSLCommunicationManager : MonoBehaviour
     public string streamType = "BCIResult";
 
     [Tooltip("Seconds to wait for a stream before timing out during resolution.")]
-    public float resolveTimeout = 3f;
+    public float resolveTimeout = 30f;
 
     [Tooltip("Seconds between automatic reconnect attempts when the stream is lost.")]
-    public float reconnectInterval = 5f;
+    public float reconnectInterval = 2f;
 
     #endregion
 
@@ -134,16 +134,11 @@ public class LSLCommunicationManager : MonoBehaviour
         FlickerNotDetected      = 101,
         TrainObj1ActiveComplete = 201,
         TrainObj2ActiveComplete = 202,
-        TrainObj1ImageryComplete= 203,
-        TrainObj2ImageryComplete= 204,
         PredictResultActiveObj1 = 300,
-        PredictResultActiveObj2 = 301,
-        PredictResultImageryObj1= 302,
-        PredictResultImageryObj2= 303,
+        PredictResultActiveObj2 = 301
     }
 
     #endregion
-
     #region Private Fields
 
     // LSL objects — only accessed from the polling coroutine (effectively single-threaded
@@ -426,26 +421,8 @@ public class LSLCommunicationManager : MonoBehaviour
                 OnTrainingEvent?.Invoke(msg);
                 OnTrainingEventUnity?.Invoke(msg);
                 break;
-            case (int)BCICommand.TrainObj1ImageryComplete:
-                OnTrainingEvent?.Invoke(msg);
-                OnTrainingEventUnity?.Invoke(msg);
-                break;
-            case (int)BCICommand.TrainObj2ImageryComplete:
-                OnTrainingEvent?.Invoke(msg);
-                OnTrainingEventUnity?.Invoke(msg);
-                break;
 
             // ── Prediction Result ─────────────────────────────────────────
-            case (int)BCICommand.PredictResultImageryObj1:
-                OnPredictionResult?.Invoke(msg);
-                OnPredictionResultUnity?.Invoke(msg);
-                break;
-
-            case (int)BCICommand.PredictResultImageryObj2:
-                OnPredictionResult?.Invoke(msg);
-                OnPredictionResultUnity?.Invoke(msg);
-                break;
-
             case (int)BCICommand.PredictResultActiveObj1:
                 OnPredictionResult?.Invoke(msg);
                 OnPredictionResultUnity?.Invoke(msg);

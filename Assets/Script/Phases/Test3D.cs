@@ -51,6 +51,9 @@ public class Test3D : MonoBehaviour
     [TextArea] public string hybridInstructionFinal;
     [TextArea] public string bciInstructionFinal;
 
+    [Header("Final UI button text")]
+    public TMP_Text finalUIbuttonText;
+
     [Header("Answer UI")]
     public GameObject IntroAnswerUI;
 
@@ -174,7 +177,6 @@ public class Test3D : MonoBehaviour
         IntroAnswerUI.SetActive(false);
         IntroNextButton.SetActive(true);
         SetMessageIntroFinalUI();
-
     }
 
     public void SetMessageIntroFinalUI()
@@ -199,23 +201,35 @@ public class Test3D : MonoBehaviour
             IntroNextButton_instructionText.text = bciInstructionFinal;
         }
 
+        if(IsBCIMode()){
+            if(finalUIbuttonText != null){
+                finalUIbuttonText.text = "Restart Test";
+            }
+        }   
+
     }
     #endregion
     #region Answer UI
 
     public void SetAnsUI()
     {
-        if (IntroductionCanvas == null) return;
-        if (Test3DScene != null) Test3DScene.SetActive(false);
-        IntroductionCanvas.SetActive(true);
-        if (introPos != null)
+        if(IsBCIMode())
         {
-            introPos.PositionCanvasFront();
+           if (IntroductionCanvas == null) return;
+           if (Test3DScene != null) Test3DScene.SetActive(false);
+           IntroductionCanvas.SetActive(true);
+           if (introPos != null)
+           {
+               introPos.PositionCanvasFront();
+           } 
+           IntroButton.SetActive(false);
+           IntroAnswerUI.SetActive(true);
+           IntroNextButton.SetActive(false);   
         }
-
-        IntroButton.SetActive(false);
-        IntroAnswerUI.SetActive(true);
-        IntroNextButton.SetActive(false);
+        else
+        {
+           IntroNextButtonUI(); 
+        }
     }
 
     #endregion
@@ -341,7 +355,12 @@ public void HandlePredictionLSL(BCIMessage msg)
      public void NextPhase()
     {
         gameObject.SetActive(false);
-        if (MainControl.Instance != null) MainControl.Instance.GoToNextPhase();            
+        if (MainControl.Instance == null) return;
+        if(IsBCIMode()){
+            MainControl.Instance.SetExperimentType(MainControl.ExperimentType.EyeTracking);
+            return;
+        }
+        MainControl.Instance.GoToNextPhase();            
        
     }
 }
