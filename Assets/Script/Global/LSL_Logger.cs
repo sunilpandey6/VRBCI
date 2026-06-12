@@ -50,7 +50,7 @@ public class LSL_Logger : MonoBehaviour
         );
 
         outlet = new StreamOutlet(info);
-
+        ExperimentLogger.Instance?.LogEvent($"[LSL_Logger] Outlet created — stream: '{streamName}', type: '{streamType}', source_id: '{sourceId}'");
         Debug.Log($"[LSL_Logger] Outlet created — stream: '{streamName}', type: '{streamType}', source_id: '{sourceId}'");
     }
 
@@ -96,6 +96,7 @@ public class LSL_Logger : MonoBehaviour
         outlet.push_sample(sample,LSL.LSL.local_clock());
 
         Debug.Log($"[LSL_Logger] Marker sent: {sample[0]}");
+        ExperimentLogger.Instance?.LogEvent("LSL_Logger", sample[0], "MarkerSent");
     }
 
     // ─── Cleanup ─────────────────────────────────────────────────────────────

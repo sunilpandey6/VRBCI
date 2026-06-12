@@ -217,6 +217,7 @@ public class LSLCommunicationManager : MonoBehaviour
     private IEnumerator ResolveAndPoll()
     {
         Debug.Log($"[LSLCommMgr] Resolving stream '{streamName}' (type: '{streamType}')…");
+        ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Resolving Stream", $"{streamName} (type: '{streamType}')");
 
         // ── Resolve ─────────────────────────────────────────────────────────
         _resolvedStreams = null;
@@ -234,11 +235,14 @@ public class LSLCommunicationManager : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogWarning($"[LSLCommMgr] Stream resolution failed: {ex.Message}");
+            ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Stream Resolution Failed", ex.Message);
         }
 
         if (!resolved)
         {
             Debug.LogWarning($"[LSLCommMgr] No stream found — scheduling reconnect in {reconnectInterval}s.");
+            ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Stream Not Found", $"Scheduling reconnect in {reconnectInterval}s.");
+            
             isConnected = false;
             yield return ScheduleReconnect();
             yield break;
@@ -259,6 +263,8 @@ public class LSLCommunicationManager : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogError($"[LSLCommMgr] Failed to open inlet: {ex.Message}");
+            ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Failed to open inlet", ex.Message);
+
             isConnected = false;
             shouldRetry = true;
         }
@@ -291,11 +297,13 @@ public class LSLCommunicationManager : MonoBehaviour
             {
                 // Inlet was closed externally — exit gracefully
                 Debug.LogWarning("[LSLCommMgr] Inlet disposed mid-poll — stopping poll loop.");
+                ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Inlet disposed mid-poll", "Stopping poll loop.");
                 break;
             }
             catch (Exception ex)
             {
                 Debug.LogWarning($"[LSLCommMgr] poll_sample error: {ex.Message} — scheduling reconnect.");
+                ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "poll_sample error", ex.Message);
                 break;
             }
         }
@@ -326,6 +334,8 @@ public class LSLCommunicationManager : MonoBehaviour
         CloseInlet(); // Tidy up any stale inlet
 
         Debug.Log($"[LSLCommMgr] Reconnecting in {reconnectInterval}s…");
+        ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Reconnecting", $"Reconnecting in {reconnectInterval}s");
+        
         yield return new WaitForSeconds(reconnectInterval);
 
         _isAttemptingReconnect = false;
@@ -384,6 +394,7 @@ public class LSLCommunicationManager : MonoBehaviour
              code == (int)BCICommand.FlickerNotDetected) && !isBCIOrHybrid)
         {
             Debug.Log($"[LSLCommMgr] Flicker code {code} ignored — experiment mode is {exp}.");
+            ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Flicker code ignored", msg.ToString());
             return;
         }
 
@@ -435,6 +446,7 @@ public class LSLCommunicationManager : MonoBehaviour
             // ── Unknown Code ──────────────────────────────────────────────
             default:
                 Debug.LogWarning($"[LSLCommMgr] Unknown BCI command code: {code} — ignoring.");
+                ExperimentLogger.Instance?.LogEvent("LSLCommMgr","Unknown BCI command code",$"{code}-ignore");
                 break;
         }
     }
@@ -452,6 +464,7 @@ public class LSLCommunicationManager : MonoBehaviour
             if (msg == null)
             {
                 Debug.LogWarning($"[LSLCommMgr] JSON deserialized to null. Raw: {raw}");
+                ExperimentLogger.Instance?.LogEvent("LSLCommMgr","JSON deserialized to null",raw);
                 return null;
             }
             return msg;
@@ -459,6 +472,7 @@ public class LSLCommunicationManager : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogWarning($"[LSLCommMgr] Failed to parse JSON: {ex.Message} | Raw: {raw}");
+            ExperimentLogger.Instance?.LogEvent("LSLCommMgr","Failed to parse JSON",$"{ex.Message}-Raw: {raw}");
             return null;
         }
     }
@@ -481,6 +495,7 @@ public class LSLCommunicationManager : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogWarning($"[LSLCommMgr] Error closing inlet: {ex.Message}");
+            ExperimentLogger.Instance?.LogEvent("LSLCommMgr", "Error closing inlet", ex.Message);
             _inlet = null;
             isConnected = false;
         }
@@ -507,6 +522,7 @@ public class LSLCommunicationManager : MonoBehaviour
             Remark = new BCIRemark { Message = "Injected from SimulateCommand()" }
         };
         Debug.Log($"[LSLCommMgr] SIMULATED command: {code} event='{unityEvent}'");
+        ExperimentLogger.Instance?.LogEvent("LSLCommMgr","Simulated command",msg.ToString());
         _messageQueue.Enqueue(msg);
     }
 
