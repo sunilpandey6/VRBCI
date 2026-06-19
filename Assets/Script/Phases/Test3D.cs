@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using static BB;
 
 // [RequireComponent(typeof(EyeClosed))]
 public class Test3D : MonoBehaviour
@@ -257,6 +258,10 @@ public class Test3D : MonoBehaviour
                 return;
             }
 
+            if(gameObject.TryGetComponent<BB>(out BB buttonTimerNeedsReset))
+            {
+                buttonTimerNeedsReset.OnHoverExit();
+            }
             StartTest3D();
             return;
         }
