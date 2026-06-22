@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d5dc89587d24ea58d8a3fb6648d00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentExperiment: 2
+  currentExperiment: 0
   currentPhase: 0
 --- !u!1001 &1852547139
 PrefabInstance:
@@ -1406,7 +1406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2329920164818532654, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2544539393360693569, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_LocalScale.z
