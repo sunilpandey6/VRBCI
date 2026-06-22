@@ -1035,7 +1035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3568475214070324856, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4372524088619916979, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1085,12 +1085,49 @@ PrefabInstance:
       propertyPath: imageryDelay
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4812116195594345654, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1612.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812116195594345654, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 307.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812116195594345654, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 76.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812116195594345654, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 63
+      objectReference: {fileID: 0}
     - target: {fileID: 5123135920685847215, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5381430862970100892, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250799247110455553, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_text
+      value: "Now we will start Training BCI to understand the door.\nYou will see
+        one of two doors displayed for a few seconds. \nWhile the door is visible,
+        focus on it and think about its features, such as its shape, color, texture,
+        handle, and other details. \nKeep your attention on the door for the entire
+        time it is displayed. When it disappears, wait for the next door and repeat
+        the process."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250799247110455553, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_fontSize
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250799247110455553, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250799247110455553, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6872956494984633346, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
@@ -1104,6 +1141,10 @@ PrefabInstance:
     - target: {fileID: 7598864495493032180, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8252314386442237459, guid: 84107906bf09946e0a8f098a1c15ab31, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1461,7 +1502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4856149884500143739, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861580938407317022, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_Name
@@ -1473,7 +1514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5735460776939960245, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5851946251101508961, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1513,10 +1554,11 @@ PrefabInstance:
 
 
         Focus
-        on the door you intend to select.
+        your attention on the door you wish to select and think about its visual
+        features (shape, color and other details). Maintain your focus until the
+        selection period ends.
 
-        The system will detect your selection
-        automatically.'
+        The system will detect your selection automatically.'
       objectReference: {fileID: 0}
     - target: {fileID: 6058948308563571282, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: finalUIbuttonText
@@ -1585,7 +1627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6114076569398417631, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6129161849626868393, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_text
@@ -1672,25 +1714,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8476656318503023054, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_text
-      value: 'Instruction:
-
-        You are now in a simulated emergency evacuation
-        scenario.
+      value: 'You are now in a simulated emergency evacuation scenario.
 
 
-        Your task is to choose an exit door using eye movement.
+        Your
+        task is to choose an exit door using BCI-based interaction.
 
 
-        As
-        soon as the scene starts, look at the door you want to select.
+        Focus
+        your attention on the door you wish to select and think about its visual
+        features (shape, color, and other details). Maintain your focus until the
+        selection period ends.
 
-
-        Keep
-        your gaze on it to confirm your choice.'
+        The system will detect your selection automatically.'
       objectReference: {fileID: 0}
     - target: {fileID: 8476656318503023054, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_fontSize
-      value: 44.3
+      value: 44.65
       objectReference: {fileID: 0}
     - target: {fileID: 8476656318503023054, guid: 781c43dc35d00411b92e0f2f5f159011, type: 3}
       propertyPath: m_HorizontalAlignment
