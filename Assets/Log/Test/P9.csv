@@ -1,0 +1,635 @@
+Time,Experiment,Phase,Event,Detail,Action
+13:26:37.630,EyeTracking,SettingUI,LSLCommMgr,Resolving Stream,BCIBackend (type: 'BCIResult')
+13:26:37.646,EyeTracking,SettingUI,LSL_Connected,BCIBackend,BCI_Stream_Open
+13:26:37.646,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:37.646;EyeTracking;SettingUI;LSL_Connected;BCIBackend;BCI_Stream_Open,MarkerSent
+13:26:37.654,EyeTracking,SettingUI,Experiment_Start,EyeTracking,
+13:26:37.655,EyeTracking,SettingUI,Phase_Start,SettingUI,
+13:26:40.242,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:40.242,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:40.242;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:42.227,EyeTracking,SettingUI,Action_Executed,Button: demoIntroScene; Action: ButtonAction,Execution_Proceeding
+13:26:42.227,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:42.227;EyeTracking;SettingUI;Action_Executed;Button: demoIntroScene; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:26:42.540,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:42.540,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:42.540;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:42.596,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:26:42.596,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:42.596;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:26:42.596,EyeTracking,SettingUI,Dwell_Start,Button: Intro-Next-UI,Dwell_Started
+13:26:42.596,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:42.596;EyeTracking;SettingUI;Dwell_Start;Button: Intro-Next-UI;Dwell_Started,MarkerSent
+13:26:43.983,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:26:43.983,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:43.983;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:26:44.026,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:44.026,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:44.026;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:44.970,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:44.970,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:44.970;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:47.194,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:47.194,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:47.194;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:48.151,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:48.152,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:48.151;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:48.522,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:48.522,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:48.522;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:50.519,EyeTracking,SettingUI,Action_Executed,Button: demoIntroScene; Action: ButtonAction,Execution_Proceeding
+13:26:50.519,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:50.519;EyeTracking;SettingUI;Action_Executed;Button: demoIntroScene; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:26:52.105,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:52.105,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:52.105;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:52.262,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:52.262,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:52.262;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:52.430,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:52.430,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:52.430;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:52.453,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:52.453,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:52.453;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:53.311,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:53.311,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:53.311;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:53.713,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:53.713,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:53.713;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:54.819,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:54.819,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:54.819;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:54.862,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:26:54.862,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:54.862;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:26:55.550,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:26:55.550,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:55.550;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:26:55.550,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:55.550,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:55.550;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:26:55.928,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:26:55.928,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:55.928;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:26:59.988,EyeTracking,SettingUI,Hover_Enter,Button: demoIntroScene,Hovering
+13:26:59.988,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:26:59.988;EyeTracking;SettingUI;Hover_Enter;Button: demoIntroScene;Hovering,MarkerSent
+13:27:01.238,EyeTracking,SettingUI,Hover_Exit,Button: demoIntroScene,Hover_Exit
+13:27:01.238,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:01.238;EyeTracking;SettingUI;Hover_Exit;Button: demoIntroScene;Hover_Exit,MarkerSent
+13:27:01.288,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:01.288,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:01.288;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:02.065,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:02.065,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:02.065;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:02.278,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:02.278,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:02.278;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:02.422,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:02.422,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:02.422;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:02.525,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:02.525,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:02.525;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.088,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.088,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.088;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:03.190,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:03.190,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.190;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.261,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.261,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.261;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:03.297,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:03.297,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.297;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.310,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.310,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.310;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:03.322,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:03.322,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.322;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.469,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.469,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.469;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:03.515,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:03.515,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.515;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.602,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.602,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.602;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:03.732,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:03.732,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.732;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.789,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.789,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.789;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:03.860,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:03.860,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.860;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:03.929,EyeTracking,SettingUI,Hover_Exit,Button: Intro-Next-UI,Hover_Exit
+13:27:03.929,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:03.929;EyeTracking;SettingUI;Hover_Exit;Button: Intro-Next-UI;Hover_Exit,MarkerSent
+13:27:04.005,EyeTracking,SettingUI,Hover_Enter,Button: Intro-Next-UI,Hovering
+13:27:04.005,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:04.005;EyeTracking;SettingUI;Hover_Enter;Button: Intro-Next-UI;Hovering,MarkerSent
+13:27:06.003,EyeTracking,SettingUI,Dwell,Button: Intro-Next-UI,Dwelling_Completed
+13:27:06.003,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.003;EyeTracking;SettingUI;Dwell;Button: Intro-Next-UI;Dwelling_Completed,MarkerSent
+13:27:06.003,EyeTracking,SettingUI,Action_Executed,Button: Intro-Next-UI; Action: ButtonAction,Execution_Proceeding
+13:27:06.003,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.003;EyeTracking;SettingUI;Action_Executed;Button: Intro-Next-UI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:27:06.026,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+13:27:06.026,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.026;EyeTracking;SettingUI;Hover_Enter;Button: nextDwellSetting;Hovering,MarkerSent
+13:27:06.026,EyeTracking,SettingUI,Dwell_Start,Button: nextDwellSetting,Dwell_Started
+13:27:06.028,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.026;EyeTracking;SettingUI;Dwell_Start;Button: nextDwellSetting;Dwell_Started,MarkerSent
+13:27:06.356,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+13:27:06.356,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.356;EyeTracking;SettingUI;Hover_Exit;Button: nextDwellSetting;Hover_Exit,MarkerSent
+13:27:06.440,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+13:27:06.440,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.440;EyeTracking;SettingUI;Hover_Enter;Button: nextDwellSetting;Hovering,MarkerSent
+13:27:06.453,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+13:27:06.453,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.453;EyeTracking;SettingUI;Hover_Exit;Button: nextDwellSetting;Hover_Exit,MarkerSent
+13:27:06.510,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+13:27:06.510,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.510;EyeTracking;SettingUI;Hover_Enter;Button: nextDwellSetting;Hovering,MarkerSent
+13:27:06.522,EyeTracking,SettingUI,Hover_Exit,Button: nextDwellSetting,Hover_Exit
+13:27:06.522,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.522;EyeTracking;SettingUI;Hover_Exit;Button: nextDwellSetting;Hover_Exit,MarkerSent
+13:27:06.922,EyeTracking,SettingUI,Hover_Enter,Button: headingDwellSetting,Hovering
+13:27:06.922,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.922;EyeTracking;SettingUI;Hover_Enter;Button: headingDwellSetting;Hovering,MarkerSent
+13:27:06.933,EyeTracking,SettingUI,Hover_Exit,Button: headingDwellSetting,Hover_Exit
+13:27:06.933,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:06.933;EyeTracking;SettingUI;Hover_Exit;Button: headingDwellSetting;Hover_Exit,MarkerSent
+13:27:07.075,EyeTracking,SettingUI,Hover_Enter,Button: headingDwellSetting,Hovering
+13:27:07.075,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:07.075;EyeTracking;SettingUI;Hover_Enter;Button: headingDwellSetting;Hovering,MarkerSent
+13:27:07.942,EyeTracking,SettingUI,Hover_Exit,Button: headingDwellSetting,Hover_Exit
+13:27:07.942,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:07.942;EyeTracking;SettingUI;Hover_Exit;Button: headingDwellSetting;Hover_Exit,MarkerSent
+13:27:08.793,EyeTracking,SettingUI,Hover_Enter,Button: addTimeDwell,Hovering
+13:27:08.793,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:08.793;EyeTracking;SettingUI;Hover_Enter;Button: addTimeDwell;Hovering,MarkerSent
+13:27:08.793,EyeTracking,SettingUI,Dwell_Start,Button: addTimeDwell,Dwell_Started
+13:27:08.793,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:08.793;EyeTracking;SettingUI;Dwell_Start;Button: addTimeDwell;Dwell_Started,MarkerSent
+13:27:08.806,EyeTracking,SettingUI,Hover_Exit,Button: addTimeDwell,Hover_Exit
+13:27:08.806,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:08.806;EyeTracking;SettingUI;Hover_Exit;Button: addTimeDwell;Hover_Exit,MarkerSent
+13:27:09.235,EyeTracking,SettingUI,Hover_Enter,Button: addTimeDwell,Hovering
+13:27:09.235,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:09.235;EyeTracking;SettingUI;Hover_Enter;Button: addTimeDwell;Hovering,MarkerSent
+13:27:09.457,EyeTracking,SettingUI,Hover_Exit,Button: addTimeDwell,Hover_Exit
+13:27:09.457,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:09.457;EyeTracking;SettingUI;Hover_Exit;Button: addTimeDwell;Hover_Exit,MarkerSent
+13:27:10.201,EyeTracking,SettingUI,Hover_Enter,Button: addTimeDwell,Hovering
+13:27:10.201,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:10.201;EyeTracking;SettingUI;Hover_Enter;Button: addTimeDwell;Hovering,MarkerSent
+13:27:10.237,EyeTracking,SettingUI,Hover_Exit,Button: addTimeDwell,Hover_Exit
+13:27:10.237,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:10.237;EyeTracking;SettingUI;Hover_Exit;Button: addTimeDwell;Hover_Exit,MarkerSent
+13:27:10.273,EyeTracking,SettingUI,Hover_Enter,Button: addTimeDwell,Hovering
+13:27:10.273,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:10.273;EyeTracking;SettingUI;Hover_Enter;Button: addTimeDwell;Hovering,MarkerSent
+13:27:10.318,EyeTracking,SettingUI,Hover_Exit,Button: addTimeDwell,Hover_Exit
+13:27:10.318,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:10.318;EyeTracking;SettingUI;Hover_Exit;Button: addTimeDwell;Hover_Exit,MarkerSent
+13:27:12.130,EyeTracking,SettingUI,Hover_Enter,Button: subTimeDwell,Hovering
+13:27:12.130,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:12.130;EyeTracking;SettingUI;Hover_Enter;Button: subTimeDwell;Hovering,MarkerSent
+13:27:12.130,EyeTracking,SettingUI,Dwell_Start,Button: subTimeDwell,Dwell_Started
+13:27:12.130,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:12.130;EyeTracking;SettingUI;Dwell_Start;Button: subTimeDwell;Dwell_Started,MarkerSent
+13:27:12.143,EyeTracking,SettingUI,Hover_Exit,Button: subTimeDwell,Hover_Exit
+13:27:12.143,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:12.143;EyeTracking;SettingUI;Hover_Exit;Button: subTimeDwell;Hover_Exit,MarkerSent
+13:27:12.154,EyeTracking,SettingUI,Hover_Enter,Button: nextDwellSetting,Hovering
+13:27:12.154,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:12.154;EyeTracking;SettingUI;Hover_Enter;Button: nextDwellSetting;Hovering,MarkerSent
+13:27:14.151,EyeTracking,SettingUI,Dwell,Button: nextDwellSetting,Dwelling_Completed
+13:27:14.151,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:14.151;EyeTracking;SettingUI;Dwell;Button: nextDwellSetting;Dwelling_Completed,MarkerSent
+13:27:14.151,EyeTracking,SettingUI,Action_Executed,Button: nextDwellSetting; Action: ButtonAction,Execution_Proceeding
+13:27:14.151,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:14.151;EyeTracking;SettingUI;Action_Executed;Button: nextDwellSetting; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:27:14.151,EyeTracking,SettingUI,Set_Target_Frequency,Button: SettingUI,Set_Target_Frequency: 15
+13:27:14.151,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:27:14.151;EyeTracking;SettingUI;Set_Target_Frequency;Button: SettingUI;Set_Target_Frequency: 15,MarkerSent
+13:27:14.151,EyeTracking,Demo3D,Phase_Start,Demo3D,
+13:27:14.430,EyeTracking,Demo3D,Hover_Enter,Button: StartDemo,Hovering
+13:27:14.430,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:14.430;EyeTracking;Demo3D;Hover_Enter;Button: StartDemo;Hovering,MarkerSent
+13:27:14.430,EyeTracking,Demo3D,Dwell_Start,Button: StartDemo,Dwell_Started
+13:27:14.430,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:14.430;EyeTracking;Demo3D;Dwell_Start;Button: StartDemo;Dwell_Started,MarkerSent
+13:27:14.759,EyeTracking,Demo3D,Hover_Exit,Button: StartDemo,Hover_Exit
+13:27:14.759,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:14.759;EyeTracking;Demo3D;Hover_Exit;Button: StartDemo;Hover_Exit,MarkerSent
+13:27:14.772,EyeTracking,Demo3D,Hover_Enter,Button: StartDemo,Hovering
+13:27:14.772,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:14.772;EyeTracking;Demo3D;Hover_Enter;Button: StartDemo;Hovering,MarkerSent
+13:27:14.882,EyeTracking,Demo3D,Hover_Exit,Button: StartDemo,Hover_Exit
+13:27:14.882,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:14.882;EyeTracking;Demo3D;Hover_Exit;Button: StartDemo;Hover_Exit,MarkerSent
+13:27:15.035,EyeTracking,Demo3D,Hover_Enter,Button: StartDemo,Hovering
+13:27:15.035,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:15.035;EyeTracking;Demo3D;Hover_Enter;Button: StartDemo;Hovering,MarkerSent
+13:27:15.046,EyeTracking,Demo3D,Hover_Exit,Button: StartDemo,Hover_Exit
+13:27:15.046,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:15.046;EyeTracking;Demo3D;Hover_Exit;Button: StartDemo;Hover_Exit,MarkerSent
+13:27:15.082,EyeTracking,Demo3D,Hover_Enter,Button: StartDemo,Hovering
+13:27:15.082,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:15.082;EyeTracking;Demo3D;Hover_Enter;Button: StartDemo;Hovering,MarkerSent
+13:27:17.079,EyeTracking,Demo3D,Dwell,Button: StartDemo,Dwelling_Completed
+13:27:17.079,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:17.079;EyeTracking;Demo3D;Dwell;Button: StartDemo;Dwelling_Completed,MarkerSent
+13:27:17.079,EyeTracking,Demo3D,Action_Executed,Button: StartDemo; Action: ButtonAction,Execution_Proceeding
+13:27:17.079,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:17.079;EyeTracking;Demo3D;Action_Executed;Button: StartDemo; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:27:17.128,EyeTracking,Demo3D,Dwell_Start,Object: Door_Single,Dwell_Started
+13:27:17.128,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:17.128;EyeTracking;Demo3D;Dwell_Start;Object: Door_Single;Dwell_Started,MarkerSent
+13:27:19.082,EyeTracking,Demo3D,Dwell_Complete,Object: Door_Single,Dwelling_Completed
+13:27:19.082,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:19.082;EyeTracking;Demo3D;Dwell_Complete;Object: Door_Single;Dwelling_Completed,MarkerSent
+13:27:19.082,EyeTracking,Demo3D,Action_Executed,Object: Door_Single; Action: DoorSwitch,Execution_Proceeding
+13:27:19.082,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:19.082;EyeTracking;Demo3D;Action_Executed;Object: Door_Single; Action: DoorSwitch;Execution_Proceeding,MarkerSent
+13:27:19.601,EyeTracking,Demo3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:19.601,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:19.601;EyeTracking;Demo3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:21.598,EyeTracking,Demo3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:27:21.598,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:21.598;EyeTracking;Demo3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:27:21.598,EyeTracking,Demo3D,Action_Executed,Object: Door_Double; Action: NextScene,Execution_Proceeding
+13:27:21.598,EyeTracking,Demo3D,LSL_Logger,2026-06-29 13:27:21.598;EyeTracking;Demo3D;Action_Executed;Object: Door_Double; Action: NextScene;Execution_Proceeding,MarkerSent
+13:27:22.106,EyeTracking,Test3D,Phase_Start,Test3D,
+13:27:22.531,EyeTracking,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+13:27:22.531,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:22.531;EyeTracking;Test3D;Hover_Enter;Button: StartTestBCI;Hovering,MarkerSent
+13:27:22.531,EyeTracking,Test3D,Dwell_Start,Button: StartTestBCI,Dwell_Started
+13:27:22.531,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:22.531;EyeTracking;Test3D;Dwell_Start;Button: StartTestBCI;Dwell_Started,MarkerSent
+13:27:23.009,EyeTracking,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+13:27:23.009,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:23.009;EyeTracking;Test3D;Hover_Exit;Button: StartTestBCI;Hover_Exit,MarkerSent
+13:27:31.010,EyeTracking,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+13:27:31.010,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:31.010;EyeTracking;Test3D;Hover_Enter;Button: StartTestBCI;Hovering,MarkerSent
+13:27:32.998,EyeTracking,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+13:27:32.998,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:32.998;EyeTracking;Test3D;Dwell;Button: StartTestBCI;Dwelling_Completed,MarkerSent
+13:27:32.998,EyeTracking,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+13:27:32.998,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:32.998;EyeTracking;Test3D;Action_Executed;Button: StartTestBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:27:33.500,EyeTracking,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:33.500,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:33.500;EyeTracking;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:35.492,EyeTracking,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:27:35.492,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:35.492;EyeTracking;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:27:35.492,EyeTracking,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:27:35.492,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:35.492;EyeTracking;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:27:36.391,EyeTracking,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+13:27:36.391,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:36.391;EyeTracking;Test3D;Hover_Enter;Button: NextTrainBCI;Hovering,MarkerSent
+13:27:36.391,EyeTracking,Test3D,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+13:27:36.392,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:36.391;EyeTracking;Test3D;Dwell_Start;Button: NextTrainBCI;Dwell_Started,MarkerSent
+13:27:36.553,EyeTracking,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+13:27:36.553,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:36.553;EyeTracking;Test3D;Hover_Exit;Button: NextTrainBCI;Hover_Exit,MarkerSent
+13:27:40.140,EyeTracking,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+13:27:40.140,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:40.140;EyeTracking;Test3D;Hover_Enter;Button: NextTrainBCI;Hovering,MarkerSent
+13:27:42.142,EyeTracking,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+13:27:42.142,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:42.142;EyeTracking;Test3D;Dwell;Button: NextTrainBCI;Dwelling_Completed,MarkerSent
+13:27:42.142,EyeTracking,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+13:27:42.142,EyeTracking,Test3D,LSL_Logger,2026-06-29 13:27:42.142;EyeTracking;Test3D;Action_Executed;Button: NextTrainBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:27:42.142,EyeTracking,Test3D,Experiment_Ended,EyeTracking,
+13:27:42.142,Hybrid,Test3D,Experiment_Start,Hybrid,
+13:27:42.142,Hybrid,Test3D,Phase_Start,Test3D,
+13:27:42.143,Hybrid,Test3D,All_Experiments_Completed,,
+13:27:44.147,Hybrid,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+13:27:44.147,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:44.147;Hybrid;Test3D;Dwell;Button: StartTestBCI;Dwelling_Completed,MarkerSent
+13:27:44.147,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_Start
+13:27:44.147,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:44.147;Hybrid;Test3D;Flicker;StartTestBCI;Flicker_Start,MarkerSent
+13:27:44.936,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+13:27:44.936,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:44.936;Hybrid;Test3D;Hover_Enter;Button: StartTestBCI;Hovering,MarkerSent
+13:27:44.947,Hybrid,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+13:27:44.947,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:44.947;Hybrid;Test3D;Hover_Exit;Button: StartTestBCI;Hover_Exit,MarkerSent
+13:27:44.958,Hybrid,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+13:27:44.958,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:44.958;Hybrid;Test3D;Hover_Enter;Button: StartTestBCI;Hovering,MarkerSent
+13:27:45.271,Hybrid,Test3D,Hover_Exit,Button: StartTestBCI,Hover_Exit
+13:27:45.271,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:45.271;Hybrid;Test3D;Hover_Exit;Button: StartTestBCI;Hover_Exit,MarkerSent
+13:27:46.159,Hybrid,Test3D,Flicker,StartTestBCI,Flicker_End
+13:27:46.159,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:46.159;Hybrid;Test3D;Flicker;StartTestBCI;Flicker_End,MarkerSent
+13:27:46.198,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+13:27:46.198,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:46.198;Hybrid;Test3D;BCI_Command_Received;100;FlickerDetected,MarkerSent
+13:27:46.199,Hybrid,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+13:27:46.199,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:46.199;Hybrid;Test3D;Action_Executed;Button: StartTestBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:27:46.742,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:46.742,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:46.742;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:47.284,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+13:27:47.284,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:47.284;Hybrid;Test3D;Gaze_Stop;Object: Door_Double;Hover_Exit,MarkerSent
+13:27:47.632,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:47.632,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:47.632;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:49.293,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+13:27:49.293,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:49.293;Hybrid;Test3D;Gaze_Stop;Object: Door_Double;Hover_Exit,MarkerSent
+13:27:49.786,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:49.786,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:49.786;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:49.812,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+13:27:49.812,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:49.812;Hybrid;Test3D;Gaze_Stop;Object: Door_Double;Hover_Exit,MarkerSent
+13:27:49.823,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:49.823,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:49.823;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:50.505,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+13:27:50.505,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:50.505;Hybrid;Test3D;Gaze_Stop;Object: Door_Double;Hover_Exit,MarkerSent
+13:27:51.508,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:51.508,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:51.508;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:51.903,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+13:27:51.903,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:51.903;Hybrid;Test3D;Gaze_Stop;Object: Door_Double;Hover_Exit,MarkerSent
+13:27:52.794,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:52.794,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:52.794;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:52.831,Hybrid,Test3D,Gaze_Stop,Object: Door_Double,Hover_Exit
+13:27:52.831,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:52.831;Hybrid;Test3D;Gaze_Stop;Object: Door_Double;Hover_Exit,MarkerSent
+13:27:52.857,Hybrid,Test3D,Dwell_Start,Object: Door_Double,Dwell_Started
+13:27:52.857,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:52.857;Hybrid;Test3D;Dwell_Start;Object: Door_Double;Dwell_Started,MarkerSent
+13:27:54.845,Hybrid,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:27:54.845,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:54.845;Hybrid;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:27:54.845,Hybrid,Test3D,Flicker_Start,Object: Door_Double; Hz: 15,Flicker_Start
+13:27:54.845,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:54.845;Hybrid;Test3D;Flicker_Start;Door_Double;Flicker_Start,MarkerSent
+13:27:56.858,Hybrid,Test3D,Flicker_End,Object: Door_Double,Flicker_End
+13:27:56.858,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:56.858;Hybrid;Test3D;Flicker_End;Object: Door_Double;Flicker_End,MarkerSent
+13:27:56.908,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+13:27:56.908,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:56.908;Hybrid;Test3D;BCI_Command_Received;100;FlickerDetected,MarkerSent
+13:27:56.908,Hybrid,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:27:56.908,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:56.908;Hybrid;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:27:57.672,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+13:27:57.672,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:57.672;Hybrid;Test3D;Hover_Enter;Button: NextTrainBCI;Hovering,MarkerSent
+13:27:57.861,Hybrid,Test3D,Hover_Exit,Button: NextTrainBCI,Hover_Exit
+13:27:57.861,Hybrid,Test3D,LSL_Logger,2026-06-29 13:27:57.861;Hybrid;Test3D;Hover_Exit;Button: NextTrainBCI;Hover_Exit,MarkerSent
+13:28:00.329,Hybrid,Test3D,Hover_Enter,Button: NextTrainBCI,Hovering
+13:28:00.329,Hybrid,Test3D,LSL_Logger,2026-06-29 13:28:00.329;Hybrid;Test3D;Hover_Enter;Button: NextTrainBCI;Hovering,MarkerSent
+13:28:02.323,Hybrid,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+13:28:02.323,Hybrid,Test3D,LSL_Logger,2026-06-29 13:28:02.323;Hybrid;Test3D;Dwell;Button: NextTrainBCI;Dwelling_Completed,MarkerSent
+13:28:02.323,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_Start
+13:28:02.323,Hybrid,Test3D,LSL_Logger,2026-06-29 13:28:02.323;Hybrid;Test3D;Flicker;NextTrainBCI;Flicker_Start,MarkerSent
+13:28:04.333,Hybrid,Test3D,Flicker,NextTrainBCI,Flicker_End
+13:28:04.333,Hybrid,Test3D,LSL_Logger,2026-06-29 13:28:04.333;Hybrid;Test3D;Flicker;NextTrainBCI;Flicker_End,MarkerSent
+13:28:04.367,Hybrid,Test3D,BCI_Command_Received,100,FlickerDetected
+13:28:04.367,Hybrid,Test3D,LSL_Logger,2026-06-29 13:28:04.367;Hybrid;Test3D;BCI_Command_Received;100;FlickerDetected,MarkerSent
+13:28:04.367,Hybrid,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+13:28:04.367,Hybrid,Test3D,LSL_Logger,2026-06-29 13:28:04.367;Hybrid;Test3D;Action_Executed;Button: NextTrainBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:28:04.367,Hybrid,Test3D,Experiment_Ended,Hybrid,
+13:28:04.367,BCI,Test3D,Experiment_Start,BCI,
+13:28:04.367,BCI,TrainBCI,Phase_Start,TrainBCI,
+13:28:04.369,BCI,TrainBCI,All_Experiments_Completed,,
+13:28:04.383,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+13:28:04.383,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:04.383;BCI;TrainBCI;Hover_Enter;Button: StartTrainBCI;Hovering,MarkerSent
+13:28:04.383,BCI,TrainBCI,Dwell_Start,Button: StartTrainBCI,Dwell_Started
+13:28:04.383,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:04.383;BCI;TrainBCI;Dwell_Start;Button: StartTrainBCI;Dwell_Started,MarkerSent
+13:28:04.798,BCI,TrainBCI,Hover_Exit,Button: StartTrainBCI,Hover_Exit
+13:28:04.798,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:04.798;BCI;TrainBCI;Hover_Exit;Button: StartTrainBCI;Hover_Exit,MarkerSent
+13:28:22.992,BCI,TrainBCI,Hover_Enter,Button: StartTrainBCI,Hovering
+13:28:22.992,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:22.992;BCI;TrainBCI;Hover_Enter;Button: StartTrainBCI;Hovering,MarkerSent
+13:28:24.984,BCI,TrainBCI,Dwell,Button: StartTrainBCI,Dwelling_Completed
+13:28:24.984,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:24.984;BCI;TrainBCI;Dwell;Button: StartTrainBCI;Dwelling_Completed,MarkerSent
+13:28:24.984,BCI,TrainBCI,Action_Executed,Button: StartTrainBCI; Action: ButtonAction,Execution_Proceeding
+13:28:24.984,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:24.984;BCI;TrainBCI;Action_Executed;Button: StartTrainBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:28:26.989,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:28:26.989,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:26.989;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:28:30.990,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:28:30.990,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:30.990;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:28:35.010,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:28:35.010,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:35.010;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:28:39.016,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:28:39.016,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:39.016;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:28:43.032,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:28:43.032,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:43.032;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:28:47.037,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:28:47.037,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:47.037;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:28:51.049,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:28:51.049,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:51.049;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:28:55.055,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:28:55.055,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:55.055;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:28:59.063,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:28:59.063,BCI,TrainBCI,LSL_Logger,2026-06-29 13:28:59.063;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:29:03.070,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:29:03.070,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:03.070;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:29:07.079,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:29:07.079,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:07.079;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:29:11.089,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:29:11.089,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:11.089;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:29:15.099,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:29:15.099,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:15.099;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:29:19.102,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:29:19.102,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:19.102;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:29:23.121,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:29:23.121,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:23.121;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:29:27.123,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:29:27.123,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:27.123;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:29:31.133,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:29:31.133,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:31.133;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:29:35.140,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:29:35.140,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:35.140;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:29:39.150,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:29:39.150,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:39.150;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:29:43.153,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:29:43.153,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:43.153;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:29:47.163,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:29:47.163,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:47.163;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:29:51.174,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:29:51.174,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:51.174;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:29:55.190,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:29:55.190,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:55.190;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:29:59.189,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:29:59.189,BCI,TrainBCI,LSL_Logger,2026-06-29 13:29:59.189;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:30:03.196,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:30:03.196,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:03.196;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:30:07.207,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:30:07.207,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:07.207;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:30:11.217,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:30:11.217,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:11.217;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:30:15.222,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:30:15.222,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:15.222;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:30:19.233,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:30:19.233,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:19.233;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:30:23.241,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:30:23.241,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:23.241;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:30:27.253,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:30:27.253,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:27.253;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:30:31.265,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:30:31.265,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:31.265;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:30:35.281,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:30:35.281,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:35.281;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:30:39.282,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:30:39.282,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:39.282;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:30:43.296,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:30:43.296,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:43.296;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:30:47.297,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:30:47.297,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:47.297;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:30:51.308,BCI,TrainBCI,Active_Training_Door2_Start,Door_Double,TAD2S
+13:30:51.308,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:51.308;BCI;TrainBCI;Active_Training_Door2_Start;Door_Double;TAD2S,MarkerSent
+13:30:55.308,BCI,TrainBCI,Active_Training_Door2_End,Door_Double,TAD2E
+13:30:55.308,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:55.308;BCI;TrainBCI;Active_Training_Door2_End;Door_Double;TAD2E,MarkerSent
+13:30:59.331,BCI,TrainBCI,Training_Active_Door1_Start,Door_Single,TAD1S
+13:30:59.331,BCI,TrainBCI,LSL_Logger,2026-06-29 13:30:59.331;BCI;TrainBCI;Training_Active_Door1_Start;Door_Single;TAD1S,MarkerSent
+13:31:03.338,BCI,TrainBCI,Training_Active_Door1_End,Door_Single,TAD1E
+13:31:03.338,BCI,TrainBCI,LSL_Logger,2026-06-29 13:31:03.338;BCI;TrainBCI;Training_Active_Door1_End;Door_Single;TAD1E,MarkerSent
+13:31:05.346,BCI,TrainBCI,Train_End,Training Complete,Train_End
+13:31:05.346,BCI,TrainBCI,LSL_Logger,2026-06-29 13:31:05.346;BCI;TrainBCI;Train_End;Training Complete;Train_End,MarkerSent
+13:31:08.079,BCI,TrainBCI,Hover_Enter,Button: NextTrainBCI,Hovering
+13:31:08.079,BCI,TrainBCI,LSL_Logger,2026-06-29 13:31:08.079;BCI;TrainBCI;Hover_Enter;Button: NextTrainBCI;Hovering,MarkerSent
+13:31:08.079,BCI,TrainBCI,Dwell_Start,Button: NextTrainBCI,Dwell_Started
+13:31:08.079,BCI,TrainBCI,LSL_Logger,2026-06-29 13:31:08.079;BCI;TrainBCI;Dwell_Start;Button: NextTrainBCI;Dwell_Started,MarkerSent
+13:31:10.068,BCI,TrainBCI,Dwell,Button: NextTrainBCI,Dwelling_Completed
+13:31:10.068,BCI,TrainBCI,LSL_Logger,2026-06-29 13:31:10.068;BCI;TrainBCI;Dwell;Button: NextTrainBCI;Dwelling_Completed,MarkerSent
+13:31:10.068,BCI,TrainBCI,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+13:31:10.068,BCI,TrainBCI,LSL_Logger,2026-06-29 13:31:10.068;BCI;TrainBCI;Action_Executed;Button: NextTrainBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:31:10.068,BCI,Test3D,Phase_Start,Test3D,
+13:31:25.049,BCI,Test3D,Hover_Enter,Button: StartTestBCI,Hovering
+13:31:25.049,BCI,Test3D,LSL_Logger,2026-06-29 13:31:25.049;BCI;Test3D;Hover_Enter;Button: StartTestBCI;Hovering,MarkerSent
+13:31:27.046,BCI,Test3D,Dwell,Button: StartTestBCI,Dwelling_Completed
+13:31:27.046,BCI,Test3D,LSL_Logger,2026-06-29 13:31:27.046;BCI;Test3D;Dwell;Button: StartTestBCI;Dwelling_Completed,MarkerSent
+13:31:27.046,BCI,Test3D,Action_Executed,Button: StartTestBCI; Action: ButtonAction,Execution_Proceeding
+13:31:27.046,BCI,Test3D,LSL_Logger,2026-06-29 13:31:27.046;BCI;Test3D;Action_Executed;Button: StartTestBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:31:27.046,BCI,Test3D,Predict_Start,Prediction_Window,Predict_Start:5
+13:31:27.046,BCI,Test3D,LSL_Logger,2026-06-29 13:31:27.046;BCI;Test3D;Predict_Start;Prediction_Window;Predict_Start:5,MarkerSent
+13:31:37.406,BCI,Test3D,BCI_Command_Received,301,PredictResultActiveObj2
+13:31:37.406,BCI,Test3D,LSL_Logger,2026-06-29 13:31:37.406;BCI;Test3D;BCI_Command_Received;301;PredictResultActiveObj2,MarkerSent
+13:31:37.418,BCI,Test3D,Dwell_Start_External,Object: Door_Double,Dwell_Started
+13:31:37.418,BCI,Test3D,LSL_Logger,2026-06-29 13:31:37.418;BCI;Test3D;Dwell_Start_External;Object: Door_Double;Dwell_Started,MarkerSent
+13:31:37.418,BCI,Test3D,Predict_End,Prediction_Phase,Predict_End
+13:31:37.418,BCI,Test3D,LSL_Logger,2026-06-29 13:31:37.418;BCI;Test3D;Predict_End;Prediction_Phase;Predict_End,MarkerSent
+13:31:39.401,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:31:39.401,BCI,Test3D,LSL_Logger,2026-06-29 13:31:39.401;BCI;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:31:39.401,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:31:39.401,BCI,Test3D,LSL_Logger,2026-06-29 13:31:39.401;BCI;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:31:42.070,BCI,Test3D,Hover_Enter,Button: No,Hovering
+13:31:42.070,BCI,Test3D,LSL_Logger,2026-06-29 13:31:42.070;BCI;Test3D;Hover_Enter;Button: No;Hovering,MarkerSent
+13:31:42.070,BCI,Test3D,Dwell_Start,Button: No,Dwell_Started
+13:31:42.070,BCI,Test3D,LSL_Logger,2026-06-29 13:31:42.070;BCI;Test3D;Dwell_Start;Button: No;Dwell_Started,MarkerSent
+13:31:42.530,BCI,Test3D,Hover_Exit,Button: No,Hover_Exit
+13:31:42.530,BCI,Test3D,LSL_Logger,2026-06-29 13:31:42.530;BCI;Test3D;Hover_Exit;Button: No;Hover_Exit,MarkerSent
+13:31:42.553,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:31:42.553,BCI,Test3D,LSL_Logger,2026-06-29 13:31:42.553;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:31:42.553,BCI,Test3D,Dwell_Start,Button: Yes,Dwell_Started
+13:31:42.553,BCI,Test3D,LSL_Logger,2026-06-29 13:31:42.553;BCI;Test3D;Dwell_Start;Button: Yes;Dwell_Started,MarkerSent
+13:31:44.553,BCI,Test3D,Dwell,Button: Yes,Dwelling_Completed
+13:31:44.553,BCI,Test3D,LSL_Logger,2026-06-29 13:31:44.553;BCI;Test3D;Dwell;Button: Yes;Dwelling_Completed,MarkerSent
+13:31:44.553,BCI,Test3D,Action_Executed,Button: Yes; Action: ButtonAction,Execution_Proceeding
+13:31:44.553,BCI,Test3D,LSL_Logger,2026-06-29 13:31:44.553;BCI;Test3D;Action_Executed;Button: Yes; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:31:44.553,BCI,Test3D,Answer,Answer_Phase,Test3D
+13:31:44.553,BCI,Test3D,LSL_Logger,2026-06-29 13:31:44.553;BCI;Test3D;Answer;Answer_Phase;Test3D,MarkerSent
+13:31:44.554,BCI,Test3D,Predict_Start,Prediction_Window,Predict_Start:4
+13:31:44.554,BCI,Test3D,LSL_Logger,2026-06-29 13:31:44.554;BCI;Test3D;Predict_Start;Prediction_Window;Predict_Start:4,MarkerSent
+13:31:50.486,BCI,Test3D,BCI_Command_Received,301,PredictResultActiveObj2
+13:31:50.486,BCI,Test3D,LSL_Logger,2026-06-29 13:31:50.486;BCI;Test3D;BCI_Command_Received;301;PredictResultActiveObj2,MarkerSent
+13:31:50.486,BCI,Test3D,Dwell_Start_External,Object: Door_Double,Dwell_Started
+13:31:50.486,BCI,Test3D,LSL_Logger,2026-06-29 13:31:50.486;BCI;Test3D;Dwell_Start_External;Object: Door_Double;Dwell_Started,MarkerSent
+13:31:50.486,BCI,Test3D,Predict_End,Prediction_Phase,Predict_End
+13:31:50.486,BCI,Test3D,LSL_Logger,2026-06-29 13:31:50.486;BCI;Test3D;Predict_End;Prediction_Phase;Predict_End,MarkerSent
+13:31:52.478,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:31:52.478,BCI,Test3D,LSL_Logger,2026-06-29 13:31:52.478;BCI;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:31:52.478,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:31:52.478,BCI,Test3D,LSL_Logger,2026-06-29 13:31:52.478;BCI;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:31:54.996,BCI,Test3D,Dwell,Button: Yes,Dwelling_Completed
+13:31:54.996,BCI,Test3D,LSL_Logger,2026-06-29 13:31:54.996;BCI;Test3D;Dwell;Button: Yes;Dwelling_Completed,MarkerSent
+13:31:54.996,BCI,Test3D,Action_Executed,Button: Yes; Action: ButtonAction,Execution_Proceeding
+13:31:54.996,BCI,Test3D,LSL_Logger,2026-06-29 13:31:54.996;BCI;Test3D;Action_Executed;Button: Yes; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:31:54.996,BCI,Test3D,Answer,Answer_Phase,Test3D
+13:31:54.996,BCI,Test3D,LSL_Logger,2026-06-29 13:31:54.996;BCI;Test3D;Answer;Answer_Phase;Test3D,MarkerSent
+13:31:54.996,BCI,Test3D,Predict_Start,Prediction_Window,Predict_Start:3
+13:31:54.996,BCI,Test3D,LSL_Logger,2026-06-29 13:31:54.996;BCI;Test3D;Predict_Start;Prediction_Window;Predict_Start:3,MarkerSent
+13:31:59.833,BCI,Test3D,BCI_Command_Received,301,PredictResultActiveObj2
+13:31:59.833,BCI,Test3D,LSL_Logger,2026-06-29 13:31:59.833;BCI;Test3D;BCI_Command_Received;301;PredictResultActiveObj2,MarkerSent
+13:31:59.833,BCI,Test3D,Dwell_Start_External,Object: Door_Double,Dwell_Started
+13:31:59.833,BCI,Test3D,LSL_Logger,2026-06-29 13:31:59.833;BCI;Test3D;Dwell_Start_External;Object: Door_Double;Dwell_Started,MarkerSent
+13:31:59.833,BCI,Test3D,Predict_End,Prediction_Phase,Predict_End
+13:31:59.833,BCI,Test3D,LSL_Logger,2026-06-29 13:31:59.833;BCI;Test3D;Predict_End;Prediction_Phase;Predict_End,MarkerSent
+13:32:01.830,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:32:01.830,BCI,Test3D,LSL_Logger,2026-06-29 13:32:01.830;BCI;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:32:01.830,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:32:01.830,BCI,Test3D,LSL_Logger,2026-06-29 13:32:01.830;BCI;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:32:03.953,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:03.953,BCI,Test3D,LSL_Logger,2026-06-29 13:32:03.953;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:04.346,BCI,Test3D,Dwell,Button: Yes,Dwelling_Completed
+13:32:04.346,BCI,Test3D,LSL_Logger,2026-06-29 13:32:04.346;BCI;Test3D;Dwell;Button: Yes;Dwelling_Completed,MarkerSent
+13:32:04.346,BCI,Test3D,Action_Executed,Button: Yes; Action: ButtonAction,Execution_Proceeding
+13:32:04.346,BCI,Test3D,LSL_Logger,2026-06-29 13:32:04.346;BCI;Test3D;Action_Executed;Button: Yes; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:32:04.346,BCI,Test3D,Answer,Answer_Phase,Test3D
+13:32:04.346,BCI,Test3D,LSL_Logger,2026-06-29 13:32:04.346;BCI;Test3D;Answer;Answer_Phase;Test3D,MarkerSent
+13:32:04.346,BCI,Test3D,Predict_Start,Prediction_Window,Predict_Start:2
+13:32:04.346,BCI,Test3D,LSL_Logger,2026-06-29 13:32:04.346;BCI;Test3D;Predict_Start;Prediction_Window;Predict_Start:2,MarkerSent
+13:32:08.023,BCI,Test3D,BCI_Command_Received,301,PredictResultActiveObj2
+13:32:08.023,BCI,Test3D,LSL_Logger,2026-06-29 13:32:08.023;BCI;Test3D;BCI_Command_Received;301;PredictResultActiveObj2,MarkerSent
+13:32:08.023,BCI,Test3D,Dwell_Start_External,Object: Door_Double,Dwell_Started
+13:32:08.023,BCI,Test3D,LSL_Logger,2026-06-29 13:32:08.023;BCI;Test3D;Dwell_Start_External;Object: Door_Double;Dwell_Started,MarkerSent
+13:32:08.023,BCI,Test3D,Predict_End,Prediction_Phase,Predict_End
+13:32:08.023,BCI,Test3D,LSL_Logger,2026-06-29 13:32:08.023;BCI;Test3D;Predict_End;Prediction_Phase;Predict_End,MarkerSent
+13:32:10.021,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:32:10.021,BCI,Test3D,LSL_Logger,2026-06-29 13:32:10.021;BCI;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:32:10.021,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:32:10.021,BCI,Test3D,LSL_Logger,2026-06-29 13:32:10.021;BCI;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:32:10.812,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:10.812,BCI,Test3D,LSL_Logger,2026-06-29 13:32:10.812;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:10.916,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:10.916,BCI,Test3D,LSL_Logger,2026-06-29 13:32:10.916;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:11.763,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:11.763,BCI,Test3D,LSL_Logger,2026-06-29 13:32:11.763;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:13.762,BCI,Test3D,Dwell,Button: Yes,Dwelling_Completed
+13:32:13.762,BCI,Test3D,LSL_Logger,2026-06-29 13:32:13.762;BCI;Test3D;Dwell;Button: Yes;Dwelling_Completed,MarkerSent
+13:32:13.762,BCI,Test3D,Action_Executed,Button: Yes; Action: ButtonAction,Execution_Proceeding
+13:32:13.762,BCI,Test3D,LSL_Logger,2026-06-29 13:32:13.762;BCI;Test3D;Action_Executed;Button: Yes; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:32:13.762,BCI,Test3D,Answer,Answer_Phase,Test3D
+13:32:13.762,BCI,Test3D,LSL_Logger,2026-06-29 13:32:13.762;BCI;Test3D;Answer;Answer_Phase;Test3D,MarkerSent
+13:32:13.762,BCI,Test3D,Predict_Start,Prediction_Window,Predict_Start:1
+13:32:13.762,BCI,Test3D,LSL_Logger,2026-06-29 13:32:13.762;BCI;Test3D;Predict_Start;Prediction_Window;Predict_Start:1,MarkerSent
+13:32:16.689,BCI,Test3D,BCI_Command_Received,301,PredictResultActiveObj2
+13:32:16.689,BCI,Test3D,LSL_Logger,2026-06-29 13:32:16.689;BCI;Test3D;BCI_Command_Received;301;PredictResultActiveObj2,MarkerSent
+13:32:16.689,BCI,Test3D,Dwell_Start_External,Object: Door_Double,Dwell_Started
+13:32:16.689,BCI,Test3D,LSL_Logger,2026-06-29 13:32:16.689;BCI;Test3D;Dwell_Start_External;Object: Door_Double;Dwell_Started,MarkerSent
+13:32:16.689,BCI,Test3D,Predict_End,Prediction_Phase,Predict_End
+13:32:16.689,BCI,Test3D,LSL_Logger,2026-06-29 13:32:16.689;BCI;Test3D;Predict_End;Prediction_Phase;Predict_End,MarkerSent
+13:32:18.680,BCI,Test3D,Dwell_Complete,Object: Door_Double,Dwelling_Completed
+13:32:18.680,BCI,Test3D,LSL_Logger,2026-06-29 13:32:18.680;BCI;Test3D;Dwell_Complete;Object: Door_Double;Dwelling_Completed,MarkerSent
+13:32:18.680,BCI,Test3D,Action_Executed,Object: Door_Double; Action: OpenDoor,Execution_Proceeding
+13:32:18.680,BCI,Test3D,LSL_Logger,2026-06-29 13:32:18.680;BCI;Test3D;Action_Executed;Object: Door_Double; Action: OpenDoor;Execution_Proceeding,MarkerSent
+13:32:19.293,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:19.293,BCI,Test3D,LSL_Logger,2026-06-29 13:32:19.293;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:19.320,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:19.320,BCI,Test3D,LSL_Logger,2026-06-29 13:32:19.320;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:19.344,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:19.344,BCI,Test3D,LSL_Logger,2026-06-29 13:32:19.344;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:19.378,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:19.378,BCI,Test3D,LSL_Logger,2026-06-29 13:32:19.378;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:19.480,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:19.480,BCI,Test3D,LSL_Logger,2026-06-29 13:32:19.480;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:20.316,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:20.316,BCI,Test3D,LSL_Logger,2026-06-29 13:32:20.316;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:20.913,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:20.913,BCI,Test3D,LSL_Logger,2026-06-29 13:32:20.913;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:22.552,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:22.552,BCI,Test3D,LSL_Logger,2026-06-29 13:32:22.552;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:22.662,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:22.662,BCI,Test3D,LSL_Logger,2026-06-29 13:32:22.662;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:22.805,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:22.805,BCI,Test3D,LSL_Logger,2026-06-29 13:32:22.805;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:22.886,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:22.886,BCI,Test3D,LSL_Logger,2026-06-29 13:32:22.886;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:23.004,BCI,Test3D,Hover_Exit,Button: Yes,Hover_Exit
+13:32:23.004,BCI,Test3D,LSL_Logger,2026-06-29 13:32:23.004;BCI;Test3D;Hover_Exit;Button: Yes;Hover_Exit,MarkerSent
+13:32:23.016,BCI,Test3D,Hover_Enter,Button: Yes,Hovering
+13:32:23.016,BCI,Test3D,LSL_Logger,2026-06-29 13:32:23.016;BCI;Test3D;Hover_Enter;Button: Yes;Hovering,MarkerSent
+13:32:25.007,BCI,Test3D,Dwell,Button: Yes,Dwelling_Completed
+13:32:25.007,BCI,Test3D,LSL_Logger,2026-06-29 13:32:25.007;BCI;Test3D;Dwell;Button: Yes;Dwelling_Completed,MarkerSent
+13:32:25.007,BCI,Test3D,Action_Executed,Button: Yes; Action: ButtonAction,Execution_Proceeding
+13:32:25.007,BCI,Test3D,LSL_Logger,2026-06-29 13:32:25.007;BCI;Test3D;Action_Executed;Button: Yes; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:32:25.007,BCI,Test3D,Answer,Answer_Phase,Test3D
+13:32:25.007,BCI,Test3D,LSL_Logger,2026-06-29 13:32:25.007;BCI;Test3D;Answer;Answer_Phase;Test3D,MarkerSent
+13:32:27.013,BCI,Test3D,Dwell,Button: NextTrainBCI,Dwelling_Completed
+13:32:27.013,BCI,Test3D,LSL_Logger,2026-06-29 13:32:27.013;BCI;Test3D;Dwell;Button: NextTrainBCI;Dwelling_Completed,MarkerSent
+13:32:27.013,BCI,Test3D,Action_Executed,Button: NextTrainBCI; Action: ButtonAction,Execution_Proceeding
+13:32:27.013,BCI,Test3D,LSL_Logger,2026-06-29 13:32:27.013;BCI;Test3D;Action_Executed;Button: NextTrainBCI; Action: ButtonAction;Execution_Proceeding,MarkerSent
+13:32:27.013,EyeTracking,Test3D,Experiment_Start,EyeTracking,
+13:32:27.013,EyeTracking,SettingUI,Phase_Start,SettingUI,
+13:32:29.446,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:29.446;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:29.446,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:29.471,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:29.471;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:29.471,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:29.492,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:29.492;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:29.492,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:29.909,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:29.909;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:29.909,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:30.014,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.014;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:30.014,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:30.027,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.027;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:30.027,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:30.038,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.038;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:30.038,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:30.508,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.508;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:30.508,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:30.530,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.530;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:30.530,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:30.861,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.861;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:30.861,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:30.895,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.895;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:30.895,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:30.943,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:30.943;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:30.943,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:31.328,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:31.328;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:31.328,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:31.361,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:31.361;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:31.361,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:31.542,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:31.542;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:31.542,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.114,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.114;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.114,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:33.140,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.140;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:33.140,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.423,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.423;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.423,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:33.476,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.476;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:33.476,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.488,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.488;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.488,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:33.499,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.499;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:33.499,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.543,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.543;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.543,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:33.554,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.554;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:33.554,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.576,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.576;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.576,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:33.612,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.612;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:33.612,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.639,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.639;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.639,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:33.663,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.663;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:33.663,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:33.676,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:33.676;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:33.676,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:34.091,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:34.091;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:34.091,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:34.137,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:34.137;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:34.137,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:34.272,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:34.272;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:34.272,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:34.361,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:34.361;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:34.361,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:34.529,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:34.529;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:34.529,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:34.677,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:34.677;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:34.677,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:35.362,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:35.362;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:35.362,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:35.532,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:35.532;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:35.532,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:35.905,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:35.905;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:35.905,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:36.091,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:36.091;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:36.091,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:36.660,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:36.660;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:36.660,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:36.831,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:36.831;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:36.831,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:37.078,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:37.078;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:37.078,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:37.124,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:37.124;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:37.124,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:41.155,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:41.155;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:41.155,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:41.235,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:41.235;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:41.235,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
+13:32:41.295,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:41.295;EyeTracking;SettingUI;Eye_Closed;eye_tracking;Eye_Closed,MarkerSent
+13:32:41.295,EyeTracking,SettingUI,Eye_Closed,eye_tracking,Eye_Closed
+13:32:41.371,EyeTracking,SettingUI,LSL_Logger,2026-06-29 13:32:41.371;EyeTracking;SettingUI;Eye_Opened;eye_tracking;Eye_Opened,MarkerSent
+13:32:41.371,EyeTracking,SettingUI,Eye_Opened,eye_tracking,Eye_Opened
